@@ -126,7 +126,8 @@ async function image(file) {
   if (dest !== file) {
     const meta = await sharp(file).metadata();
     const alpha = !!meta.hasAlpha;
-    await sharp(file).webp(LOSSLESS ? { lossless: true, effort: 6 } : alpha
+    // lossless: quality is libwebp's compression effort there, 100 the smallest file for the same pixels
+    await sharp(file).webp(LOSSLESS ? { lossless: true, effort: 6, quality: 100 } : alpha
       ? { quality: 90, alphaQuality: 100, effort: 6, smartSubsample: true }
       : { quality: QUALITY, effort: 6, smartSubsample: true }).toFile(dest);
     outs.push(dest);
