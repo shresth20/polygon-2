@@ -1,0 +1,3009 @@
+{
+ "about": "The Gujarati voice, measured by tools/voice/measure-gujarati-voice.py from the ElevenLabs takes (assets/VO-GU/<n>_<key>.mp3, numbered as the Hindi script; docs/voice/gu/takes.json). For each line the experience speaks: its number, its key in src/i18n/locales.json, where it is used (lesson: a line of src/lesson/recordings.js, built as assets/audio/lesson/gu/<file>; game: a window of Frozen Rush's take, CFG.vo.lines <id>), its English and its Gujarati as shown, the voice, where its speech starts and ends in the take (seconds), its runs of speech between pauses (`runs`), and where each shown word starts (ElevenLabs' alignment fitted to those runs). `check` is a blind transcription (Whisper) and how close it is to the script (`match`, 0-1). A line may carry `cues`: for each English word, the index of the Gujarati word on which its cue fires; without it the build works them out (tools/voice/build-hindi-voice.py: CONCEPTS_GU). Build with npm run build:gujarati-voice.",
+ "language": "gu",
+ "source": "assets/VO-GU",
+ "lines": [
+  {
+   "n": 47,
+   "key": "swifteeNeedsHelp",
+   "use": "lesson",
+   "file": "92_Momo_needs_your_help",
+   "en": "Momo needs your help.",
+   "gu": "મોમોને તમારી મદદની જરૂર છે.",
+   "speech": [
+    0.06,
+    2.25
+   ],
+   "words": [
+    0.06,
+    0.72,
+    1.12,
+    1.6,
+    1.973
+   ],
+   "runs": [
+    [
+     0.06,
+     2.25
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 48,
+   "key": "swifteeLearnFirst",
+   "use": "lesson",
+   "file": "91_But_to_help_Momo_you_need_to_learn_about_polygons",
+   "en": "But to help Momo, you need to learn about polygons.",
+   "gu": "પણ મોમોની મદદ કરવા માટે તમારે બહુકોણ વિશે શીખવું પડશે.",
+   "speech": [
+    0.05,
+    4.13
+   ],
+   "words": [
+    0.05,
+    0.32,
+    0.84,
+    1.16,
+    1.48,
+    2.0,
+    2.48,
+    3.08,
+    3.36,
+    3.68
+   ],
+   "runs": [
+    [
+     0.05,
+     4.13
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 49,
+   "key": "swifteeLetsHelp",
+   "use": "lesson",
+   "file": "90_Now_lets_help_Momo",
+   "en": "Now let's help Momo.",
+   "gu": "ચાલો, હવે મોમોની મદદ કરીએ.",
+   "speech": [
+    0.04,
+    2.18
+   ],
+   "words": [
+    0.04,
+    0.68,
+    1.04,
+    1.52,
+    1.84
+   ],
+   "runs": [
+    [
+     0.04,
+     0.39
+    ],
+    [
+     0.68,
+     2.18
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 50,
+   "key": "s01Point",
+   "use": "lesson",
+   "file": "01_Look_A_point",
+   "en": "Look! A point.",
+   "gu": "જુઓ! એક બિંદુ.",
+   "speech": [
+    0.03,
+    1.62
+   ],
+   "words": [
+    0.03,
+    0.86,
+    1.12
+   ],
+   "runs": [
+    [
+     0.03,
+     0.44
+    ],
+    [
+     0.86,
+     1.62
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 51,
+   "key": "s02DrewShape",
+   "use": "lesson",
+   "file": "02_Woah_It_drew_a_shape",
+   "en": "Woah! It drew a shape.",
+   "gu": "વાહ! તેણે એક આકૃતિ દોરી.",
+   "speech": [
+    0.02,
+    2.41
+   ],
+   "words": [
+    0.02,
+    0.96,
+    1.253,
+    1.52,
+    2.0
+   ],
+   "runs": [
+    [
+     0.02,
+     0.55
+    ],
+    [
+     0.96,
+     2.41
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 52,
+   "key": "s03LookClosely",
+   "use": "lesson",
+   "file": "03_Lets_look_at_this_shape_closely",
+   "en": "Let's look at this shape closely.",
+   "gu": "ચાલો, આ આકૃતિને ધ્યાનથી જોઈએ.",
+   "speech": [
+    0.06,
+    2.84
+   ],
+   "words": [
+    0.06,
+    0.77,
+    1.12,
+    1.92,
+    2.4
+   ],
+   "runs": [
+    [
+     0.06,
+     0.39
+    ],
+    [
+     0.77,
+     2.84
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 53,
+   "key": "s04NoGaps",
+   "use": "lesson",
+   "file": "04_There_are_no_gaps_in_its_boundary",
+   "en": "There are no gaps in its boundary.",
+   "gu": "તેની સીમામાં ક્યાંય ખાલી જગ્યા નથી.",
+   "speech": [
+    0.04,
+    2.75
+   ],
+   "words": [
+    0.04,
+    0.32,
+    1.14,
+    1.6,
+    2.0,
+    2.347
+   ],
+   "runs": [
+    [
+     0.04,
+     0.99
+    ],
+    [
+     1.14,
+     2.75
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 54,
+   "key": "s05OpenOrClosed",
+   "use": "lesson",
+   "file": "05_Is_it_open_or_closed",
+   "en": "Is it open or closed?",
+   "gu": "આ ખુલ્લી છે કે બંધ?",
+   "speech": [
+    0.02,
+    1.79
+   ],
+   "words": [
+    0.02,
+    0.24,
+    0.8,
+    1.2,
+    1.36
+   ],
+   "runs": [
+    [
+     0.02,
+     1.79
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 55,
+   "key": "s06ThisShapeOpenOrClosed",
+   "use": "lesson",
+   "file": "06_Is_this_shape_open_or_closed",
+   "en": "Is this shape open or closed?",
+   "gu": "આ આકૃતિ ખુલ્લી છે કે બંધ?",
+   "speech": [
+    0.02,
+    2.56
+   ],
+   "words": [
+    0.02,
+    0.24,
+    1.12,
+    1.6,
+    2.0,
+    2.16
+   ],
+   "runs": [
+    [
+     0.02,
+     2.56
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 56,
+   "key": "s07WhatAboutThis",
+   "use": "lesson",
+   "file": "07_What_about_this_one",
+   "en": "What about this one?",
+   "gu": "આનું શું?",
+   "speech": [
+    0.02,
+    0.84
+   ],
+   "words": [
+    0.02,
+    0.4
+   ],
+   "runs": [
+    [
+     0.02,
+     0.84
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 57,
+   "key": "s08AndThis",
+   "use": "lesson",
+   "file": "08_And_this",
+   "en": "And this?",
+   "gu": "અને આ?",
+   "speech": [
+    0.03,
+    0.94
+   ],
+   "words": [
+    0.03,
+    0.64
+   ],
+   "runs": [
+    [
+     0.03,
+     0.94
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 58,
+   "key": "s09HowAboutThis",
+   "use": "lesson",
+   "file": "09_How_about_this_one",
+   "en": "How about this one?",
+   "gu": "આ કેવી છે?",
+   "speech": [
+    0.03,
+    1.02
+   ],
+   "words": [
+    0.03,
+    0.36,
+    0.72
+   ],
+   "runs": [
+    [
+     0.03,
+     0.23
+    ],
+    [
+     0.36,
+     1.02
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 59,
+   "key": "ocFbClosed",
+   "use": "lesson",
+   "file": "48_No_gaps_in_its_boundary_This_shape_is_closed",
+   "en": "No gaps in its boundary. This shape is closed.",
+   "gu": "તેની સીમામાં ખાલી જગ્યા નથી. આ આકૃતિ બંધ છે.",
+   "speech": [
+    0.03,
+    4.18
+   ],
+   "words": [
+    0.03,
+    0.347,
+    1.04,
+    1.44,
+    1.84,
+    2.64,
+    2.88,
+    3.52,
+    3.92
+   ],
+   "runs": [
+    [
+     0.03,
+     2.16
+    ],
+    [
+     2.64,
+     4.18
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 60,
+   "key": "ocFbOpen",
+   "use": "lesson",
+   "file": "49_There_is_a_gap_in_its_boundary_It_is_open",
+   "en": "There is a gap in its boundary. It is open.",
+   "gu": "તેની સીમામાં ખાલી જગ્યા છે. તે ખુલ્લી છે.",
+   "speech": [
+    0.03,
+    3.44
+   ],
+   "words": [
+    0.03,
+    0.32,
+    1.04,
+    1.44,
+    1.84,
+    2.5,
+    2.667,
+    3.12
+   ],
+   "runs": [
+    [
+     0.03,
+     2.09
+    ],
+    [
+     2.5,
+     3.44
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 61,
+   "key": "ocYesClosed",
+   "use": "lesson",
+   "file": "66_Yes_It_is_closed",
+   "en": "Yes! It is closed.",
+   "gu": "હા! તે બંધ છે.",
+   "speech": [
+    0.02,
+    1.58
+   ],
+   "words": [
+    0.02,
+    0.75,
+    0.88,
+    1.28
+   ],
+   "runs": [
+    [
+     0.02,
+     0.63
+    ],
+    [
+     0.75,
+     1.58
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 62,
+   "key": "ocYesOpen",
+   "use": "lesson",
+   "file": "67_Yes_It_is_open",
+   "en": "Yes! It is open.",
+   "gu": "હા! તે ખુલ્લી છે.",
+   "speech": [
+    0.03,
+    1.59
+   ],
+   "words": [
+    0.03,
+    0.72,
+    0.88,
+    1.28
+   ],
+   "runs": [
+    [
+     0.03,
+     0.51
+    ],
+    [
+     0.72,
+     1.59
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 63,
+   "key": "s10TwoOpen",
+   "use": "lesson",
+   "file": "10_These_two_shapes_are_open",
+   "en": "These two shapes are open...",
+   "gu": "આ બે આકૃતિઓ ખુલ્લી છે...",
+   "speech": [
+    0.02,
+    2.1
+   ],
+   "words": [
+    0.02,
+    0.24,
+    0.56,
+    1.307,
+    1.76
+   ],
+   "runs": [
+    [
+     0.02,
+     2.1
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 64,
+   "key": "s11TwoClosed",
+   "use": "lesson",
+   "file": "11_and_these_two_shapes_are_closed",
+   "en": "...and these two shapes are closed.",
+   "gu": "...અને આ બે આકૃતિઓ બંધ છે.",
+   "speech": [
+    0.02,
+    2.39
+   ],
+   "words": [
+    0.02,
+    0.64,
+    0.827,
+    1.12,
+    1.787,
+    2.133
+   ],
+   "runs": [
+    [
+     0.02,
+     2.39
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 65,
+   "key": "s12BoundariesDifferent",
+   "use": "lesson",
+   "file": "12_Look_The_boundaries_of_the_shapes_are_different_too",
+   "en": "Look! The boundaries of the shapes are different too.",
+   "gu": "જુઓ! આકૃતિઓની સીમાઓ પણ અલગ-અલગ છે.",
+   "speech": [
+    0.02,
+    3.25
+   ],
+   "words": [
+    0.02,
+    0.82,
+    1.6,
+    2.12,
+    2.427,
+    2.96
+   ],
+   "runs": [
+    [
+     0.02,
+     0.41
+    ],
+    [
+     0.82,
+     3.25
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 66,
+   "key": "s13StraightAndCurved",
+   "use": "lesson",
+   "file": "13_Some_are_straight_and_some_are_curved",
+   "en": "Some are straight and some are curved.",
+   "gu": "કેટલીક સીધી છે અને કેટલીક વક્ર.",
+   "speech": [
+    0.04,
+    2.76
+   ],
+   "words": [
+    0.04,
+    0.48,
+    0.88,
+    1.43,
+    1.76,
+    2.24
+   ],
+   "runs": [
+    [
+     0.04,
+     1.19
+    ],
+    [
+     1.43,
+     2.76
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 67,
+   "key": "s14WhichStraightCurved",
+   "use": "lesson",
+   "file": "14_Which_boundaries_are_straight_and_which_are_curved",
+   "en": "Which boundaries are straight and which are curved?",
+   "gu": "કઈ સીમાઓ સીધી છે અને કઈ વક્ર?",
+   "speech": [
+    0.06,
+    2.87
+   ],
+   "words": [
+    0.06,
+    0.32,
+    0.907,
+    1.36,
+    1.8,
+    2.12,
+    2.4
+   ],
+   "runs": [
+    [
+     0.06,
+     1.61
+    ],
+    [
+     1.8,
+     2.87
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 68,
+   "key": "s14AskAgain",
+   "use": "lesson",
+   "file": "88_Is_the_boundary_straight_or_curved",
+   "en": "Is the boundary straight or curved?",
+   "gu": "આ સીમા સીધી છે કે વક્ર?",
+   "speech": [
+    0.02,
+    2.25
+   ],
+   "words": [
+    0.02,
+    0.24,
+    0.72,
+    1.2,
+    1.52,
+    1.76
+   ],
+   "runs": [
+    [
+     0.02,
+     2.25
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 69,
+   "key": "s14NotCurved",
+   "use": "lesson",
+   "file": "68_Look_This_boundary_isnt_curved_It_is_made_of_straight_lines",
+   "en": "Look! This boundary isn't curved. It is made of straight lines.",
+   "gu": "જુઓ! આ સીમા વક્ર નથી. તે સીધી રેખાઓથી બનેલી છે.",
+   "speech": [
+    0.02,
+    4.62
+   ],
+   "words": [
+    0.02,
+    0.84,
+    1.04,
+    1.44,
+    1.867,
+    2.71,
+    2.88,
+    3.28,
+    3.92,
+    4.32
+   ],
+   "runs": [
+    [
+     0.02,
+     0.46
+    ],
+    [
+     0.84,
+     2.31
+    ],
+    [
+     2.71,
+     4.62
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 70,
+   "key": "s14IsCurved",
+   "use": "lesson",
+   "file": "69_Look_closely_This_boundary_bends_smoothly_It_is_curved",
+   "en": "Look closely. This boundary bends smoothly. It is curved.",
+   "gu": "ધ્યાનથી જુઓ. આ સીમા સરળતાથી વળે છે. તે વક્ર છે.",
+   "speech": [
+    0.03,
+    4.51
+   ],
+   "words": [
+    0.03,
+    0.56,
+    1.3,
+    1.467,
+    1.92,
+    2.6,
+    2.88,
+    3.55,
+    3.76,
+    4.24
+   ],
+   "runs": [
+    [
+     0.03,
+     0.86
+    ],
+    [
+     1.3,
+     3.13
+    ],
+    [
+     3.55,
+     4.51
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 71,
+   "key": "s15GotIt",
+   "use": "lesson",
+   "file": "15_You_got_it_These_boundaries_are_straight_while_these_are_curve",
+   "en": "You got it! These boundaries are straight, while these are curved.",
+   "gu": "બરાબર! આ સીમાઓ સીધી છે, જ્યારે આ વક્ર છે.",
+   "speech": [
+    0.03,
+    4.64
+   ],
+   "words": [
+    0.03,
+    0.98,
+    1.2,
+    1.92,
+    2.373,
+    2.92,
+    3.44,
+    3.84,
+    4.24
+   ],
+   "runs": [
+    [
+     0.03,
+     0.49
+    ],
+    [
+     0.98,
+     2.62
+    ],
+    [
+     2.92,
+     4.64
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 72,
+   "key": "s16TapClosedStraight",
+   "use": "lesson",
+   "file": "80_Tap_the_closed_figure_made_with_straight_lines",
+   "en": "Tap the closed figure made with straight lines.",
+   "gu": "સીધી રેખાઓથી બનેલી બંધ આકૃતિ પર ટૅપ કરો.",
+   "speech": [
+    0.03,
+    3.45
+   ],
+   "words": [
+    0.03,
+    0.48,
+    1.12,
+    1.68,
+    2.08,
+    2.56,
+    2.88,
+    3.16
+   ],
+   "runs": [
+    [
+     0.03,
+     3.45
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 73,
+   "key": "s16Yes",
+   "use": "lesson",
+   "file": "70_Yes_It_is_closed_and_made_of_straight_lines",
+   "en": "Yes! It is closed and made of straight lines.",
+   "gu": "હા! તે બંધ છે અને સીધી રેખાઓથી બનેલી છે.",
+   "speech": [
+    0.03,
+    3.82
+   ],
+   "words": [
+    0.03,
+    0.76,
+    0.96,
+    1.28,
+    1.9,
+    2.187,
+    2.56,
+    3.147,
+    3.6
+   ],
+   "runs": [
+    [
+     0.03,
+     0.55
+    ],
+    [
+     0.76,
+     1.57
+    ],
+    [
+     1.9,
+     3.82
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 74,
+   "key": "s16NotQuite",
+   "use": "lesson",
+   "file": "50_Not_quite_Look_for_a_figure_with_no_gaps_and_no_curves",
+   "en": "Not quite. Look for a figure with no gaps and no curves.",
+   "gu": "બરાબર નથી. એવી આકૃતિ શોધો જેમાં ખાલી જગ્યા કે વળાંક ન હોય.",
+   "speech": [
+    0.03,
+    5.47
+   ],
+   "words": [
+    0.03,
+    0.587,
+    1.51,
+    1.84,
+    2.293,
+    3.07,
+    3.413,
+    3.76,
+    4.32,
+    4.56,
+    5.04,
+    5.2
+   ],
+   "runs": [
+    [
+     0.03,
+     1.03
+    ],
+    [
+     1.51,
+     2.81
+    ],
+    [
+     3.07,
+     5.47
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 75,
+   "key": "s17CallPolygon",
+   "use": "lesson",
+   "file": "17_We_call_this_a_polygon",
+   "en": "We call this a polygon.",
+   "gu": "આને આપણે બહુકોણ કહીએ છીએ.",
+   "speech": [
+    0.03,
+    2.2
+   ],
+   "words": [
+    0.03,
+    0.32,
+    0.88,
+    1.48,
+    1.84
+   ],
+   "runs": [
+    [
+     0.03,
+     2.2
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 76,
+   "key": "s18Definition",
+   "use": "lesson",
+   "file": "18_A_closed_figure_made_of_only_straight_line_segments_is_called",
+   "en": "A closed figure made of only straight line segments is called a polygon.",
+   "gu": "ફક્ત રેખાખંડોથી બનેલી બંધ આકૃતિને બહુકોણ કહે છે.",
+   "speech": [
+    0.03,
+    4.31
+   ],
+   "words": [
+    0.03,
+    0.48,
+    1.44,
+    2.0,
+    2.4,
+    3.28,
+    3.84,
+    4.08
+   ],
+   "runs": [
+    [
+     0.03,
+     4.31
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 77,
+   "key": "s19WhichPolygons",
+   "use": "lesson",
+   "file": "19_Which_of_these_figures_are_polygons",
+   "en": "Which of these figures are polygons?",
+   "gu": "આમાંથી કઈ આકૃતિઓ બહુકોણ છે?",
+   "speech": [
+    0.02,
+    2.42
+   ],
+   "words": [
+    0.02,
+    0.63,
+    0.96,
+    1.627,
+    2.213
+   ],
+   "runs": [
+    [
+     0.02,
+     0.49
+    ],
+    [
+     0.63,
+     2.42
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 78,
+   "key": "s19GreatJob",
+   "use": "lesson",
+   "file": "81_Great_job_You_identified_all_the_polygons",
+   "en": "Great job! You identified all the polygons.",
+   "gu": "ખૂબ સરસ! તમે બધા બહુકોણ ઓળખી લીધા.",
+   "speech": [
+    0.02,
+    3.1
+   ],
+   "words": [
+    0.02,
+    0.4,
+    1.23,
+    1.467,
+    1.84,
+    2.427,
+    2.747
+   ],
+   "runs": [
+    [
+     0.02,
+     0.9
+    ],
+    [
+     1.23,
+     3.1
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 79,
+   "key": "polygonRule",
+   "use": "lesson",
+   "file": "72_A_polygon_is_closed_with_only_straight_sides",
+   "en": "A polygon is closed, with only straight sides.",
+   "gu": "બહુકોણ બંધ હોય છે, અને તેની બધી બાજુઓ સીધી હોય છે.",
+   "speech": [
+    0.02,
+    4.33
+   ],
+   "words": [
+    0.02,
+    0.72,
+    1.04,
+    1.28,
+    1.9,
+    2.08,
+    2.427,
+    2.88,
+    3.44,
+    3.88,
+    4.08
+   ],
+   "runs": [
+    [
+     0.02,
+     1.53
+    ],
+    [
+     1.9,
+     4.33
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 80,
+   "key": "fbTheseAreTheOnes",
+   "use": "lesson",
+   "file": "71_That_is_right_These_are_the_ones",
+   "en": "That is right! These are the ones.",
+   "gu": "બરાબર! આ જ છે.",
+   "speech": [
+    0.03,
+    1.72
+   ],
+   "words": [
+    0.03,
+    0.98,
+    1.28,
+    1.44
+   ],
+   "runs": [
+    [
+     0.03,
+     0.68
+    ],
+    [
+     0.98,
+     1.72
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 81,
+   "key": "fbNotQuiteTryAgain",
+   "use": "lesson",
+   "file": "75_Not_quite_Try_again",
+   "en": "Not quite. Try again.",
+   "gu": "બરાબર નથી. ફરી પ્રયાસ કરો.",
+   "speech": [
+    0.02,
+    2.27
+   ],
+   "words": [
+    0.02,
+    0.56,
+    1.3,
+    1.6,
+    2.0
+   ],
+   "runs": [
+    [
+     0.02,
+     0.97
+    ],
+    [
+     1.3,
+     2.27
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 83,
+   "key": "s20Sides",
+   "use": "lesson",
+   "file": "20_These_line_segments_are_the_sides_of_the_polygon",
+   "en": "These line segments are the sides of the polygon.",
+   "gu": "આ રેખાખંડો બહુકોણની બાજુઓ છે.",
+   "speech": [
+    0.02,
+    2.85
+   ],
+   "words": [
+    0.02,
+    0.24,
+    1.28,
+    2.027,
+    2.56
+   ],
+   "runs": [
+    [
+     0.02,
+     2.85
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 84,
+   "key": "s21Vertex",
+   "use": "lesson",
+   "file": "21_The_point_where_two_sides_meet_is_called_a_vertex",
+   "en": "The point where two sides meet is called a vertex.",
+   "gu": "જે બિંદુએ બે બાજુઓ મળે છે, તેને શિરોબિંદુ કહે છે.",
+   "speech": [
+    0.02,
+    3.96
+   ],
+   "words": [
+    0.02,
+    0.32,
+    0.88,
+    1.12,
+    1.6,
+    1.92,
+    2.48,
+    2.8,
+    3.44,
+    3.68
+   ],
+   "runs": [
+    [
+     0.02,
+     2.19
+    ],
+    [
+     2.48,
+     3.96
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 85,
+   "key": "s22Angle",
+   "use": "lesson",
+   "file": "22_When_two_sides_meet_they_also_form_an_angle",
+   "en": "When two sides meet, they also form an angle.",
+   "gu": "જ્યારે બે બાજુઓ મળે છે, ત્યારે તે એક ખૂણો પણ બનાવે છે.",
+   "speech": [
+    0.02,
+    4.32
+   ],
+   "words": [
+    0.02,
+    0.48,
+    0.72,
+    1.24,
+    1.52,
+    2.19,
+    2.48,
+    2.667,
+    2.93,
+    3.36,
+    3.52,
+    3.92
+   ],
+   "runs": [
+    [
+     0.02,
+     1.85
+    ],
+    [
+     2.19,
+     2.79
+    ],
+    [
+     2.93,
+     4.32
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 86,
+   "key": "s23LabelParts",
+   "use": "lesson",
+   "file": "23_Label_the_parts_of_the_polygon",
+   "en": "Label the parts of the polygon.",
+   "gu": "બહુકોણના ભાગોને નામ આપો.",
+   "speech": [
+    0.03,
+    2.12
+   ],
+   "words": [
+    0.03,
+    0.8,
+    1.44,
+    1.76
+   ],
+   "runs": [
+    [
+     0.03,
+     2.12
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 87,
+   "key": "s23Perfect",
+   "use": "lesson",
+   "file": "73_Perfect_Side_vertex_and_angle_all_labelled",
+   "en": "Perfect! Side, vertex and angle — all labelled.",
+   "gu": "સરસ! બાજુ, શિરોબિંદુ અને ખૂણો — બધાને નામ આપ્યાં.",
+   "speech": [
+    0.03,
+    4.92
+   ],
+   "words": [
+    0.03,
+    1.06,
+    1.96,
+    2.8,
+    3.04,
+    3.78,
+    3.78,
+    4.347,
+    4.6
+   ],
+   "runs": [
+    [
+     0.03,
+     0.69
+    ],
+    [
+     1.06,
+     1.49
+    ],
+    [
+     1.96,
+     3.46
+    ],
+    [
+     3.78,
+     4.92
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 88,
+   "key": "s24CountSides",
+   "use": "lesson",
+   "file": "88_Lets_count_the_sides_of_the_polygon",
+   "en": "Let's count the sides of the polygon.",
+   "gu": "ચાલો, બહુકોણની બાજુઓ ગણીએ.",
+   "speech": [
+    0.04,
+    2.44
+   ],
+   "words": [
+    0.04,
+    0.74,
+    1.52,
+    2.0
+   ],
+   "runs": [
+    [
+     0.04,
+     0.4
+    ],
+    [
+     0.74,
+     2.44
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 89,
+   "key": "countCarefully",
+   "use": "lesson",
+   "file": "51_Count_each_side_carefully_and_try_again",
+   "en": "Count each side carefully and try again.",
+   "gu": "દરેક બાજુ ધ્યાનથી ગણો અને ફરી પ્રયાસ કરો.",
+   "speech": [
+    0.02,
+    3.33
+   ],
+   "words": [
+    0.02,
+    0.48,
+    0.88,
+    1.52,
+    2.04,
+    2.347,
+    2.64,
+    3.04
+   ],
+   "runs": [
+    [
+     0.02,
+     1.85
+    ],
+    [
+     2.04,
+     3.33
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 90,
+   "key": "s25Correct5",
+   "use": "lesson",
+   "file": "82_Correct_This_polygon_has_five_sides",
+   "en": "Correct! This polygon has five sides.",
+   "gu": "સાચું! આ બહુકોણને 5 બાજુઓ છે.",
+   "speech": [
+    0.02,
+    3.16
+   ],
+   "words": [
+    0.02,
+    1.01,
+    1.28,
+    2.13,
+    2.48,
+    2.96
+   ],
+   "runs": [
+    [
+     0.02,
+     0.62
+    ],
+    [
+     1.01,
+     2.0
+    ],
+    [
+     2.13,
+     3.16
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 91,
+   "key": "s26ChangeLooks",
+   "use": "lesson",
+   "file": "26_Now_lets_change_how_it_looks",
+   "en": "Now let's change how it looks.",
+   "gu": "હવે તેનો દેખાવ બદલીએ.",
+   "speech": [
+    0.03,
+    1.89
+   ],
+   "words": [
+    0.03,
+    0.69,
+    0.96,
+    1.387
+   ],
+   "runs": [
+    [
+     0.03,
+     0.49
+    ],
+    [
+     0.69,
+     1.89
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 92,
+   "key": "s27DragVertex",
+   "use": "lesson",
+   "file": "27_Drag_any_vertex_Stretch_it_squash_it_or_resize_it",
+   "en": "Drag any vertex. Stretch it, squash it, or resize it.",
+   "gu": "કોઈ પણ શિરોબિંદુ ખેંચો. તેને તાણો, દબાવો કે તેનું કદ બદલો.",
+   "speech": [
+    0.03,
+    5.01
+   ],
+   "words": [
+    0.03,
+    0.32,
+    0.48,
+    1.147,
+    2.07,
+    2.36,
+    3.03,
+    3.88,
+    4.0,
+    4.37,
+    4.64
+   ],
+   "runs": [
+    [
+     0.03,
+     1.61
+    ],
+    [
+     2.07,
+     2.81
+    ],
+    [
+     3.03,
+     3.66
+    ],
+    [
+     3.88,
+     4.24
+    ],
+    [
+     4.37,
+     5.01
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 94,
+   "key": "s28Whoa",
+   "use": "lesson",
+   "file": "28_Whoa_It_looks_quite_different_now",
+   "en": "Whoa! It looks quite different now.",
+   "gu": "વાહ! હવે તે તદ્દન અલગ દેખાય છે.",
+   "speech": [
+    0.02,
+    2.84
+   ],
+   "words": [
+    0.02,
+    0.86,
+    1.16,
+    1.36,
+    1.867,
+    2.187,
+    2.56
+   ],
+   "runs": [
+    [
+     0.02,
+     0.53
+    ],
+    [
+     0.86,
+     2.84
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 95,
+   "key": "s29Appearance",
+   "use": "lesson",
+   "file": "29_Its_appearance_has_completely_changed",
+   "en": "Its appearance has completely changed.",
+   "gu": "તેનો દેખાવ સંપૂર્ણપણે બદલાઈ ગયો છે.",
+   "speech": [
+    0.04,
+    2.91
+   ],
+   "words": [
+    0.04,
+    0.347,
+    1.04,
+    1.947,
+    2.36,
+    2.64
+   ],
+   "runs": [
+    [
+     0.04,
+     2.91
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 96,
+   "key": "s30NotEverything",
+   "use": "lesson",
+   "file": "30_But_not_everything_has_changed",
+   "en": "But not everything has changed.",
+   "gu": "પણ બધું બદલાયું નથી.",
+   "speech": [
+    0.06,
+    2.03
+   ],
+   "words": [
+    0.06,
+    0.64,
+    1.04,
+    1.547
+   ],
+   "runs": [
+    [
+     0.06,
+     2.03
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 97,
+   "key": "s31CountAgain",
+   "use": "lesson",
+   "file": "31_Lets_count_the_sides_again",
+   "en": "Let's count the sides again.",
+   "gu": "ચાલો, બાજુઓ ફરી ગણીએ.",
+   "speech": [
+    0.05,
+    2.03
+   ],
+   "words": [
+    0.05,
+    0.78,
+    1.36,
+    1.6
+   ],
+   "runs": [
+    [
+     0.05,
+     0.42
+    ],
+    [
+     0.78,
+     2.03
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 98,
+   "key": "s32Still5",
+   "use": "lesson",
+   "file": "32_Both_polygons_still_have_five_sides",
+   "en": "Both polygons still have five sides.",
+   "gu": "બંને બહુકોણને હજુ પણ 5 બાજુઓ છે.",
+   "speech": [
+    0.03,
+    3.16
+   ],
+   "words": [
+    0.03,
+    0.48,
+    1.36,
+    1.76,
+    2.04,
+    2.4,
+    2.88
+   ],
+   "runs": [
+    [
+     0.03,
+     3.16
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 99,
+   "key": "s33NameBySides",
+   "use": "lesson",
+   "file": "33_So_the_number_of_sides_gives_us_a_good_way_to_name_polygons",
+   "en": "So the number of sides gives us a good way to name polygons.",
+   "gu": "તેથી બાજુઓની સંખ્યા બહુકોણને નામ આપવાની સારી રીત છે.",
+   "speech": [
+    0.04,
+    4.12
+   ],
+   "words": [
+    0.04,
+    0.4,
+    1.04,
+    1.627,
+    2.4,
+    2.68,
+    3.227,
+    3.6,
+    3.893
+   ],
+   "runs": [
+    [
+     0.04,
+     4.12
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 100,
+   "key": "s34Triangle",
+   "use": "lesson",
+   "file": "34_A_polygon_with_three_sides_is_called_a_triangle",
+   "en": "A polygon with three sides is called a triangle.",
+   "gu": "3 બાજુઓવાળા બહુકોણને ત્રિકોણ કહે છે.",
+   "speech": [
+    0.08,
+    3.27
+   ],
+   "words": [
+    0.08,
+    0.4,
+    1.28,
+    2.24,
+    2.72,
+    3.04
+   ],
+   "runs": [
+    [
+     0.08,
+     3.27
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 101,
+   "key": "s35Quadrilateral",
+   "use": "lesson",
+   "file": "35_A_polygon_with_four_sides_is_called_a_quadrilateral",
+   "en": "A polygon with four sides is called a quadrilateral.",
+   "gu": "4 બાજુઓવાળા બહુકોણને ચતુષ્કોણ કહે છે.",
+   "speech": [
+    0.03,
+    3.41
+   ],
+   "words": [
+    0.03,
+    0.4,
+    1.2,
+    2.19,
+    2.88,
+    3.12
+   ],
+   "runs": [
+    [
+     0.03,
+     2.03
+    ],
+    [
+     2.19,
+     3.41
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 102,
+   "key": "s36SelectQuadrilaterals",
+   "use": "lesson",
+   "file": "36_Select_all_the_quadrilaterals",
+   "en": "Select all the quadrilaterals.",
+   "gu": "બધા ચતુષ્કોણ પસંદ કરો.",
+   "speech": [
+    0.02,
+    1.8
+   ],
+   "words": [
+    0.02,
+    0.533,
+    1.16,
+    1.48
+   ],
+   "runs": [
+    [
+     0.02,
+     1.8
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 103,
+   "key": "s36ThatsRight",
+   "use": "lesson",
+   "file": "83_Thats_right_Quadrilaterals_are_polygons",
+   "en": "That's right! Quadrilaterals are polygons with four sides.",
+   "gu": "બરાબર! ચતુષ્કોણ એટલે 4 બાજુઓવાળા બહુકોણ.",
+   "speech": [
+    0.02,
+    4.1
+   ],
+   "words": [
+    0.02,
+    1.04,
+    1.813,
+    2.32,
+    2.64,
+    3.467
+   ],
+   "runs": [
+    [
+     0.02,
+     0.49
+    ],
+    [
+     1.04,
+     4.1
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 104,
+   "key": "s36Rule",
+   "use": "lesson",
+   "file": "84_Quadrilaterals_are_polygons_with_four_sides",
+   "en": "Quadrilaterals are polygons with four sides.",
+   "gu": "ચતુષ્કોણ એટલે 4 બાજુઓવાળા બહુકોણ.",
+   "speech": [
+    0.04,
+    3.19
+   ],
+   "words": [
+    0.04,
+    0.88,
+    1.44,
+    1.76,
+    2.64
+   ],
+   "runs": [
+    [
+     0.04,
+     3.19
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 105,
+   "key": "s36IsThisQuad",
+   "use": "lesson",
+   "file": "85_Is_this_shape_a_quadrilateral",
+   "en": "Is this shape a quadrilateral?",
+   "gu": "શું આ આકૃતિ ચતુષ્કોણ છે?",
+   "speech": [
+    0.02,
+    2.51
+   ],
+   "words": [
+    0.02,
+    0.64,
+    0.88,
+    1.6,
+    2.293
+   ],
+   "runs": [
+    [
+     0.02,
+     2.51
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 106,
+   "key": "s37Pentagon",
+   "use": "lesson",
+   "file": "37_A_polygon_with_five_sides_is_called_a_pentagon",
+   "en": "A polygon with five sides is called a pentagon.",
+   "gu": "5 બાજુઓવાળા બહુકોણને પંચકોણ કહે છે.",
+   "speech": [
+    0.05,
+    3.48
+   ],
+   "words": [
+    0.05,
+    0.4,
+    1.28,
+    2.36,
+    2.96,
+    3.2
+   ],
+   "runs": [
+    [
+     0.05,
+     2.17
+    ],
+    [
+     2.36,
+     3.48
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 107,
+   "key": "s38Hexagon",
+   "use": "lesson",
+   "file": "38_A_polygon_with_six_sides_is_called_a_hexagon",
+   "en": "A polygon with six sides is called a hexagon.",
+   "gu": "6 બાજુઓવાળા બહુકોણને ષટ્કોણ કહે છે.",
+   "speech": [
+    0.02,
+    3.26
+   ],
+   "words": [
+    0.02,
+    0.32,
+    1.28,
+    2.24,
+    2.8,
+    3.04
+   ],
+   "runs": [
+    [
+     0.02,
+     3.26
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 108,
+   "key": "s39Heptagon",
+   "use": "lesson",
+   "file": "39_A_polygon_with_seven_sides_is_called_a_heptagon",
+   "en": "A polygon with seven sides is called a heptagon.",
+   "gu": "7 બાજુઓવાળા બહુકોણને સપ્તકોણ કહે છે.",
+   "speech": [
+    0.04,
+    3.63
+   ],
+   "words": [
+    0.04,
+    0.48,
+    1.36,
+    2.4,
+    3.08,
+    3.36
+   ],
+   "runs": [
+    [
+     0.04,
+     3.63
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 109,
+   "key": "s40Octagon",
+   "use": "lesson",
+   "file": "40_A_polygon_with_eight_sides_is_called_an_octagon",
+   "en": "A polygon with eight sides is called an octagon.",
+   "gu": "8 બાજુઓવાળા બહુકોણને અષ્ટકોણ કહે છે.",
+   "speech": [
+    0.0,
+    3.51
+   ],
+   "words": [
+    0.0,
+    0.4,
+    1.28,
+    2.31,
+    3.0,
+    3.28
+   ],
+   "runs": [
+    [
+     0.0,
+     2.12
+    ],
+    [
+     2.31,
+     3.51
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 110,
+   "key": "recapRecall",
+   "use": "lesson",
+   "file": "91_Lets_recall_what_we_learnt_today",
+   "en": "Let's recall what we learnt today.",
+   "gu": "ચાલો, આજે આપણે શું શીખ્યા તે યાદ કરીએ.",
+   "speech": [
+    0.05,
+    3.08
+   ],
+   "words": [
+    0.05,
+    0.78,
+    1.08,
+    1.44,
+    1.68,
+    2.28,
+    2.427,
+    2.72
+   ],
+   "runs": [
+    [
+     0.05,
+     0.39
+    ],
+    [
+     0.78,
+     2.16
+    ],
+    [
+     2.28,
+     3.08
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 111,
+   "key": "recapNames",
+   "use": "lesson",
+   "file": "92_Polygons_have_different_names_based_on_their_number_of_sides",
+   "en": "Polygons have different names based on their number of sides.",
+   "gu": "બાજુઓની સંખ્યા પ્રમાણે બહુકોણનાં નામ જુદાં-જુદાં હોય છે.",
+   "speech": [
+    0.02,
+    3.84
+   ],
+   "words": [
+    0.02,
+    0.72,
+    1.12,
+    1.707,
+    2.427,
+    2.8,
+    3.4,
+    3.6
+   ],
+   "runs": [
+    [
+     0.02,
+     3.84
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 112,
+   "key": "c1WhichPolygons",
+   "use": "lesson",
+   "file": "77_Select_polygons",
+   "en": "Which of these are polygons?",
+   "gu": "આમાંથી કયા બહુકોણ છે?",
+   "speech": [
+    0.02,
+    1.76
+   ],
+   "words": [
+    0.02,
+    0.68,
+    0.96,
+    1.52
+   ],
+   "runs": [
+    [
+     0.02,
+     1.76
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 113,
+   "key": "c1Yes",
+   "use": "lesson",
+   "file": "52_Yes_Closed_with_only_straight_sides",
+   "en": "Yes! Closed, with only straight sides.",
+   "gu": "હા! બંધ, અને ફક્ત સીધી બાજુઓ.",
+   "speech": [
+    0.03,
+    3.25
+   ],
+   "words": [
+    0.03,
+    0.71,
+    1.49,
+    1.84,
+    2.32,
+    2.72
+   ],
+   "runs": [
+    [
+     0.03,
+     0.45
+    ],
+    [
+     0.71,
+     1.27
+    ],
+    [
+     1.49,
+     3.25
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 114,
+   "key": "c1NotQuite",
+   "use": "lesson",
+   "file": "87_Not_quite_A_polygon_is_closed",
+   "en": "Not quite! A polygon is closed with only straight sides.",
+   "gu": "બરાબર નથી! બહુકોણ બંધ હોય છે અને તેની ફક્ત સીધી બાજુઓ હોય છે.",
+   "speech": [
+    0.03,
+    5.6
+   ],
+   "words": [
+    0.03,
+    0.72,
+    1.61,
+    2.267,
+    2.6,
+    2.8,
+    3.38,
+    3.6,
+    3.867,
+    4.267,
+    4.667,
+    5.14,
+    5.36
+   ],
+   "runs": [
+    [
+     0.03,
+     1.23
+    ],
+    [
+     1.61,
+     3.06
+    ],
+    [
+     3.38,
+     5.6
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 115,
+   "key": "c2Classify",
+   "use": "lesson",
+   "file": "43_Classify_the_figures_as_a_polygon_or_not_a_polygon",
+   "en": "Classify the figures as a polygon or not a polygon.",
+   "gu": "આકૃતિઓને બહુકોણ અથવા બહુકોણ નથી તરીકે વર્ગીકૃત કરો.",
+   "speech": [
+    0.03,
+    4.87
+   ],
+   "words": [
+    0.03,
+    0.96,
+    1.74,
+    2.4,
+    2.96,
+    3.52,
+    3.96,
+    4.56
+   ],
+   "runs": [
+    [
+     0.03,
+     1.58
+    ],
+    [
+     1.74,
+     4.87
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 117,
+   "key": "c2GreatJob",
+   "use": "lesson",
+   "file": "55_Great_job_You_sorted_the_figures_correctly",
+   "en": "Great job! You sorted the figures correctly.",
+   "gu": "ખૂબ સરસ! તમે આકૃતિઓને સાચી રીતે ગોઠવી.",
+   "speech": [
+    0.01,
+    3.56
+   ],
+   "words": [
+    0.01,
+    0.4,
+    1.3,
+    1.6,
+    2.427,
+    2.84,
+    3.12
+   ],
+   "runs": [
+    [
+     0.01,
+     0.86
+    ],
+    [
+     1.3,
+     3.56
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 118,
+   "key": "c2WrongGroup",
+   "use": "lesson",
+   "file": "56_Wrong_group_Check_for_gaps_or_curved_sides",
+   "en": "Wrong group. Check for gaps or curved sides.",
+   "gu": "ખોટું જૂથ. ખાલી જગ્યા કે વક્ર બાજુઓ તપાસો.",
+   "speech": [
+    0.01,
+    3.78
+   ],
+   "words": [
+    0.01,
+    0.48,
+    1.27,
+    1.6,
+    2.16,
+    2.4,
+    2.8,
+    3.28
+   ],
+   "runs": [
+    [
+     0.01,
+     0.86
+    ],
+    [
+     1.27,
+     3.78
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 119,
+   "key": "c2Rule",
+   "use": "lesson",
+   "file": "57_Polygons_are_closed_with_only_straight_sides_Try_again",
+   "en": "Polygons are closed, with only straight sides. Try again.",
+   "gu": "બહુકોણ બંધ હોય છે, અને તેમની ફક્ત સીધી બાજુઓ હોય છે. ફરી પ્રયાસ કરો.",
+   "speech": [
+    0.03,
+    5.66
+   ],
+   "words": [
+    0.03,
+    0.72,
+    1.04,
+    1.28,
+    1.92,
+    2.12,
+    2.507,
+    2.96,
+    3.36,
+    3.84,
+    4.0,
+    4.69,
+    4.98,
+    5.36
+   ],
+   "runs": [
+    [
+     0.03,
+     1.51
+    ],
+    [
+     1.92,
+     2.66
+    ],
+    [
+     2.79,
+     4.24
+    ],
+    [
+     4.69,
+     5.66
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 120,
+   "key": "c3WhichNot",
+   "use": "lesson",
+   "file": "78_Not_a_polygon",
+   "en": "Which figure is NOT a polygon?",
+   "gu": "કઈ આકૃતિ બહુકોણ નથી?",
+   "speech": [
+    0.04,
+    1.84
+   ],
+   "words": [
+    0.04,
+    0.32,
+    0.96,
+    1.52
+   ],
+   "runs": [
+    [
+     0.04,
+     1.84
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 121,
+   "key": "c3Found",
+   "use": "lesson",
+   "file": "58_You_found_it_That_is_not_a_polygon",
+   "en": "You found it! That is not a polygon.",
+   "gu": "તમે શોધી કાઢ્યું! તે બહુકોણ નથી.",
+   "speech": [
+    0.08,
+    2.78
+   ],
+   "words": [
+    0.08,
+    0.4,
+    0.76,
+    1.62,
+    1.76,
+    2.32
+   ],
+   "runs": [
+    [
+     0.08,
+     1.13
+    ],
+    [
+     1.62,
+     2.78
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 122,
+   "key": "c3BreaksRule",
+   "use": "lesson",
+   "file": "59_Which_figure_breaks_the_rule_for_a_polygon",
+   "en": "Which figure breaks the rule for a polygon?",
+   "gu": "કઈ આકૃતિ બહુકોણનો નિયમ તોડે છે?",
+   "speech": [
+    0.04,
+    2.75
+   ],
+   "words": [
+    0.04,
+    0.4,
+    1.04,
+    1.84,
+    2.16,
+    2.56
+   ],
+   "runs": [
+    [
+     0.04,
+     2.75
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 123,
+   "key": "c3Questions",
+   "use": "lesson",
+   "file": "53_Is_it_closed_Does_it_have_only_straight_sides",
+   "en": "Is it closed? Does it have only straight sides?",
+   "gu": "શું તે બંધ છે? શું તેની ફક્ત સીધી બાજુઓ છે?",
+   "speech": [
+    0.02,
+    3.58
+   ],
+   "words": [
+    0.02,
+    0.24,
+    0.48,
+    0.8,
+    1.53,
+    1.76,
+    2.08,
+    2.56,
+    2.907,
+    3.36
+   ],
+   "runs": [
+    [
+     0.02,
+     1.03
+    ],
+    [
+     1.53,
+     3.58
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 124,
+   "key": "c4WhichPentagons",
+   "use": "lesson",
+   "file": "79_Select_pentagons",
+   "en": "Which of these are pentagons?",
+   "gu": "આમાંથી કયા પંચકોણ છે?",
+   "speech": [
+    0.02,
+    1.79
+   ],
+   "words": [
+    0.02,
+    0.68,
+    0.96,
+    1.573
+   ],
+   "runs": [
+    [
+     0.02,
+     1.79
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 125,
+   "key": "c4Exactly",
+   "use": "lesson",
+   "file": "60_Exactly_A_pentagon_always_has_five_sides",
+   "en": "Exactly! A pentagon always has five sides.",
+   "gu": "બિલકુલ! પંચકોણને હંમેશા 5 બાજુઓ હોય છે.",
+   "speech": [
+    0.05,
+    4.03
+   ],
+   "words": [
+    0.05,
+    1.22,
+    2.0,
+    2.83,
+    3.147,
+    3.6,
+    3.84
+   ],
+   "runs": [
+    [
+     0.05,
+     0.73
+    ],
+    [
+     1.22,
+     2.7
+    ],
+    [
+     2.83,
+     4.03
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 126,
+   "key": "c4CountEach",
+   "use": "lesson",
+   "file": "61_Count_the_sides_of_each_figure_carefully",
+   "en": "Count the sides of each figure carefully.",
+   "gu": "દરેક આકૃતિની બાજુઓ ધ્યાનથી ગણો.",
+   "speech": [
+    0.02,
+    2.75
+   ],
+   "words": [
+    0.02,
+    0.56,
+    1.2,
+    1.84,
+    2.4
+   ],
+   "runs": [
+    [
+     0.02,
+     2.75
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 127,
+   "key": "c4LookFor5",
+   "use": "lesson",
+   "file": "62_Look_for_every_figure_with_exactly_five_sides",
+   "en": "Look for every figure with exactly five sides.",
+   "gu": "બરાબર 5 બાજુઓવાળી દરેક આકૃતિ શોધો.",
+   "speech": [
+    0.03,
+    3.41
+   ],
+   "words": [
+    0.03,
+    0.74,
+    1.12,
+    2.053,
+    2.56,
+    3.04
+   ],
+   "runs": [
+    [
+     0.03,
+     0.61
+    ],
+    [
+     0.74,
+     3.41
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 128,
+   "key": "c5Classify",
+   "use": "lesson",
+   "file": "46_Classify_each_figure_as_a_hexagon_or_a_heptagon",
+   "en": "Classify each figure as a hexagon or a heptagon.",
+   "gu": "દરેક આકૃતિને ષટ્કોણ અથવા સપ્તકોણ તરીકે વર્ગીકૃત કરો.",
+   "speech": [
+    0.02,
+    4.48
+   ],
+   "words": [
+    0.02,
+    0.48,
+    1.36,
+    2.053,
+    2.48,
+    3.16,
+    3.64,
+    4.24
+   ],
+   "runs": [
+    [
+     0.02,
+     4.48
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 130,
+   "key": "c5WellDone",
+   "use": "lesson",
+   "file": "63_Well_done_Hexagons_have_six_sides_and_heptagons_have_seven_sid",
+   "en": "Well done! Hexagons have six sides and heptagons have seven sides.",
+   "gu": "શાબાશ! ષટ્કોણને 6 બાજુઓ હોય છે અને સપ્તકોણને 7 બાજુઓ.",
+   "speech": [
+    0.03,
+    5.48
+   ],
+   "words": [
+    0.03,
+    1.45,
+    2.24,
+    2.507,
+    2.98,
+    3.2,
+    3.61,
+    3.84,
+    4.72,
+    5.04
+   ],
+   "runs": [
+    [
+     0.03,
+     1.02
+    ],
+    [
+     1.45,
+     3.43
+    ],
+    [
+     3.61,
+     5.48
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 131,
+   "key": "c5CountWrong",
+   "use": "lesson",
+   "file": "64_Count_the_sides_of_the_ones_you_placed_wrong",
+   "en": "Count the sides of the ones you placed wrong.",
+   "gu": "તમે ખોટી જગ્યાએ મૂકેલી આકૃતિઓની બાજુઓ ગણો.",
+   "speech": [
+    0.09,
+    3.42
+   ],
+   "words": [
+    0.09,
+    0.4,
+    0.8,
+    1.28,
+    1.76,
+    2.613,
+    3.16
+   ],
+   "runs": [
+    [
+     0.09,
+     3.42
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 132,
+   "key": "c5Rule",
+   "use": "lesson",
+   "file": "65_Six_sides_make_a_hexagon_seven_make_a_heptagon",
+   "en": "Six sides make a hexagon, seven make a heptagon.",
+   "gu": "6 બાજુઓથી ષટ્કોણ બને, 7થી સપ્તકોણ.",
+   "speech": [
+    0.02,
+    3.71
+   ],
+   "words": [
+    0.02,
+    0.32,
+    1.04,
+    1.547,
+    2.27,
+    3.04
+   ],
+   "runs": [
+    [
+     0.02,
+     1.86
+    ],
+    [
+     2.27,
+     2.57
+    ],
+    [
+     2.7,
+     3.71
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 133,
+   "key": "endReady",
+   "use": "lesson",
+   "file": "93_Now_you_know_everything_about_polygons_You_are_ready_to_help_Momo",
+   "en": "Now you know everything about polygons. You are ready to help Momo.",
+   "gu": "હવે તમે બહુકોણ વિશે બધું જાણો છો. તમે મોમોની મદદ કરવા તૈયાર છો.",
+   "speech": [
+    0.05,
+    5.22
+   ],
+   "words": [
+    0.05,
+    0.28,
+    0.64,
+    1.2,
+    1.627,
+    2.0,
+    2.4,
+    3.01,
+    3.28,
+    3.8,
+    4.12,
+    4.48,
+    4.96
+   ],
+   "runs": [
+    [
+     0.05,
+     2.61
+    ],
+    [
+     3.01,
+     5.22
+    ]
+   ],
+   "voice": "Hetalben - Young Gujarati Customer Care"
+  },
+  {
+   "n": 32,
+   "key": "gameMeet",
+   "use": "game",
+   "id": "tut-1-meet",
+   "en": "This is Momo. He needs to find his friend.",
+   "gu": "આ મોમો છે. તેને તેના મિત્રને શોધવાનો છે.",
+   "speech": [
+    0.02,
+    3.66
+   ],
+   "words": [
+    0.02,
+    0.32,
+    0.8,
+    1.62,
+    2.08,
+    2.4,
+    2.96,
+    3.52
+   ],
+   "runs": [
+    [
+     0.02,
+     0.96
+    ],
+    [
+     1.62,
+     3.66
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 33,
+   "key": "gameGoal",
+   "use": "game",
+   "id": "tut-2-goal",
+   "en": "Help Momo cross the Frozen Pass!",
+   "gu": "મોમોને થીજેલો ઘાટ પાર કરવામાં મદદ કરો!",
+   "speech": [
+    0.02,
+    3.31
+   ],
+   "words": [
+    0.02,
+    0.72,
+    1.36,
+    1.83,
+    2.12,
+    2.72,
+    3.08
+   ],
+   "runs": [
+    [
+     0.02,
+     1.71
+    ],
+    [
+     1.83,
+     3.31
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 34,
+   "key": "gameWatchOut",
+   "use": "game",
+   "id": "tut-3-watch",
+   "en": "Watch out!",
+   "gu": "સાવધાન!",
+   "speech": [
+    0.02,
+    0.79
+   ],
+   "words": [
+    0.02
+   ],
+   "runs": [
+    [
+     0.02,
+     0.79
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 35,
+   "key": "gameTapJump",
+   "use": "game",
+   "id": "tut-4-jump",
+   "en": "Tap to jump over obstacles.",
+   "gu": "અવરોધો પરથી કૂદવા માટે ટૅપ કરો.",
+   "speech": [
+    0.03,
+    2.62
+   ],
+   "words": [
+    0.03,
+    0.64,
+    1.15,
+    1.6,
+    2.16,
+    2.45
+   ],
+   "runs": [
+    [
+     0.03,
+     1.03
+    ],
+    [
+     1.15,
+     1.95
+    ],
+    [
+     2.16,
+     2.32
+    ],
+    [
+     2.45,
+     2.62
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 36,
+   "key": "gamePathBroken",
+   "use": "game",
+   "id": "tut-5-broken",
+   "en": "Oh no! The path is broken.",
+   "gu": "અરે નહીં! રસ્તો તૂટી ગયો છે.",
+   "speech": [
+    0.04,
+    2.6
+   ],
+   "words": [
+    0.04,
+    0.4,
+    1.22,
+    1.76,
+    2.08,
+    2.32
+   ],
+   "runs": [
+    [
+     0.04,
+     0.93
+    ],
+    [
+     1.22,
+     2.6
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 37,
+   "key": "gameUseIcePiece",
+   "use": "game",
+   "id": "tut-6-use",
+   "en": "Use the right ice piece to fix the path.",
+   "gu": "રસ્તો ઠીક કરવા માટે બરફનો સાચો ટુકડો વાપરો.",
+   "speech": [
+    0.05,
+    3.83
+   ],
+   "words": [
+    0.05,
+    0.64,
+    1.0,
+    1.32,
+    1.92,
+    2.64,
+    3.12,
+    3.48
+   ],
+   "runs": [
+    [
+     0.05,
+     3.83
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 38,
+   "key": "gameUsePiece",
+   "use": "game",
+   "id": "tut-6b-piece",
+   "en": "Use the right piece to fix the path.",
+   "gu": "રસ્તો ઠીક કરવા માટે સાચો ટુકડો વાપરો.",
+   "speech": [
+    0.07,
+    3.02
+   ],
+   "words": [
+    0.07,
+    0.64,
+    1.0,
+    1.32,
+    1.92,
+    2.347,
+    2.68
+   ],
+   "runs": [
+    [
+     0.07,
+     0.88
+    ],
+    [
+     1.0,
+     3.02
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 39,
+   "key": "gamePerfectFit",
+   "use": "game",
+   "id": "tut-7-fit",
+   "en": "Perfect fit! Keep going!",
+   "gu": "બરાબર બેસી ગયો! આગળ વધતા રહો!",
+   "speech": [
+    0.04,
+    2.5
+   ],
+   "words": [
+    0.04,
+    0.507,
+    0.8,
+    1.59,
+    1.88,
+    2.2
+   ],
+   "runs": [
+    [
+     0.04,
+     1.1
+    ],
+    [
+     1.59,
+     2.5
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 40,
+   "key": "signTriangle",
+   "use": "game",
+   "id": "sign-triangle",
+   "en": "Cut the triangle.",
+   "gu": "ત્રિકોણ કાપો.",
+   "speech": [
+    0.1,
+    0.95
+   ],
+   "words": [
+    0.1,
+    0.56
+   ],
+   "runs": [
+    [
+     0.1,
+     0.95
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 41,
+   "key": "signQuadrilateral",
+   "use": "game",
+   "id": "sign-quadrilateral",
+   "en": "Cut the quadrilateral.",
+   "gu": "ચતુષ્કોણ કાપો.",
+   "speech": [
+    0.05,
+    1.23
+   ],
+   "words": [
+    0.05,
+    0.8
+   ],
+   "runs": [
+    [
+     0.05,
+     1.23
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 42,
+   "key": "signPentagon",
+   "use": "game",
+   "id": "sign-pentagon",
+   "en": "Cut the pentagon.",
+   "gu": "પંચકોણ કાપો.",
+   "speech": [
+    0.05,
+    1.1
+   ],
+   "words": [
+    0.05,
+    0.68
+   ],
+   "runs": [
+    [
+     0.05,
+     1.1
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 43,
+   "key": "signHexagon",
+   "use": "game",
+   "id": "sign-hexagon",
+   "en": "Cut the hexagon.",
+   "gu": "ષટ્કોણ કાપો.",
+   "speech": [
+    0.05,
+    1.1
+   ],
+   "words": [
+    0.05,
+    0.72
+   ],
+   "runs": [
+    [
+     0.05,
+     1.1
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 44,
+   "key": "signHeptagon",
+   "use": "game",
+   "id": "sign-heptagon",
+   "en": "Cut the heptagon.",
+   "gu": "સપ્તકોણ કાપો.",
+   "speech": [
+    0.02,
+    1.24
+   ],
+   "words": [
+    0.02,
+    0.8
+   ],
+   "runs": [
+    [
+     0.02,
+     0.29
+    ],
+    [
+     0.41,
+     1.24
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 45,
+   "key": "signPentagons",
+   "use": "game",
+   "id": "sign-pentagons",
+   "en": "Cut all the pentagons.",
+   "gu": "બધા પંચકોણ કાપો.",
+   "speech": [
+    0.03,
+    1.56
+   ],
+   "words": [
+    0.03,
+    0.6,
+    1.16
+   ],
+   "runs": [
+    [
+     0.03,
+     0.47
+    ],
+    [
+     0.6,
+     1.56
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  },
+  {
+   "n": 46,
+   "key": "signHexagons",
+   "use": "game",
+   "id": "sign-hexagons",
+   "en": "Cut all the hexagons.",
+   "gu": "બધા ષટ્કોણ કાપો.",
+   "speech": [
+    0.02,
+    1.4
+   ],
+   "words": [
+    0.02,
+    0.48,
+    1.04
+   ],
+   "runs": [
+    [
+     0.02,
+     1.4
+    ]
+   ],
+   "voice": "Bhavesh Bhai - Expressive Gujarati Friend"
+  }
+ ]
+}

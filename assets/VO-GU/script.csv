@@ -1,0 +1,99 @@
+file,key,english,gujarati,voice,characters,credits
+32_gameMeet.mp3,gameMeet,This is Momo. He needs to find his friend.,આ મોમો છે. તેને તેના મિત્રને શોધવાનો છે.,Bhavesh Bhai,40,19
+33_gameGoal.mp3,gameGoal,Help Momo cross the Frozen Pass!,મોમોને થીજેલો ઘાટ પાર કરવામાં મદદ કરો!,Bhavesh Bhai,38,18
+34_gameWatchOut.mp3,gameWatchOut,Watch out!,સાવધાન!,Bhavesh Bhai,7,3
+35_gameTapJump.mp3,gameTapJump,Tap to jump over obstacles.,અવરોધો પરથી કૂદવા માટે ટૅપ કરો.,Bhavesh Bhai,31,15
+36_gamePathBroken.mp3,gamePathBroken,Oh no! The path is broken.,અરે નહીં! રસ્તો તૂટી ગયો છે.,Bhavesh Bhai,28,14
+37_gameUseIcePiece.mp3,gameUseIcePiece,Use the right ice piece to fix the path.,રસ્તો ઠીક કરવા માટે બરફનો સાચો ટુકડો વાપરો.,Bhavesh Bhai,43,21
+38_gameUsePiece.mp3,gameUsePiece,Use the right piece to fix the path.,રસ્તો ઠીક કરવા માટે સાચો ટુકડો વાપરો.,Bhavesh Bhai,37,18
+39_gamePerfectFit.mp3,gamePerfectFit,Perfect fit! Keep going!,બરાબર બેસી ગયો! આગળ વધતા રહો!,Bhavesh Bhai,29,14
+40_signTriangle.mp3,signTriangle,Cut the triangle.,ત્રિકોણ કાપો.,Bhavesh Bhai,13,6
+41_signQuadrilateral.mp3,signQuadrilateral,Cut the quadrilateral.,ચતુષ્કોણ કાપો.,Bhavesh Bhai,14,7
+42_signPentagon.mp3,signPentagon,Cut the pentagon.,પંચકોણ કાપો.,Bhavesh Bhai,12,6
+43_signHexagon.mp3,signHexagon,Cut the hexagon.,ષટ્કોણ કાપો.,Bhavesh Bhai,12,6
+44_signHeptagon.mp3,signHeptagon,Cut the heptagon.,સપ્તકોણ કાપો.,Bhavesh Bhai,13,6
+45_signPentagons.mp3,signPentagons,Cut all the pentagons.,બધા પંચકોણ કાપો.,Bhavesh Bhai,16,8
+46_signHexagons.mp3,signHexagons,Cut all the hexagons.,બધા ષટ્કોણ કાપો.,Bhavesh Bhai,16,8
+47_swifteeNeedsHelp.mp3,swifteeNeedsHelp,Momo needs your help.,મોમોને તમારી મદદની જરૂર છે.,Hetalben,27,13
+48_swifteeLearnFirst.mp3,swifteeLearnFirst,"But to help Momo, you need to learn about polygons.",પણ મોમોની મદદ કરવા માટે તમારે બહુકોણ વિશે શીખવું પડશે.,Hetalben,54,26
+49_swifteeLetsHelp.mp3,swifteeLetsHelp,Now let's help Momo.,"ચાલો, હવે મોમોની મદદ કરીએ.",Hetalben,26,13
+50_s01Point.mp3,s01Point,Look! A point.,જુઓ! એક બિંદુ.,Hetalben,14,7
+51_s02DrewShape.mp3,s02DrewShape,Woah! It drew a shape.,વાહ! તેણે એક આકૃતિ દોરી.,Hetalben,24,12
+52_s03LookClosely.mp3,s03LookClosely,Let's look at this shape closely.,"ચાલો, આ આકૃતિને ધ્યાનથી જોઈએ.",Hetalben,29,14
+53_s04NoGaps.mp3,s04NoGaps,There are no gaps in its boundary.,તેની સીમામાં ક્યાંય ખાલી જગ્યા નથી.,Hetalben,35,17
+54_s05OpenOrClosed.mp3,s05OpenOrClosed,Is it open or closed?,આ ખુલ્લી છે કે બંધ?,Hetalben,19,9
+55_s06ThisShapeOpenOrClosed.mp3,s06ThisShapeOpenOrClosed,Is this shape open or closed?,આ આકૃતિ ખુલ્લી છે કે બંધ?,Hetalben,25,12
+56_s07WhatAboutThis.mp3,s07WhatAboutThis,What about this one?,આનું શું?,Hetalben,9,4
+57_s08AndThis.mp3,s08AndThis,And this?,અને આ?,Hetalben,6,3
+58_s09HowAboutThis.mp3,s09HowAboutThis,How about this one?,આ કેવી છે?,Hetalben,10,5
+59_ocFbClosed.mp3,ocFbClosed,No gaps in its boundary. This shape is closed.,તેની સીમામાં ખાલી જગ્યા નથી. આ આકૃતિ બંધ છે.,Hetalben,44,21
+60_ocFbOpen.mp3,ocFbOpen,There is a gap in its boundary. It is open.,તેની સીમામાં ખાલી જગ્યા છે. તે ખુલ્લી છે.,Hetalben,41,20
+61_ocYesClosed.mp3,ocYesClosed,Yes! It is closed.,હા! તે બંધ છે.,Hetalben,14,7
+62_ocYesOpen.mp3,ocYesOpen,Yes! It is open.,હા! તે ખુલ્લી છે.,Hetalben,17,8
+63_s10TwoOpen.mp3,s10TwoOpen,These two shapes are open...,આ બે આકૃતિઓ ખુલ્લી છે...,Hetalben,24,12
+64_s11TwoClosed.mp3,s11TwoClosed,...and these two shapes are closed.,...અને આ બે આકૃતિઓ બંધ છે.,Hetalben,26,13
+65_s12BoundariesDifferent.mp3,s12BoundariesDifferent,Look! The boundaries of the shapes are different too.,જુઓ! આકૃતિઓની સીમાઓ પણ અલગ-અલગ છે.,Hetalben,34,16
+66_s13StraightAndCurved.mp3,s13StraightAndCurved,Some are straight and some are curved.,કેટલીક સીધી છે અને કેટલીક વક્ર.,Hetalben,31,15
+67_s14WhichStraightCurved.mp3,s14WhichStraightCurved,Which boundaries are straight and which are curved?,કઈ સીમાઓ સીધી છે અને કઈ વક્ર?,Hetalben,29,14
+68_s14AskAgain.mp3,s14AskAgain,Is the boundary straight or curved?,આ સીમા સીધી છે કે વક્ર?,Hetalben,23,11
+69_s14NotCurved.mp3,s14NotCurved,Look! This boundary isn't curved. It is made of straight lines.,જુઓ! આ સીમા વક્ર નથી. તે સીધી રેખાઓથી બનેલી છે.,Hetalben,47,23
+70_s14IsCurved.mp3,s14IsCurved,Look closely. This boundary bends smoothly. It is curved.,ધ્યાનથી જુઓ. આ સીમા સરળતાથી વળે છે. તે વક્ર છે.,Hetalben,47,23
+71_s15GotIt.mp3,s15GotIt,"You got it! These boundaries are straight, while these are curved.","બરાબર! આ સીમાઓ સીધી છે, જ્યારે આ વક્ર છે.",Hetalben,41,20
+72_s16TapClosedStraight.mp3,s16TapClosedStraight,Tap the closed figure made with straight lines.,સીધી રેખાઓથી બનેલી બંધ આકૃતિ પર ટૅપ કરો.,Hetalben,40,19
+73_s16Yes.mp3,s16Yes,Yes! It is closed and made of straight lines.,હા! તે બંધ છે અને સીધી રેખાઓથી બનેલી છે.,Hetalben,40,19
+74_s16NotQuite.mp3,s16NotQuite,Not quite. Look for a figure with no gaps and no curves.,બરાબર નથી. એવી આકૃતિ શોધો જેમાં ખાલી જગ્યા કે વળાંક ન હોય.,Hetalben,58,28
+75_s17CallPolygon.mp3,s17CallPolygon,We call this a polygon.,આને આપણે બહુકોણ કહીએ છીએ.,Hetalben,25,12
+76_s18Definition.mp3,s18Definition,A closed figure made of only straight line segments is called a polygon.,ફક્ત રેખાખંડોથી બનેલી બંધ આકૃતિને બહુકોણ કહે છે.,Hetalben,48,23
+77_s19WhichPolygons.mp3,s19WhichPolygons,Which of these figures are polygons?,આમાંથી કઈ આકૃતિઓ બહુકોણ છે?,Hetalben,27,13
+78_s19GreatJob.mp3,s19GreatJob,Great job! You identified all the polygons.,ખૂબ સરસ! તમે બધા બહુકોણ ઓળખી લીધા.,Hetalben,34,16
+79_polygonRule.mp3,polygonRule,"A polygon is closed, with only straight sides.","બહુકોણ બંધ હોય છે, અને તેની બધી બાજુઓ સીધી હોય છે.",Hetalben,50,24
+80_fbTheseAreTheOnes.mp3,fbTheseAreTheOnes,That is right! These are the ones.,બરાબર! આ જ છે.,Hetalben,14,7
+81_fbNotQuiteTryAgain.mp3,fbNotQuiteTryAgain,Not quite. Try again.,બરાબર નથી. ફરી પ્રયાસ કરો.,Hetalben,26,13
+83_s20Sides.mp3,s20Sides,These line segments are the sides of the polygon.,આ રેખાખંડો બહુકોણની બાજુઓ છે.,Hetalben,29,14
+84_s21Vertex.mp3,s21Vertex,The point where two sides meet is called a vertex.,"જે બિંદુએ બે બાજુઓ મળે છે, તેને શિરોબિંદુ કહે છે.",Hetalben,49,24
+85_s22Angle.mp3,s22Angle,"When two sides meet, they also form an angle.","જ્યારે બે બાજુઓ મળે છે, ત્યારે તે એક ખૂણો પણ બનાવે છે.",Hetalben,54,26
+86_s23LabelParts.mp3,s23LabelParts,Label the parts of the polygon.,બહુકોણના ભાગોને નામ આપો.,Hetalben,24,12
+87_s23Perfect.mp3,s23Perfect,"Perfect! Side, vertex and angle — all labelled.","સરસ! બાજુ, શિરોબિંદુ અને ખૂણો — બધાને નામ આપ્યાં.",Hetalben,49,24
+88_s24CountSides.mp3,s24CountSides,Let's count the sides of the polygon.,"ચાલો, બહુકોણની બાજુઓ ગણીએ.",Hetalben,26,13
+89_countCarefully.mp3,countCarefully,Count each side carefully and try again.,દરેક બાજુ ધ્યાનથી ગણો અને ફરી પ્રયાસ કરો.,Hetalben,41,20
+90_s25Correct5.mp3,s25Correct5,Correct! This polygon has 5 sides.,સાચું! આ બહુકોણને 5 બાજુઓ છે.,Hetalben,32,16
+91_s26ChangeLooks.mp3,s26ChangeLooks,Now let's change how it looks.,હવે તેનો દેખાવ બદલીએ.,Hetalben,21,10
+92_s27DragVertex.mp3,s27DragVertex,"Drag any vertex. Stretch it, squash it, or resize it.","કોઈ પણ શિરોબિંદુ ખેંચો. તેને તાણો, દબાવો કે તેનું કદ બદલો.",Hetalben,58,28
+94_s28Whoa.mp3,s28Whoa,Whoa! It looks quite different now.,વાહ! હવે તે તદ્દન અલગ દેખાય છે.,Hetalben,31,15
+95_s29Appearance.mp3,s29Appearance,Its appearance has completely changed.,તેનો દેખાવ સંપૂર્ણપણે બદલાઈ ગયો છે.,Hetalben,35,17
+96_s30NotEverything.mp3,s30NotEverything,But not everything has changed.,પણ બધું બદલાયું નથી.,Hetalben,20,10
+97_s31CountAgain.mp3,s31CountAgain,Let's count the sides again.,"ચાલો, બાજુઓ ફરી ગણીએ.",Hetalben,21,10
+98_s32Still5.mp3,s32Still5,Both polygons still have 5 sides.,બંને બહુકોણને હજુ પણ 5 બાજુઓ છે.,Hetalben,35,17
+99_s33NameBySides.mp3,s33NameBySides,So the number of sides gives us a good way to name polygons.,તેથી બાજુઓની સંખ્યા બહુકોણને નામ આપવાની સારી રીત છે.,Hetalben,52,25
+100_s34Triangle.mp3,s34Triangle,A polygon with 3 sides is called a triangle.,3 બાજુઓવાળા બહુકોણને ત્રિકોણ કહે છે.,Hetalben,39,19
+101_s35Quadrilateral.mp3,s35Quadrilateral,A polygon with 4 sides is called a quadrilateral.,4 બાજુઓવાળા બહુકોણને ચતુષ્કોણ કહે છે.,Hetalben,39,19
+102_s36SelectQuadrilaterals.mp3,s36SelectQuadrilaterals,Select all the quadrilaterals.,બધા ચતુષ્કોણ પસંદ કરો.,Hetalben,22,11
+103_s36ThatsRight.mp3,s36ThatsRight,That’s right! Quadrilaterals are polygons with 4 sides.,બરાબર! ચતુષ્કોણ એટલે 4 બાજુઓવાળા બહુકોણ.,Hetalben,42,20
+104_s36Rule.mp3,s36Rule,Quadrilaterals are polygons with 4 sides.,ચતુષ્કોણ એટલે 4 બાજુઓવાળા બહુકોણ.,Hetalben,35,17
+105_s36IsThisQuad.mp3,s36IsThisQuad,Is this shape a quadrilateral?,શું આ આકૃતિ ચતુષ્કોણ છે?,Hetalben,24,12
+106_s37Pentagon.mp3,s37Pentagon,A polygon with 5 sides is called a pentagon.,5 બાજુઓવાળા બહુકોણને પંચકોણ કહે છે.,Hetalben,38,18
+107_s38Hexagon.mp3,s38Hexagon,A polygon with 6 sides is called a hexagon.,6 બાજુઓવાળા બહુકોણને ષટ્કોણ કહે છે.,Hetalben,35,17
+108_s39Heptagon.mp3,s39Heptagon,A polygon with 7 sides is called a heptagon.,7 બાજુઓવાળા બહુકોણને સપ્તકોણ કહે છે.,Hetalben,38,18
+109_s40Octagon.mp3,s40Octagon,A polygon with 8 sides is called an octagon.,8 બાજુઓવાળા બહુકોણને અષ્ટકોણ કહે છે.,Hetalben,37,18
+110_recapRecall.mp3,recapRecall,Let's recall what we learnt today.,"ચાલો, આજે આપણે શું શીખ્યા તે યાદ કરીએ.",Hetalben,38,18
+111_recapNames.mp3,recapNames,Polygons have different names based on their number of sides.,બાજુઓની સંખ્યા પ્રમાણે બહુકોણનાં નામ જુદાં-જુદાં હોય છે.,Hetalben,56,27
+112_c1WhichPolygons.mp3,c1WhichPolygons,Which of these are polygons?,આમાંથી કયા બહુકોણ છે?,Hetalben,21,10
+113_c1Yes.mp3,c1Yes,"Yes! Closed, with only straight sides.","હા! બંધ, અને ફક્ત સીધી બાજુઓ.",Hetalben,29,14
+114_c1NotQuite.mp3,c1NotQuite,Not quite! A polygon is closed with only straight sides.,બરાબર નથી! બહુકોણ બંધ હોય છે અને તેની ફક્ત સીધી બાજુઓ હોય છે.,Hetalben,61,30
+115_c2Classify.mp3,c2Classify,Classify the figures as a polygon or not a polygon.,આકૃતિઓને બહુકોણ અથવા બહુકોણ નથી તરીકે વર્ગીકૃત કરો.,Hetalben,51,25
+117_c2GreatJob.mp3,c2GreatJob,Great job! You sorted the figures correctly.,ખૂબ સરસ! તમે આકૃતિઓને સાચી રીતે ગોઠવી.,Hetalben,38,18
+118_c2WrongGroup.mp3,c2WrongGroup,Wrong group. Check for gaps or curved sides.,ખોટું જૂથ. ખાલી જગ્યા કે વક્ર બાજુઓ તપાસો.,Hetalben,42,20
+119_c2Rule.mp3,c2Rule,"Polygons are closed, with only straight sides. Try again.","બહુકોણ બંધ હોય છે, અને તેમની ફક્ત સીધી બાજુઓ હોય છે. ફરી પ્રયાસ કરો.",Hetalben,68,33
+120_c3WhichNot.mp3,c3WhichNot,Which figure is NOT a polygon?,કઈ આકૃતિ બહુકોણ નથી?,Hetalben,20,10
+121_c3Found.mp3,c3Found,You found it! That is not a polygon.,તમે શોધી કાઢ્યું! તે બહુકોણ નથી.,Hetalben,32,16
+122_c3BreaksRule.mp3,c3BreaksRule,Which figure breaks the rule for a polygon?,કઈ આકૃતિ બહુકોણનો નિયમ તોડે છે?,Hetalben,31,15
+123_c3Questions.mp3,c3Questions,Is it closed? Does it have only straight sides?,શું તે બંધ છે? શું તેની ફક્ત સીધી બાજુઓ છે?,Hetalben,43,21
+124_c4WhichPentagons.mp3,c4WhichPentagons,Which of these are pentagons?,આમાંથી કયા પંચકોણ છે?,Hetalben,21,10
+125_c4Exactly.mp3,c4Exactly,Exactly! A pentagon always has 5 sides.,બિલકુલ! પંચકોણને હંમેશા 5 બાજુઓ હોય છે.,Hetalben,42,20
+126_c4CountEach.mp3,c4CountEach,Count the sides of each figure carefully.,દરેક આકૃતિની બાજુઓ ધ્યાનથી ગણો.,Hetalben,31,15
+127_c4LookFor5.mp3,c4LookFor5,Look for every figure with exactly 5 sides.,બરાબર 5 બાજુઓવાળી દરેક આકૃતિ શોધો.,Hetalben,37,18
+128_c5Classify.mp3,c5Classify,Classify each figure as a hexagon or a heptagon.,દરેક આકૃતિને ષટ્કોણ અથવા સપ્તકોણ તરીકે વર્ગીકૃત કરો.,Hetalben,52,25
+130_c5WellDone.mp3,c5WellDone,Well done! Hexagons have 6 sides and heptagons have 7 sides.,શાબાશ! ષટ્કોણને 6 બાજુઓ હોય છે અને સપ્તકોણને 7 બાજુઓ.,Hetalben,55,27
+131_c5CountWrong.mp3,c5CountWrong,Count the sides of the ones you placed wrong.,તમે ખોટી જગ્યાએ મૂકેલી આકૃતિઓની બાજુઓ ગણો.,Hetalben,42,20
+132_c5Rule.mp3,c5Rule,"6 sides make a hexagon, 7 make a heptagon.","6 બાજુઓથી ષટ્કોણ બને, 7થી સપ્તકોણ.",Hetalben,36,17
+133_endReady.mp3,endReady,Now you know everything about polygons. You are ready to help Momo.,હવે તમે બહુકોણ વિશે બધું જાણો છો. તમે મોમોની મદદ કરવા તૈયાર છો.,Hetalben,63,31

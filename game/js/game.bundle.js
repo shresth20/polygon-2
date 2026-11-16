@@ -44,8 +44,12 @@ const ASSET_V = {
   "assets/audio/universfield-ground-impact-352053.ogg": "2f6ab5e2",
   "assets/audio/universfield-sad-trumpet-278822.mp3": "429a0a32",
   "assets/audio/universfield-sad-trumpet-278822.ogg": "31998195",
+  "assets/audio/vo-lines-gu.mp3": "2caec4a3",
+  "assets/audio/vo-lines-gu.ogg": "27154bdb",
   "assets/audio/vo-lines-hi.mp3": "a0a9d105",
   "assets/audio/vo-lines-hi.ogg": "ebbb6834",
+  "assets/audio/vo-lines-mr.mp3": "8e1c3523",
+  "assets/audio/vo-lines-mr.ogg": "4e78bd39",
   "assets/audio/vo-lines.mp3": "d5df6b98",
   "assets/audio/vo-lines.ogg": "a80595e4",
   "assets/char/bear.webp": "ac7771ee",
@@ -2207,7 +2211,8 @@ const CFG = {
        those of its own words on screen. It stands in for the English take once the language's
        words are in (see AudioManager.voTake): the voice and the words are always one language.
        Written by tools/voice/build-hindi-voice.py in the lesson's repository, from
-       docs/voice/hi/cue-map.json there. */
+       docs/voice/hi/cue-map.json there (Hindi, delivered recordings) and, with --lang mr or gu,
+       from docs/voice/mr/cue-map.json or docs/voice/gu/cue-map.json (Marathi, Gujarati: ElevenLabs takes). */
     langs: {
       hi: { src: 'assets/audio/vo-lines-hi.mp3', take: 39.98, lines: {
           'tut-1-meet':      [0.00, 3.48, [0.06, 0.34, 0.86, 1.54, 1.82, 2.18, 2.57, 2.70, 3.20]],   // "यह मोमो है। उसे अपने दोस्त को ढूँढना है।" (This is Momo. He needs to find his friend.)
@@ -2225,6 +2230,40 @@ const CFG = {
           'sign-heptagon':   [34.21, 1.47, [0.06, 0.79]],   // "सप्तभुज काटें।" (Cut the heptagon.)
           'sign-pentagons':  [36.08, 1.71, [0.06, 0.65, 1.18]],   // "सभी पंचभुज काटें।" (Cut all the pentagons.)
           'sign-hexagons':   [38.19, 1.79, [0.06, 0.53, 1.19]],   // "सभी षट्भुज काटें।" (Cut all the hexagons.)
+      } },
+      mr: { src: 'assets/audio/vo-lines-mr.mp3', take: 35.31, lines: {
+          'tut-1-meet':      [0.00, 3.22, [0.06, 0.27, 0.67, 1.28, 1.63, 1.95, 2.43, 2.87]],   // "हा मोमो आहे. त्याला त्याच्या मित्राला शोधायचे आहे." (This is Momo. He needs to find his friend.)
+          'tut-2-goal':      [3.62, 3.00, [0.06, 0.56, 1.08, 1.56, 1.88, 2.28, 2.60]],   // "मोमोला गोठलेली खिंड पार करायला मदत करा!" (Help Momo cross the Frozen Pass!)
+          'tut-3-watch':     [7.02, 0.79, [0.06]],   // "सावध!" (Watch out!)
+          'tut-4-jump':      [8.21, 2.55, [0.06, 0.91, 1.18, 1.92, 2.19]],   // "अडथळ्यांवरून उडी मारण्यासाठी टॅप करा." (Tap to jump over obstacles.)
+          'tut-5-broken':    [11.16, 2.46, [0.06, 0.34, 1.25, 1.70, 2.06]],   // "अरे बापरे! रस्ता तुटला आहे." (Oh no! The path is broken.)
+          'tut-6-use':       [14.02, 3.51, [0.06, 0.52, 0.96, 1.72, 2.36, 2.76, 3.08]],   // "रस्ता दुरुस्त करण्यासाठी बर्फाचा योग्य तुकडा वापरा." (Use the right ice piece to fix the path.)
+          'tut-6b-piece':    [17.93, 2.88, [0.06, 0.52, 0.96, 1.72, 2.12, 2.44]],   // "रस्ता दुरुस्त करण्यासाठी योग्य तुकडा वापरा." (Use the right piece to fix the path.)
+          'tut-7-fit':       [21.21, 2.40, [0.06, 0.60, 1.16, 1.82, 2.04]],   // "अगदी बरोबर बसला! पुढे चला!" (Perfect fit! Keep going!)
+          'sign-triangle':   [24.01, 0.98, [0.06, 0.52]],   // "त्रिकोण कापा." (Cut the triangle.)
+          'sign-quadrilateral': [25.39, 1.10, [0.06, 0.58]],   // "चौकोन कापा." (Cut the quadrilateral.)
+          'sign-pentagon':   [26.89, 1.13, [0.06, 0.58]],   // "पंचकोन कापा." (Cut the pentagon.)
+          'sign-hexagon':    [28.42, 1.10, [0.06, 0.58]],   // "षट्कोन कापा." (Cut the hexagon.)
+          'sign-heptagon':   [29.92, 1.44, [0.06, 0.84]],   // "सप्तकोन कापा." (Cut the heptagon.)
+          'sign-pentagons':  [31.76, 1.62, [0.06, 0.52, 1.08]],   // "सर्व पंचकोन कापा." (Cut all the pentagons.)
+          'sign-hexagons':   [33.78, 1.53, [0.06, 0.45, 1.05]],   // "सर्व षट्कोन कापा." (Cut all the hexagons.)
+      } },
+      gu: { src: 'assets/audio/vo-lines-gu.mp3', take: 38.60, lines: {
+          'tut-1-meet':      [0.00, 3.82, [0.06, 0.36, 0.84, 1.66, 2.12, 2.44, 3.00, 3.56]],   // "આ મોમો છે. તેને તેના મિત્રને શોધવાનો છે." (This is Momo. He needs to find his friend.)
+          'tut-2-goal':      [4.22, 3.47, [0.06, 0.76, 1.40, 1.87, 2.16, 2.76, 3.12]],   // "મોમોને થીજેલો ઘાટ પાર કરવામાં મદદ કરો!" (Help Momo cross the Frozen Pass!)
+          'tut-3-watch':     [8.09, 0.95, [0.06]],   // "સાવધાન!" (Watch out!)
+          'tut-4-jump':      [9.44, 2.77, [0.06, 0.67, 1.18, 1.63, 2.19, 2.48]],   // "અવરોધો પરથી કૂદવા માટે ટૅપ કરો." (Tap to jump over obstacles.)
+          'tut-5-broken':    [12.61, 2.74, [0.06, 0.42, 1.24, 1.78, 2.10, 2.34]],   // "અરે નહીં! રસ્તો તૂટી ગયો છે." (Oh no! The path is broken.)
+          'tut-6-use':       [15.75, 3.96, [0.06, 0.65, 1.01, 1.33, 1.93, 2.65, 3.13, 3.49]],   // "રસ્તો ઠીક કરવા માટે બરફનો સાચો ટુકડો વાપરો." (Use the right ice piece to fix the path.)
+          'tut-6b-piece':    [20.11, 3.13, [0.06, 0.63, 0.99, 1.31, 1.91, 2.34, 2.67]],   // "રસ્તો ઠીક કરવા માટે સાચો ટુકડો વાપરો." (Use the right piece to fix the path.)
+          'tut-7-fit':       [23.64, 2.64, [0.06, 0.53, 0.82, 1.61, 1.90, 2.22]],   // "બરાબર બેસી ગયો! આગળ વધતા રહો!" (Perfect fit! Keep going!)
+          'sign-triangle':   [26.68, 1.03, [0.06, 0.52]],   // "ત્રિકોણ કાપો." (Cut the triangle.)
+          'sign-quadrilateral': [28.11, 1.36, [0.06, 0.81]],   // "ચતુષ્કોણ કાપો." (Cut the quadrilateral.)
+          'sign-pentagon':   [29.87, 1.23, [0.06, 0.69]],   // "પંચકોણ કાપો." (Cut the pentagon.)
+          'sign-hexagon':    [31.50, 1.23, [0.06, 0.73]],   // "ષટ્કોણ કાપો." (Cut the hexagon.)
+          'sign-heptagon':   [33.13, 1.40, [0.06, 0.84]],   // "સપ્તકોણ કાપો." (Cut the heptagon.)
+          'sign-pentagons':  [34.93, 1.71, [0.06, 0.63, 1.19]],   // "બધા પંચકોણ કાપો." (Cut all the pentagons.)
+          'sign-hexagons':   [37.04, 1.56, [0.06, 0.52, 1.08]],   // "બધા ષટ્કોણ કાપો." (Cut all the hexagons.)
       } }
     }
   },

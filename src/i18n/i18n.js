@@ -27,8 +27,8 @@
    three names, for that script's characters only: English text keeps its faces exactly, and
    only the one file the language needs is fetched (assets/fonts/).
 
-   THE VOICE. A language in VOICED has a recorded voice of its own: Hindi. Its takes of the
-   lesson's lines are src/lesson/recordings-<code>.js (tools/voice/build-hindi-voice.py), and
+   THE VOICE. A language in VOICED has a recorded voice of its own: Hindi, Marathi, Gujarati. Its takes
+   of the lesson's lines are src/lesson/recordings-<code>.js (tools/voice/build-hindi-voice.py), and
    Frozen Rush has its take (CFG.vo.langs). A page that speaks the lesson asks for them on this
    script's tag, data-voice="src/lesson/recordings-{code}.js" (index.html), and they are loaded
    with the words, so no line is looked up before they are in. The other languages speak with
@@ -45,7 +45,7 @@
   const ALIAS = { or: 'od', ori: 'od', odia: 'od', oriya: 'od', odiya: 'od', hindi: 'hi', marathi: 'mr', telugu: 'te',
     gujarati: 'gu', english: 'en', eng: 'en', hin: 'hi', mar: 'mr', tel: 'te', guj: 'gu' };
   const TAG = { od: 'or' };              // Odia is od in the address, or as a language tag
-  const VOICED = ['hi'];                 // the languages with a recorded voice of their own
+  const VOICED = ['hi', 'mr', 'gu'];     // the languages with a recorded voice of their own
   const READY_CAP = 10000;
   const FONTS = {
     hi: { file: 'baloo-2-devanagari.woff2', range: 'U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF' },

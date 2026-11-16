@@ -22,6 +22,8 @@ Two kinds of check live here:
 | `check-answer-feedback.cjs` | Right and wrong answer feedback, glows, Swiftee's reactions, one sound per answer |
 | `check-audio-recovery.cjs`, `check-voice-gate.cjs`, `check-recorded-voice.cjs`, `check-word-animation.cjs`, `check-word-browser.cjs`, `check-choice-voice-cues.cjs` | Narration: recordings, word timing, gating, recovery |
 | `check-hindi-voice.cjs` | The Hindi voice (`?lan=hi`): every line's Hindi take, its file and length, each word shown as it is said, the cues on the Hindi words, screen 27's cut, the game's Hindi take; English and Marathi keep the English takes |
+| `check-gujarati-voice.cjs` | The Gujarati voice (`?lan=gu`, the ElevenLabs takes): the Hindi check run in Gujarati: every line's take, its file and length, each word shown as it is said, the cues on the Gujarati words, the game's Gujarati take |
+| `check-marathi-voice.cjs` | The Marathi voice (`?lan=mr`, the ElevenLabs takes): the Hindi check run in Marathi: every line's take, its file and length, each word shown as it is said, the cues on the Marathi words, the game's Marathi take |
 | `check-guide-sync.cjs`, `check-idle-feedback.cjs` | Swiftee's expressions and idle behaviour |
 | `check-sfx.cjs`, `check-sfx-channel.cjs` | Sound effects |
 | `check-background-transition.cjs`, `check-canvas-scaling.cjs`, `check-scene-aspect.cjs`, `check-dialogue-frame.cjs`, `check-dialogue-tail.cjs` | Layout at many screen sizes and zoom levels |

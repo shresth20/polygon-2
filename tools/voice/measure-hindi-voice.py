@@ -107,7 +107,7 @@ def spoken_lines(L, number):
     for vo, key in GAME:
         lines.append({'n': number[key], 'key': key, 'use': 'game', 'id': vo, 'en': L['en'][key]})
     for l in lines:
-        l['hi'] = shown(L[LANG][l['key']])
+        l[LANG] = shown(L[LANG][l['key']])
     return lines
 
 

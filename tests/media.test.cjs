@@ -56,7 +56,7 @@ async function onDisk() {
   const mp3s = shipped.filter(f => f.endsWith('.mp3'));
   check('no MP3 copy ships (Ogg Opus is the one format)', !mp3s.length, mp3s.join(', '));
   const mp3Named = [];
-  for (const f of ['src/lesson/recordings.js', 'src/lesson/recordings-hi.js', 'src/story/story-voice.js', 'src/bridge/bridge-story.js', 'src/intro/swiftee-cameo.js', 'src/lesson/lesson-music.js', 'index.html']) {
+  for (const f of ['src/lesson/recordings.js', 'src/lesson/recordings-hi.js', 'src/lesson/recordings-mr.js', 'src/lesson/recordings-gu.js', 'src/story/story-voice.js', 'src/bridge/bridge-story.js', 'src/intro/swiftee-cameo.js', 'src/lesson/lesson-music.js', 'index.html']) {
     for (const m of fs.readFileSync(path.join(ROOT, f), 'utf8').matchAll(/assets\/audio\/(?!source\/)[\w./@-]+\.mp3/g)) mp3Named.push(f + ': ' + m[0]);
   }
   check('the lesson side names no .mp3 file', !mp3Named.length, mp3Named.join(', '));

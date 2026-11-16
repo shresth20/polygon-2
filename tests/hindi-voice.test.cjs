@@ -1,16 +1,19 @@
 #!/usr/bin/env node
 /* THE HINDI VOICE, in the browser, start to end (?lan=hi; src/lesson/recordings-hi.js, Frozen
    Rush's CFG.vo.langs.hi). With real audio playing:
-     - every screen of the lesson: it plays its Hindi take, and the words on the board keep to it:
+     - every screen of the lesson: it plays its ' + NAME + ' take, and the words on the board keep to it:
        none before the voice says it, each one as it is said (sampled against the take's clock)
      - no English take of a lesson line is fetched in Hindi
      - the recap says its lines in Hindi, its words coming in, and reaches Next
-     - the opening: the game's tutorial in its Hindi take (its words timed by it), Swiftee's two
-       lines over the game in her Hindi takes
+     - the opening: the game's tutorial in its ' + NAME + ' take (its words timed by it), Swiftee's two
+       lines over the game in her ' + NAME + ' takes
      - the end: her last line in Hindi; the return: Swiftee at the ditch, the plank's line and its
-       question, all in the Hindi takes
-     - Marathi and English keep the English takes
-   node tests/hindi-voice.test.cjs        PART=lesson|recap|opening|end|others */
+       question, all in the ' + NAME + ' takes
+     - Telugu and English keep the English takes
+   node tests/hindi-voice.test.cjs        PART=lesson|recap|opening|end|others
+   The same for the Marathi voice (src/lesson/recordings-mr.js, CFG.vo.langs.mr, the ElevenLabs takes):
+   VOICE_LANG=mr node tests/hindi-voice.test.cjs, or node tests/marathi-voice.test.cjs
+   And for Gujarati: VOICE_LANG=gu node tests/hindi-voice.test.cjs, or node tests/gujarati-voice.test.cjs */
 const path = require('path');
 const fs = require('fs');
 const ROOT = path.resolve(__dirname, '..');
@@ -19,6 +22,9 @@ const { serve } = require('./helpers/serve.cjs');
 const ENGINE = process.env.ENGINE || 'chromium';
 const PART = process.env.PART || 'all';
 const part = p => PART === 'all' || PART.split(',').includes(p);
+const LAN = process.env.VOICE_LANG || 'hi';
+const NAME = { hi: 'Hindi', mr: 'Marathi', gu: 'Gujarati' }[LAN];
+const OWN = new RegExp('/' + LAN + '/');         // a lesson take of the language's own
 
 const results = [];
 const check = (name, ok, detail) => results.push({ name, ok: !!ok, detail });
@@ -59,10 +65,10 @@ const lessonAudio = rs => rs.filter(r => /^\/assets\/audio\/lesson\//.test(r.pat
 
   /* ------------------------------------------------------------ 1. every screen, in step */
   if (part('lesson')) {
-    const a = await open(browser, srv, '?preview=1&game=0&lan=hi');
+    const a = await open(browser, srv, '?preview=1&game=0&lan=' + LAN);
     await a.page.waitForFunction(() => window.__poly && window.__poly.state.ready, null, { timeout: 60000 });
-    const on = await a.page.evaluate(() => ({ voiced: PolygonI18n.voiced, rows: (window.POLYGON_VOICES && window.POLYGON_VOICES.hi || []).length }));
-    check('lesson (hi): the page speaks Hindi: its takes are loaded with its words', on.voiced && on.rows > 80, JSON.stringify(on));
+    const on = await a.page.evaluate(lan => ({ voiced: PolygonI18n.voiced, rows: (window.POLYGON_VOICES && window.POLYGON_VOICES[lan] || []).length }), LAN);
+    check('lesson (' + LAN + '): the page speaks ' + NAME + ': its takes are loaded with its words', on.voiced && on.rows > 80, JSON.stringify(on));
     const steps = await a.page.evaluate(() => window.__poly.steps().length);
     const late = [], wrongFile = [], silent = [];
     let heard = 0;
@@ -99,7 +105,7 @@ const lessonAudio = rs => rs.filter(r => /^\/assets\/audio\/lesson\//.test(r.pat
         return { src: playing, out };
       }, { n0, src: expect.src });
       if (!samples.out.length) { silent.push((k + 1) + ' ' + expect.text); continue; }
-      if (!/\/assets\/audio\/lesson\/hi\//.test(samples.src)) wrongFile.push((k + 1) + ': ' + samples.src);
+      if (!new RegExp('/assets/audio/lesson/' + LAN + '/').test(samples.src)) wrongFile.push((k + 1) + ': ' + samples.src);
       heard++;
       for (const s of samples.out) {
         if (s.reveal !== 'recorded') continue;
@@ -109,17 +115,17 @@ const lessonAudio = rs => rs.filter(r => /^\/assets\/audio\/lesson\//.test(r.pat
       }
       await a.page.waitForTimeout(250);
     }
-    check('lesson (hi): every screen\'s line plays, in its Hindi take (' + heard + ' screens)', heard > 30 && !wrongFile.length && !silent.length, wrongFile.concat(silent.map(s => 'silent: ' + s)).join(' | '));
-    check('lesson (hi): the words come in as the take says them: none early, none a word behind', !late.length, late.join(' | '));
-    const english = lessonAudio(a.fetched()).filter(p => !/\/hi\//.test(p));
-    check('lesson (hi): no English take of a lesson line is fetched', !english.length, english.join(' '));
-    check('lesson (hi): no script errors, every request found', !a.errors.length && !a.missing().length, a.errors.concat(a.missing()).join(' | '));
+    check('lesson (' + LAN + '): every screen\'s line plays, in its ' + NAME + ' take (' + heard + ' screens)', heard > 30 && !wrongFile.length && !silent.length, wrongFile.concat(silent.map(s => 'silent: ' + s)).join(' | '));
+    check('lesson (' + LAN + '): the words come in as the take says them: none early, none a word behind', !late.length, late.join(' | '));
+    const english = lessonAudio(a.fetched()).filter(p => !OWN.test(p));
+    check('lesson (' + LAN + '): no English take of a lesson line is fetched', !english.length, english.join(' '));
+    check('lesson (' + LAN + '): no script errors, every request found', !a.errors.length && !a.missing().length, a.errors.concat(a.missing()).join(' | '));
     await a.page.close();
   }
 
   /* ------------------------------------------------------------ 2. the recap */
   if (part('recap')) {
-    const a = await open(browser, srv, '?preview=1&game=0&lan=hi');
+    const a = await open(browser, srv, '?preview=1&game=0&lan=' + LAN);
     await a.page.waitForFunction(() => window.__poly && window.__poly.state.ready, null, { timeout: 60000 });
     const k = await a.page.evaluate(() => window.__poly.steps().findIndex(s => s.recap));
     await goTo(a.page, k);
@@ -135,17 +141,17 @@ const lessonAudio = rs => rs.filter(r => /^\/assets\/audio\/lesson\//.test(r.pat
       await a.page.waitForTimeout(80);
     }
     const said = lessonAudio(a.fetched());
-    check('recap (hi): its lines are said in their Hindi takes', said.length >= 10 && said.every(p => /\/hi\//.test(p)) &&
+    check('recap (' + LAN + '): its lines are said in their ' + NAME + ' takes', said.length >= 10 && said.every(p => OWN.test(p)) &&
       said.some(p => /91_Lets_recall/.test(p)) && said.some(p => /92_Polygons_have_different_names/.test(p)), said.join(' '));
-    check('recap (hi): its words come in one by one, in Hindi, and Next comes up', state === 'READY' && words.length >= 8 && words.every(w => !/[A-Za-z]{2}/.test(w)),
+    check('recap (' + LAN + '): its words come in one by one, in ' + NAME + ', and Next comes up', state === 'READY' && words.length >= 8 && words.every(w => !/[A-Za-z]{2}/.test(w)),
       state + ' | ' + words.slice(0, 4).join(' / '));
-    check('recap (hi): no script errors', !a.errors.length, a.errors.join(' | '));
+    check('recap (' + LAN + '): no script errors', !a.errors.length, a.errors.join(' | '));
     await a.page.close();
   }
 
   /* ------------------------------------------------------------ 3. the opening */
   if (part('opening')) {
-    const a = await open(browser, srv, '?intro=1&lan=hi');
+    const a = await open(browser, srv, '?intro=1&lan=' + LAN);
     await a.page.waitForFunction(() => window.RunnerStage && RunnerStage.state().opening.said.includes('ready'), null, { timeout: 90000 }).catch(() => {});
     const f = a.page.frames().find(x => /lesson=intro/.test(x.url()));
     await f.click('#btn-play');
@@ -156,32 +162,32 @@ const lessonAudio = rs => rs.filter(r => /^\/assets\/audio\/lesson\//.test(r.pat
       if (st !== 'OPENING_COVER' && st !== 'OPENING_TUTORIAL') break;
       const r = await f.evaluate(() => { const t = document.getElementById('tut-text'); return t ? { text: t.textContent.trim(), w0: t.dataset.w0 } : {}; }).catch(() => ({}));
       if (r.w0 != null && r.text && !/[A-Za-z]{2}/.test(r.text)) timed = true;
-      if (r.text === plain(L.hi.gameTapJump)) asked = true;
+      if (r.text === plain(L[LAN].gameTapJump)) asked = true;
       if (asked) await f.evaluate(() => window.iceAgeGame.jump && window.iceAgeGame.jump()).catch(() => {});
       await a.page.waitForTimeout(150);
     }
     const voice = await f.evaluate(() => ({ lang: window.iceAgeGame.voLang(), said: window.iceAgeGame._voice().said })).catch(e => ({ err: String(e) }));
     const take = a.fetched().filter(r => /vo-lines/.test(r.path)).map(r => r.path);
-    check('opening (hi): the game speaks its Hindi take', voice.lang === 'hi' && take.length && take.every(p => /vo-lines-hi\./.test(p)), JSON.stringify(voice) + ' ' + take.join(' '));
-    check('opening (hi): the tutorial\'s lines were spoken, and its Hindi words timed by the take', ['tut-1-meet', 'tut-2-goal', 'tut-3-watch', 'tut-4-jump', 'tut-5-broken']
+    check('opening (' + LAN + '): the game speaks its ' + NAME + ' take', voice.lang === LAN && take.length && take.every(p => new RegExp('vo-lines-' + LAN + '\\.').test(p)), JSON.stringify(voice) + ' ' + take.join(' '));
+    check('opening (' + LAN + '): the tutorial\'s lines were spoken, and its ' + NAME + ' words timed by the take', ['tut-1-meet', 'tut-2-goal', 'tut-3-watch', 'tut-4-jump', 'tut-5-broken']
       .every(id => (voice.said || []).some(s => s === id || s.startsWith(id + ':ctx') || s.startsWith(id + ':after'))) && timed, JSON.stringify(voice.said) + ' timed:' + timed);
     await a.page.waitForFunction(() => window.SwifteeCameo.state().history.filter(h => h.event === 'said').length >= 2, null, { timeout: 40000 }).catch(() => {});
     const cameo = await a.page.evaluate(() => window.SwifteeCameo.state().history.filter(h => h.event === 'say'));
     const hers = lessonAudio(a.fetched());
-    check('opening (hi): Swiftee says her two lines over the game in her Hindi takes', cameo.length === 2 && cameo.every(h => h.voice) &&
-      hers.some(p => /\/hi\/92_Momo_needs_your_help/.test(p)) && hers.some(p => /\/hi\/91_But_to_help_Momo/.test(p)) && !hers.some(p => !/\/hi\//.test(p)), JSON.stringify(cameo) + ' ' + hers.join(' '));
-    check('opening (hi): no script errors', !a.errors.length, a.errors.join(' | '));
+    check('opening (' + LAN + '): Swiftee says her two lines over the game in her ' + NAME + ' takes', cameo.length === 2 && cameo.every(h => h.voice) &&
+      hers.some(p => new RegExp('/' + LAN + '/92_Momo_needs_your_help').test(p)) && hers.some(p => new RegExp('/' + LAN + '/91_But_to_help_Momo').test(p)) && !hers.some(p => !OWN.test(p)), JSON.stringify(cameo) + ' ' + hers.join(' '));
+    check('opening (' + LAN + '): no script errors', !a.errors.length, a.errors.join(' | '));
     await a.page.close();
   }
 
   /* ------------------------------------------------------------ 4. the end and the return */
   if (part('end')) {
-    const b = await open(browser, srv, '?preview=1&lan=hi');
+    const b = await open(browser, srv, '?preview=1&lan=' + LAN);
     await b.page.waitForFunction(() => window.__poly && window.__poly.state.ready, null, { timeout: 30000 });
     await b.page.evaluate(() => { const g = window.__poly, k = g.steps().length - 1; g.unlockAudio(); g.setState({ k }, () => g.runStep(k, false)); });
     await b.page.waitForFunction(() => RunnerStage.state().phase === 'FROZEN_RUSH_RUNNING', null, { timeout: 120000 }).catch(() => {});
     const last = lessonAudio(b.fetched());
-    check('end (hi): her last line in its Hindi take', last.some(p => /\/hi\/93_Now_you_know_everything/.test(p)) && last.every(p => /\/hi\//.test(p)), last.join(' '));
+    check('end (' + LAN + '): her last line in its ' + NAME + ' take', last.some(p => new RegExp('/' + LAN + '/93_Now_you_know_everything').test(p)) && last.every(p => OWN.test(p)), last.join(' '));
     const g = b.page.frames().find(x => /lesson=end/.test(x.url()));
     let activeAt = 0, voice = {};
     const t1 = Date.now();
@@ -194,23 +200,23 @@ const lessonAudio = rs => rs.filter(r => /^\/assets\/audio\/lesson\//.test(r.pat
       await b.page.waitForTimeout(700);
     }
     const spoke = id => (voice.said || []).some(s => s === id || s.startsWith(id + ':ctx') || s.startsWith(id + ':after'));
-    check('return (hi): the plank\'s line and its question in the Hindi take', voice.lang === 'hi' && spoke('tut-6b-piece') && spoke('sign-triangle'), JSON.stringify(voice));
+    check('return (' + LAN + '): the plank\'s line and its question in the ' + NAME + ' take', voice.lang === LAN && spoke('tut-6b-piece') && spoke('sign-triangle'), JSON.stringify(voice));
     const ditch = lessonAudio(b.fetched());
-    check('return (hi): Swiftee at the ditch in her Hindi take', ditch.some(p => /\/hi\/90_Now_lets_help_Momo/.test(p)), ditch.join(' '));
-    check('end (hi): no script errors', !b.errors.length, b.errors.join(' | '));
+    check('return (' + LAN + '): Swiftee at the ditch in her ' + NAME + ' take', ditch.some(p => new RegExp('/' + LAN + '/90_Now_lets_help_Momo').test(p)), ditch.join(' '));
+    check('end (' + LAN + '): no script errors', !b.errors.length, b.errors.join(' | '));
     await b.page.close();
   }
 
   /* ------------------------------------------------------------ 5. the others keep the English takes */
   if (part('others')) {
-    for (const lan of ['mr', 'en']) {
+    for (const lan of ['te', 'en']) {
       const a = await open(browser, srv, '?preview=1&game=0' + (lan === 'en' ? '' : '&lan=' + lan));
       await a.page.waitForFunction(() => window.__poly && window.__poly.state.ready, null, { timeout: 60000 });
       await goTo(a.page, 4);
       await a.page.waitForTimeout(3000);
       const said = lessonAudio(a.fetched());
-      const loaded = await a.page.evaluate(() => !!window.POLYGON_VOICES || performance.getEntriesByType('resource').some(e => /recordings-hi/.test(e.name)));
-      check(lan + ': the English takes, and nothing of the Hindi voice fetched', said.length && said.every(p => !/\/hi\//.test(p)) && !loaded, said.join(' ') + ' hi:' + loaded);
+      const loaded = await a.page.evaluate(() => !!window.POLYGON_VOICES || performance.getEntriesByType('resource').some(e => /recordings-[a-z]+\.js/.test(e.name)));
+      check(lan + ': the English takes, and nothing of the Hindi, Marathi or Gujarati voice fetched', said.length && said.every(p => !/\/(hi|mr|gu)\//.test(p)) && !loaded, said.join(' ') + ' own voice:' + loaded);
       await a.page.close();
     }
   }

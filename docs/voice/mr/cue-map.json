@@ -1,0 +1,3017 @@
+{
+ "about": "The Marathi voice, measured by tools/voice/measure-marathi-voice.py from the ElevenLabs takes (assets/VO-MR/<n>_<key>.mp3, numbered as the Hindi script; docs/voice/mr/takes.json). For each line the experience speaks: its number, its key in src/i18n/locales.json, where it is used (lesson: a line of src/lesson/recordings.js, built as assets/audio/lesson/mr/<file>; game: a window of Frozen Rush's take, CFG.vo.lines <id>), its English and its Marathi as shown, the voice, where its speech starts and ends in the take (seconds), its runs of speech between pauses (`runs`), and where each shown word starts (ElevenLabs' alignment fitted to those runs). `check` is a blind transcription (Whisper) and how close it is to the script (`match`, 0-1). A line may carry `cues`: for each English word, the index of the Marathi word on which its cue fires; without it the build works them out (tools/voice/build-hindi-voice.py: CONCEPTS). Build with npm run build:marathi-voice.",
+ "language": "mr",
+ "source": "assets/VO-MR",
+ "lines": [
+  {
+   "n": 47,
+   "key": "swifteeNeedsHelp",
+   "use": "lesson",
+   "file": "92_Momo_needs_your_help",
+   "en": "Momo needs your help.",
+   "mr": "मोमोला तुमच्या मदतीची गरज आहे.",
+   "speech": [
+    0.02,
+    2.28
+   ],
+   "words": [
+    0.02,
+    0.56,
+    0.96,
+    1.6,
+    1.92
+   ],
+   "runs": [
+    [
+     0.02,
+     2.28
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 48,
+   "key": "swifteeLearnFirst",
+   "use": "lesson",
+   "file": "91_But_to_help_Momo_you_need_to_learn_about_polygons",
+   "en": "But to help Momo, you need to learn about polygons.",
+   "mr": "पण मोमोला मदत करण्यासाठी तुम्हाला बहुभुजाकृतींबद्दल शिकावे लागेल.",
+   "speech": [
+    0.09,
+    4.52
+   ],
+   "words": [
+    0.09,
+    0.32,
+    0.8,
+    1.12,
+    1.92,
+    2.4,
+    3.68,
+    4.107
+   ],
+   "runs": [
+    [
+     0.09,
+     4.52
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 49,
+   "key": "swifteeLetsHelp",
+   "use": "lesson",
+   "file": "90_Now_lets_help_Momo",
+   "en": "Now let's help Momo.",
+   "mr": "चला, आता मोमोला मदत करूया.",
+   "speech": [
+    0.05,
+    2.16
+   ],
+   "words": [
+    0.05,
+    0.64,
+    0.96,
+    1.44,
+    1.76
+   ],
+   "runs": [
+    [
+     0.05,
+     0.41
+    ],
+    [
+     0.64,
+     2.16
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 50,
+   "key": "s01Point",
+   "use": "lesson",
+   "file": "01_Look_A_point",
+   "en": "Look! A point.",
+   "mr": "पाहा! एक बिंदू.",
+   "speech": [
+    0.05,
+    1.73
+   ],
+   "words": [
+    0.05,
+    0.8,
+    1.2
+   ],
+   "runs": [
+    [
+     0.05,
+     0.39
+    ],
+    [
+     0.8,
+     1.73
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 51,
+   "key": "s02DrewShape",
+   "use": "lesson",
+   "file": "02_Woah_It_drew_a_shape",
+   "en": "Woah! It drew a shape.",
+   "mr": "व्वा! त्याने एक आकृती काढली.",
+   "speech": [
+    0.02,
+    2.44
+   ],
+   "words": [
+    0.02,
+    0.96,
+    1.24,
+    1.52,
+    1.96
+   ],
+   "runs": [
+    [
+     0.02,
+     0.67
+    ],
+    [
+     0.96,
+     2.44
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 52,
+   "key": "s03LookClosely",
+   "use": "lesson",
+   "file": "03_Lets_look_at_this_shape_closely",
+   "en": "Let's look at this shape closely.",
+   "mr": "चला, ही आकृती नीट पाहूया.",
+   "speech": [
+    0.06,
+    2.2
+   ],
+   "words": [
+    0.06,
+    0.68,
+    0.88,
+    1.44,
+    1.76
+   ],
+   "runs": [
+    [
+     0.06,
+     0.38
+    ],
+    [
+     0.68,
+     2.2
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 53,
+   "key": "s04NoGaps",
+   "use": "lesson",
+   "file": "04_There_are_no_gaps_in_its_boundary",
+   "en": "There are no gaps in its boundary.",
+   "mr": "हिच्या सीमेत कुठेही मोकळी जागा नाही.",
+   "speech": [
+    0.05,
+    2.7
+   ],
+   "words": [
+    0.05,
+    0.4,
+    1.0,
+    1.64,
+    2.08,
+    2.4
+   ],
+   "runs": [
+    [
+     0.05,
+     2.7
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 54,
+   "key": "s05OpenOrClosed",
+   "use": "lesson",
+   "file": "05_Is_it_open_or_closed",
+   "en": "Is it open or closed?",
+   "mr": "ही खुली आहे की बंद?",
+   "speech": [
+    0.04,
+    1.83
+   ],
+   "words": [
+    0.04,
+    0.28,
+    0.72,
+    1.2,
+    1.36
+   ],
+   "runs": [
+    [
+     0.04,
+     1.83
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 55,
+   "key": "s06ThisShapeOpenOrClosed",
+   "use": "lesson",
+   "file": "06_Is_this_shape_open_or_closed",
+   "en": "Is this shape open or closed?",
+   "mr": "ही आकृती खुली आहे की बंद?",
+   "speech": [
+    0.03,
+    2.36
+   ],
+   "words": [
+    0.03,
+    0.24,
+    0.88,
+    1.36,
+    1.76,
+    1.92
+   ],
+   "runs": [
+    [
+     0.03,
+     2.36
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 56,
+   "key": "s07WhatAboutThis",
+   "use": "lesson",
+   "file": "07_What_about_this_one",
+   "en": "What about this one?",
+   "mr": "हिचे काय?",
+   "speech": [
+    0.04,
+    0.7
+   ],
+   "words": [
+    0.04,
+    0.36
+   ],
+   "runs": [
+    [
+     0.04,
+     0.7
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 57,
+   "key": "s08AndThis",
+   "use": "lesson",
+   "file": "08_And_this",
+   "en": "And this?",
+   "mr": "आणि ही?",
+   "speech": [
+    0.0,
+    0.76
+   ],
+   "words": [
+    0.0,
+    0.48
+   ],
+   "runs": [
+    [
+     0.0,
+     0.76
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 58,
+   "key": "s09HowAboutThis",
+   "use": "lesson",
+   "file": "09_How_about_this_one",
+   "en": "How about this one?",
+   "mr": "ही कशी आहे?",
+   "speech": [
+    0.02,
+    0.93
+   ],
+   "words": [
+    0.02,
+    0.24,
+    0.56
+   ],
+   "runs": [
+    [
+     0.02,
+     0.93
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 59,
+   "key": "ocFbClosed",
+   "use": "lesson",
+   "file": "48_No_gaps_in_its_boundary_This_shape_is_closed",
+   "en": "No gaps in its boundary. This shape is closed.",
+   "mr": "हिच्या सीमेत मोकळी जागा नाही. ही आकृती बंद आहे.",
+   "speech": [
+    0.06,
+    4.09
+   ],
+   "words": [
+    0.06,
+    0.4,
+    1.04,
+    1.52,
+    1.84,
+    2.62,
+    2.8,
+    3.36,
+    3.76
+   ],
+   "runs": [
+    [
+     0.06,
+     2.19
+    ],
+    [
+     2.62,
+     4.09
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 60,
+   "key": "ocFbOpen",
+   "use": "lesson",
+   "file": "49_There_is_a_gap_in_its_boundary_It_is_open",
+   "en": "There is a gap in its boundary. It is open.",
+   "mr": "हिच्या सीमेत मोकळी जागा आहे. ही खुली आहे.",
+   "speech": [
+    0.04,
+    3.33
+   ],
+   "words": [
+    0.04,
+    0.4,
+    1.0,
+    1.48,
+    1.84,
+    2.45,
+    2.64,
+    3.04
+   ],
+   "runs": [
+    [
+     0.04,
+     2.08
+    ],
+    [
+     2.45,
+     3.33
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 61,
+   "key": "ocYesClosed",
+   "use": "lesson",
+   "file": "66_Yes_It_is_closed",
+   "en": "Yes! It is closed.",
+   "mr": "हो! ही बंद आहे.",
+   "speech": [
+    0.02,
+    1.7
+   ],
+   "words": [
+    0.02,
+    0.73,
+    0.96,
+    1.36
+   ],
+   "runs": [
+    [
+     0.02,
+     0.42
+    ],
+    [
+     0.73,
+     1.7
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 62,
+   "key": "ocYesOpen",
+   "use": "lesson",
+   "file": "67_Yes_It_is_open",
+   "en": "Yes! It is open.",
+   "mr": "हो! ही खुली आहे.",
+   "speech": [
+    0.03,
+    1.63
+   ],
+   "words": [
+    0.03,
+    0.71,
+    0.92,
+    1.28
+   ],
+   "runs": [
+    [
+     0.03,
+     0.44
+    ],
+    [
+     0.71,
+     1.63
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 63,
+   "key": "s10TwoOpen",
+   "use": "lesson",
+   "file": "10_These_two_shapes_are_open",
+   "en": "These two shapes are open...",
+   "mr": "या दोन आकृती खुल्या आहेत...",
+   "speech": [
+    0.03,
+    1.82
+   ],
+   "words": [
+    0.03,
+    0.32,
+    0.64,
+    1.2,
+    1.52
+   ],
+   "runs": [
+    [
+     0.03,
+     1.82
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 64,
+   "key": "s11TwoClosed",
+   "use": "lesson",
+   "file": "11_and_these_two_shapes_are_closed",
+   "en": "...and these two shapes are closed.",
+   "mr": "...आणि या दोन आकृती बंद आहेत.",
+   "speech": [
+    0.01,
+    2.12
+   ],
+   "words": [
+    0.01,
+    0.32,
+    0.52,
+    0.8,
+    1.32,
+    1.72
+   ],
+   "runs": [
+    [
+     0.01,
+     2.12
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 65,
+   "key": "s12BoundariesDifferent",
+   "use": "lesson",
+   "file": "12_Look_The_boundaries_of_the_shapes_are_different_too",
+   "en": "Look! The boundaries of the shapes are different too.",
+   "mr": "पाहा! आकृतींच्या सीमाही वेगवेगळ्या आहेत.",
+   "speech": [
+    0.05,
+    2.99
+   ],
+   "words": [
+    0.05,
+    0.79,
+    1.6,
+    2.16,
+    2.72
+   ],
+   "runs": [
+    [
+     0.05,
+     0.38
+    ],
+    [
+     0.79,
+     2.99
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 66,
+   "key": "s13StraightAndCurved",
+   "use": "lesson",
+   "file": "13_Some_are_straight_and_some_are_curved",
+   "en": "Some are straight and some are curved.",
+   "mr": "काही सरळ आहेत आणि काही वक्र.",
+   "speech": [
+    0.04,
+    2.51
+   ],
+   "words": [
+    0.04,
+    0.4,
+    0.8,
+    1.35,
+    1.64,
+    2.0
+   ],
+   "runs": [
+    [
+     0.04,
+     1.06
+    ],
+    [
+     1.35,
+     2.51
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 67,
+   "key": "s14WhichStraightCurved",
+   "use": "lesson",
+   "file": "14_Which_boundaries_are_straight_and_which_are_curved",
+   "en": "Which boundaries are straight and which are curved?",
+   "mr": "कोणत्या सीमा सरळ आहेत आणि कोणत्या वक्र?",
+   "speech": [
+    0.02,
+    3.08
+   ],
+   "words": [
+    0.02,
+    0.48,
+    0.88,
+    1.28,
+    1.76,
+    2.16,
+    2.64
+   ],
+   "runs": [
+    [
+     0.02,
+     3.08
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 68,
+   "key": "s14AskAgain",
+   "use": "lesson",
+   "file": "88_Is_the_boundary_straight_or_curved",
+   "en": "Is the boundary straight or curved?",
+   "mr": "ही सीमा सरळ आहे की वक्र?",
+   "speech": [
+    0.03,
+    2.2
+   ],
+   "words": [
+    0.03,
+    0.24,
+    0.72,
+    1.12,
+    1.52,
+    1.76
+   ],
+   "runs": [
+    [
+     0.03,
+     2.2
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 69,
+   "key": "s14NotCurved",
+   "use": "lesson",
+   "file": "68_Look_This_boundary_isnt_curved_It_is_made_of_straight_lines",
+   "en": "Look! This boundary isn't curved. It is made of straight lines.",
+   "mr": "पाहा! ही सीमा वक्र नाही. ती सरळ रेषांनी बनलेली आहे.",
+   "speech": [
+    0.04,
+    4.51
+   ],
+   "words": [
+    0.04,
+    0.8,
+    0.96,
+    1.36,
+    1.8,
+    2.57,
+    2.8,
+    3.12,
+    3.72,
+    4.24
+   ],
+   "runs": [
+    [
+     0.04,
+     0.38
+    ],
+    [
+     0.8,
+     2.15
+    ],
+    [
+     2.57,
+     4.51
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 70,
+   "key": "s14IsCurved",
+   "use": "lesson",
+   "file": "69_Look_closely_This_boundary_bends_smoothly_It_is_curved",
+   "en": "Look closely. This boundary bends smoothly. It is curved.",
+   "mr": "नीट पाहा. ही सीमा हळूवारपणे वळते. ती वक्र आहे.",
+   "speech": [
+    0.0,
+    4.54
+   ],
+   "words": [
+    0.0,
+    0.4,
+    1.24,
+    1.44,
+    1.92,
+    2.76,
+    3.6,
+    3.76,
+    4.24
+   ],
+   "runs": [
+    [
+     0.0,
+     0.79
+    ],
+    [
+     1.24,
+     3.17
+    ],
+    [
+     3.6,
+     4.54
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 71,
+   "key": "s15GotIt",
+   "use": "lesson",
+   "file": "15_You_got_it_These_boundaries_are_straight_while_these_are_curve",
+   "en": "You got it! These boundaries are straight, while these are curved.",
+   "mr": "अगदी बरोबर! या सीमा सरळ आहेत, तर या वक्र आहेत.",
+   "speech": [
+    0.01,
+    4.55
+   ],
+   "words": [
+    0.01,
+    0.48,
+    1.37,
+    1.6,
+    2.0,
+    2.4,
+    3.11,
+    3.32,
+    3.84,
+    4.32
+   ],
+   "runs": [
+    [
+     0.01,
+     0.88
+    ],
+    [
+     1.37,
+     2.65
+    ],
+    [
+     3.11,
+     4.55
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 72,
+   "key": "s16TapClosedStraight",
+   "use": "lesson",
+   "file": "80_Tap_the_closed_figure_made_with_straight_lines",
+   "en": "Tap the closed figure made with straight lines.",
+   "mr": "सरळ रेषांनी बनलेल्या बंद आकृतीवर टॅप करा.",
+   "speech": [
+    0.03,
+    3.51
+   ],
+   "words": [
+    0.03,
+    0.52,
+    1.04,
+    1.76,
+    2.16,
+    2.91,
+    3.21
+   ],
+   "runs": [
+    [
+     0.03,
+     2.79
+    ],
+    [
+     2.91,
+     3.09
+    ],
+    [
+     3.21,
+     3.51
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 73,
+   "key": "s16Yes",
+   "use": "lesson",
+   "file": "70_Yes_It_is_closed_and_made_of_straight_lines",
+   "en": "Yes! It is closed and made of straight lines.",
+   "mr": "हो! ती बंद आहे आणि सरळ रेषांनी बनलेली आहे.",
+   "speech": [
+    0.02,
+    3.82
+   ],
+   "words": [
+    0.02,
+    0.68,
+    0.88,
+    1.28,
+    1.85,
+    2.16,
+    2.52,
+    3.04,
+    3.52
+   ],
+   "runs": [
+    [
+     0.02,
+     0.48
+    ],
+    [
+     0.68,
+     1.58
+    ],
+    [
+     1.85,
+     3.82
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 74,
+   "key": "s16NotQuite",
+   "use": "lesson",
+   "file": "50_Not_quite_Look_for_a_figure_with_no_gaps_and_no_curves",
+   "en": "Not quite. Look for a figure with no gaps and no curves.",
+   "mr": "अगदी बरोबर नाही. मोकळी जागा आणि वक्रता नसलेली आकृती शोधा.",
+   "speech": [
+    0.02,
+    5.07
+   ],
+   "words": [
+    0.02,
+    0.48,
+    0.88,
+    1.75,
+    2.24,
+    2.8,
+    3.12,
+    3.68,
+    4.16,
+    4.68
+   ],
+   "runs": [
+    [
+     0.02,
+     1.19
+    ],
+    [
+     1.75,
+     5.07
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 75,
+   "key": "s17CallPolygon",
+   "use": "lesson",
+   "file": "17_We_call_this_a_polygon",
+   "en": "We call this a polygon.",
+   "mr": "याला आपण बहुभुजाकृती म्हणतो.",
+   "speech": [
+    0.03,
+    2.22
+   ],
+   "words": [
+    0.03,
+    0.4,
+    0.88,
+    1.787
+   ],
+   "runs": [
+    [
+     0.03,
+     2.22
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 76,
+   "key": "s18Definition",
+   "use": "lesson",
+   "file": "18_A_closed_figure_made_of_only_straight_line_segments_is_called",
+   "en": "A closed figure made of only straight line segments is called a polygon.",
+   "mr": "फक्त रेषाखंडांनी बनलेल्या बंद आकृतीला बहुभुजाकृती म्हणतात.",
+   "speech": [
+    0.06,
+    4.57
+   ],
+   "words": [
+    0.06,
+    0.44,
+    1.36,
+    2.0,
+    2.4,
+    3.28,
+    4.18
+   ],
+   "runs": [
+    [
+     0.06,
+     4.57
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 77,
+   "key": "s19WhichPolygons",
+   "use": "lesson",
+   "file": "19_Which_of_these_figures_are_polygons",
+   "en": "Which of these figures are polygons?",
+   "mr": "यांपैकी कोणत्या आकृती बहुभुजाकृती आहेत?",
+   "speech": [
+    0.03,
+    3.48
+   ],
+   "words": [
+    0.03,
+    0.8,
+    1.28,
+    2.08,
+    3.04
+   ],
+   "runs": [
+    [
+     0.03,
+     3.48
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 78,
+   "key": "s19GreatJob",
+   "use": "lesson",
+   "file": "81_Great_job_You_identified_all_the_polygons",
+   "en": "Great job! You identified all the polygons.",
+   "mr": "छान! तुम्ही सर्व बहुभुजाकृती ओळखल्या.",
+   "speech": [
+    0.02,
+    3.17
+   ],
+   "words": [
+    0.02,
+    0.92,
+    1.28,
+    1.68,
+    2.64
+   ],
+   "runs": [
+    [
+     0.02,
+     0.53
+    ],
+    [
+     0.92,
+     3.17
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 79,
+   "key": "polygonRule",
+   "use": "lesson",
+   "file": "72_A_polygon_is_closed_with_only_straight_sides",
+   "en": "A polygon is closed, with only straight sides.",
+   "mr": "बहुभुजाकृती बंद असते आणि तिच्या सर्व बाजू सरळ असतात.",
+   "speech": [
+    0.02,
+    4.53
+   ],
+   "words": [
+    0.02,
+    1.12,
+    1.48,
+    2.24,
+    2.44,
+    2.88,
+    3.28,
+    3.76,
+    4.16
+   ],
+   "runs": [
+    [
+     0.02,
+     1.9
+    ],
+    [
+     2.24,
+     4.53
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 80,
+   "key": "fbTheseAreTheOnes",
+   "use": "lesson",
+   "file": "71_That_is_right_These_are_the_ones",
+   "en": "That is right! These are the ones.",
+   "mr": "बरोबर! ह्याच त्या आहेत.",
+   "speech": [
+    0.02,
+    1.77
+   ],
+   "words": [
+    0.02,
+    0.9,
+    1.35,
+    1.52
+   ],
+   "runs": [
+    [
+     0.02,
+     0.62
+    ],
+    [
+     0.9,
+     1.2
+    ],
+    [
+     1.35,
+     1.77
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 81,
+   "key": "fbNotQuiteTryAgain",
+   "use": "lesson",
+   "file": "75_Not_quite_Try_again",
+   "en": "Not quite. Try again.",
+   "mr": "अगदी बरोबर नाही. पुन्हा प्रयत्न करा.",
+   "speech": [
+    0.02,
+    2.83
+   ],
+   "words": [
+    0.02,
+    0.48,
+    0.88,
+    1.7,
+    2.04,
+    2.48
+   ],
+   "runs": [
+    [
+     0.02,
+     1.25
+    ],
+    [
+     1.7,
+     2.83
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 83,
+   "key": "s20Sides",
+   "use": "lesson",
+   "file": "20_These_line_segments_are_the_sides_of_the_polygon",
+   "en": "These line segments are the sides of the polygon.",
+   "mr": "हे रेषाखंड बहुभुजाकृतीच्या बाजू आहेत.",
+   "speech": [
+    0.03,
+    3.17
+   ],
+   "words": [
+    0.03,
+    0.24,
+    1.2,
+    2.4,
+    2.8
+   ],
+   "runs": [
+    [
+     0.03,
+     3.17
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 84,
+   "key": "s21Vertex",
+   "use": "lesson",
+   "file": "21_The_point_where_two_sides_meet_is_called_a_vertex",
+   "en": "The point where two sides meet is called a vertex.",
+   "mr": "ज्या बिंदूत दोन बाजू मिळतात, त्याला शिरोबिंदू म्हणतात.",
+   "speech": [
+    0.02,
+    3.6
+   ],
+   "words": [
+    0.02,
+    0.32,
+    0.84,
+    1.12,
+    1.44,
+    2.23,
+    2.56,
+    3.2
+   ],
+   "runs": [
+    [
+     0.02,
+     1.93
+    ],
+    [
+     2.23,
+     3.6
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 85,
+   "key": "s22Angle",
+   "use": "lesson",
+   "file": "22_When_two_sides_meet_they_also_form_an_angle",
+   "en": "When two sides meet, they also form an angle.",
+   "mr": "जेव्हा दोन बाजू मिळतात, तेव्हा त्या एक कोनही तयार करतात.",
+   "speech": [
+    0.02,
+    3.92
+   ],
+   "words": [
+    0.02,
+    0.48,
+    0.8,
+    1.12,
+    1.92,
+    2.16,
+    2.48,
+    2.79,
+    3.24,
+    3.52
+   ],
+   "runs": [
+    [
+     0.02,
+     1.59
+    ],
+    [
+     1.92,
+     2.65
+    ],
+    [
+     2.79,
+     3.92
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 86,
+   "key": "s23LabelParts",
+   "use": "lesson",
+   "file": "23_Label_the_parts_of_the_polygon",
+   "en": "Label the parts of the polygon.",
+   "mr": "बहुभुजाकृतीच्या भागांना नावे द्या.",
+   "speech": [
+    0.01,
+    2.53
+   ],
+   "words": [
+    0.01,
+    1.2,
+    1.92,
+    2.28
+   ],
+   "runs": [
+    [
+     0.01,
+     2.53
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 87,
+   "key": "s23Perfect",
+   "use": "lesson",
+   "file": "73_Perfect_Side_vertex_and_angle_all_labelled",
+   "en": "Perfect! Side, vertex and angle — all labelled.",
+   "mr": "उत्तम! बाजू, शिरोबिंदू आणि कोन — सर्वांना नावे दिली.",
+   "speech": [
+    0.02,
+    5.14
+   ],
+   "words": [
+    0.02,
+    1.04,
+    1.9,
+    2.8,
+    3.12,
+    3.88,
+    3.88,
+    4.48,
+    4.8
+   ],
+   "runs": [
+    [
+     0.02,
+     0.15
+    ],
+    [
+     0.3,
+     0.64
+    ],
+    [
+     1.04,
+     1.62
+    ],
+    [
+     1.9,
+     3.48
+    ],
+    [
+     3.88,
+     5.14
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 88,
+   "key": "s24CountSides",
+   "use": "lesson",
+   "file": "88_Lets_count_the_sides_of_the_polygon",
+   "en": "Let's count the sides of the polygon.",
+   "mr": "चला, बहुभुजाकृतीच्या बाजू मोजूया.",
+   "speech": [
+    0.06,
+    2.94
+   ],
+   "words": [
+    0.06,
+    0.81,
+    2.08,
+    2.4
+   ],
+   "runs": [
+    [
+     0.06,
+     0.38
+    ],
+    [
+     0.81,
+     2.94
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 89,
+   "key": "countCarefully",
+   "use": "lesson",
+   "file": "51_Count_each_side_carefully_and_try_again",
+   "en": "Count each side carefully and try again.",
+   "mr": "प्रत्येक बाजू नीट मोजा आणि पुन्हा प्रयत्न करा.",
+   "speech": [
+    0.11,
+    3.33
+   ],
+   "words": [
+    0.11,
+    0.56,
+    0.96,
+    1.32,
+    1.93,
+    2.24,
+    2.6,
+    3.04
+   ],
+   "runs": [
+    [
+     0.11,
+     0.27
+    ],
+    [
+     0.39,
+     1.75
+    ],
+    [
+     1.93,
+     3.33
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 90,
+   "key": "s25Correct5",
+   "use": "lesson",
+   "file": "82_Correct_This_polygon_has_five_sides",
+   "en": "Correct! This polygon has five sides.",
+   "mr": "बरोबर! या बहुभुजाकृतीला 5 बाजू आहेत.",
+   "speech": [
+    0.02,
+    3.48
+   ],
+   "words": [
+    0.02,
+    1.05,
+    1.28,
+    2.61,
+    2.88,
+    3.24
+   ],
+   "runs": [
+    [
+     0.02,
+     0.6
+    ],
+    [
+     1.05,
+     2.46
+    ],
+    [
+     2.61,
+     3.48
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 91,
+   "key": "s26ChangeLooks",
+   "use": "lesson",
+   "file": "26_Now_lets_change_how_it_looks",
+   "en": "Now let's change how it looks.",
+   "mr": "आता याचे रूप बदलूया.",
+   "speech": [
+    0.02,
+    1.59
+   ],
+   "words": [
+    0.02,
+    0.32,
+    0.72,
+    1.04
+   ],
+   "runs": [
+    [
+     0.02,
+     1.59
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 92,
+   "key": "s27DragVertex",
+   "use": "lesson",
+   "file": "27_Drag_any_vertex_Stretch_it_squash_it_or_resize_it",
+   "en": "Drag any vertex. Stretch it, squash it, or resize it.",
+   "mr": "कोणताही शिरोबिंदू ओढा. ती ताणा, दाबा किंवा तिचा आकार बदला.",
+   "speech": [
+    0.04,
+    5.12
+   ],
+   "words": [
+    0.04,
+    0.64,
+    1.36,
+    2.12,
+    2.32,
+    2.96,
+    3.71,
+    3.96,
+    4.32,
+    4.72
+   ],
+   "runs": [
+    [
+     0.04,
+     1.74
+    ],
+    [
+     2.12,
+     2.8
+    ],
+    [
+     2.96,
+     3.54
+    ],
+    [
+     3.71,
+     5.12
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 94,
+   "key": "s28Whoa",
+   "use": "lesson",
+   "file": "28_Whoa_It_looks_quite_different_now",
+   "en": "Whoa! It looks quite different now.",
+   "mr": "व्वा! आता ती खूपच वेगळी दिसते.",
+   "speech": [
+    0.02,
+    2.84
+   ],
+   "words": [
+    0.02,
+    1.04,
+    1.28,
+    1.52,
+    2.0,
+    2.32
+   ],
+   "runs": [
+    [
+     0.02,
+     0.86
+    ],
+    [
+     1.04,
+     2.84
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 95,
+   "key": "s29Appearance",
+   "use": "lesson",
+   "file": "29_Its_appearance_has_completely_changed",
+   "en": "Its appearance has completely changed.",
+   "mr": "तिचे रूप पूर्णपणे बदलले आहे.",
+   "speech": [
+    0.03,
+    2.38
+   ],
+   "words": [
+    0.03,
+    0.4,
+    0.9,
+    1.56,
+    2.08
+   ],
+   "runs": [
+    [
+     0.03,
+     0.7
+    ],
+    [
+     0.9,
+     2.38
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 96,
+   "key": "s30NotEverything",
+   "use": "lesson",
+   "file": "30_But_not_everything_has_changed",
+   "en": "But not everything has changed.",
+   "mr": "पण सर्व काही बदललेले नाही.",
+   "speech": [
+    0.04,
+    2.13
+   ],
+   "words": [
+    0.04,
+    0.4,
+    0.8,
+    1.12,
+    1.72
+   ],
+   "runs": [
+    [
+     0.04,
+     2.13
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 97,
+   "key": "s31CountAgain",
+   "use": "lesson",
+   "file": "31_Lets_count_the_sides_again",
+   "en": "Let's count the sides again.",
+   "mr": "चला, बाजू पुन्हा मोजूया.",
+   "speech": [
+    0.05,
+    2.06
+   ],
+   "words": [
+    0.05,
+    0.76,
+    1.2,
+    1.56
+   ],
+   "runs": [
+    [
+     0.05,
+     0.37
+    ],
+    [
+     0.76,
+     2.06
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 98,
+   "key": "s32Still5",
+   "use": "lesson",
+   "file": "32_Both_polygons_still_have_five_sides",
+   "en": "Both polygons still have five sides.",
+   "mr": "दोन्ही बहुभुजाकृतींना अजूनही 5 बाजू आहेत.",
+   "speech": [
+    0.03,
+    3.4
+   ],
+   "words": [
+    0.03,
+    0.56,
+    1.84,
+    2.51,
+    2.8,
+    3.16
+   ],
+   "runs": [
+    [
+     0.03,
+     2.37
+    ],
+    [
+     2.51,
+     3.4
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 99,
+   "key": "s33NameBySides",
+   "use": "lesson",
+   "file": "33_So_the_number_of_sides_gives_us_a_good_way_to_name_polygons",
+   "en": "So the number of sides gives us a good way to name polygons.",
+   "mr": "म्हणून बाजूंच्या संख्येवरून बहुभुजाकृतींना नावे देणे सोपे जाते.",
+   "speech": [
+    0.03,
+    4.76
+   ],
+   "words": [
+    0.03,
+    0.65,
+    1.36,
+    2.16,
+    3.28,
+    3.68,
+    4.0,
+    4.36
+   ],
+   "runs": [
+    [
+     0.03,
+     0.51
+    ],
+    [
+     0.65,
+     4.76
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 100,
+   "key": "s34Triangle",
+   "use": "lesson",
+   "file": "34_A_polygon_with_three_sides_is_called_a_triangle",
+   "en": "A polygon with three sides is called a triangle.",
+   "mr": "3 बाजू असलेल्या बहुभुजाकृतीला त्रिकोण म्हणतात.",
+   "speech": [
+    0.04,
+    3.41
+   ],
+   "words": [
+    0.04,
+    0.32,
+    0.64,
+    1.28,
+    2.6,
+    3.0
+   ],
+   "runs": [
+    [
+     0.04,
+     2.46
+    ],
+    [
+     2.6,
+     3.41
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 101,
+   "key": "s35Quadrilateral",
+   "use": "lesson",
+   "file": "35_A_polygon_with_four_sides_is_called_a_quadrilateral",
+   "en": "A polygon with four sides is called a quadrilateral.",
+   "mr": "4 बाजू असलेल्या बहुभुजाकृतीला चौकोन म्हणतात.",
+   "speech": [
+    0.03,
+    3.63
+   ],
+   "words": [
+    0.03,
+    0.32,
+    0.68,
+    1.28,
+    2.6,
+    3.12
+   ],
+   "runs": [
+    [
+     0.03,
+     2.46
+    ],
+    [
+     2.6,
+     3.63
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 102,
+   "key": "s36SelectQuadrilaterals",
+   "use": "lesson",
+   "file": "36_Select_all_the_quadrilaterals",
+   "en": "Select all the quadrilaterals.",
+   "mr": "सर्व चौकोन निवडा.",
+   "speech": [
+    0.01,
+    1.47
+   ],
+   "words": [
+    0.01,
+    0.48,
+    1.04
+   ],
+   "runs": [
+    [
+     0.01,
+     1.47
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 103,
+   "key": "s36ThatsRight",
+   "use": "lesson",
+   "file": "83_Thats_right_Quadrilaterals_are_polygons",
+   "en": "That's right! Quadrilaterals are polygons with four sides.",
+   "mr": "बरोबर! चौकोन म्हणजे 4 बाजू असलेल्या बहुभुजाकृती.",
+   "speech": [
+    0.01,
+    4.54
+   ],
+   "words": [
+    0.01,
+    1.1,
+    1.62,
+    2.27,
+    2.64,
+    2.92,
+    3.52
+   ],
+   "runs": [
+    [
+     0.01,
+     0.62
+    ],
+    [
+     1.1,
+     2.15
+    ],
+    [
+     2.27,
+     4.54
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 104,
+   "key": "s36Rule",
+   "use": "lesson",
+   "file": "84_Quadrilaterals_are_polygons_with_four_sides",
+   "en": "Quadrilaterals are polygons with four sides.",
+   "mr": "चौकोन म्हणजे 4 बाजू असलेल्या बहुभुजाकृती.",
+   "speech": [
+    0.05,
+    3.72
+   ],
+   "words": [
+    0.05,
+    0.92,
+    1.42,
+    1.76,
+    2.08,
+    2.72
+   ],
+   "runs": [
+    [
+     0.05,
+     0.7
+    ],
+    [
+     0.92,
+     1.3
+    ],
+    [
+     1.42,
+     3.72
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 105,
+   "key": "s36IsThisQuad",
+   "use": "lesson",
+   "file": "85_Is_this_shape_a_quadrilateral",
+   "en": "Is this shape a quadrilateral?",
+   "mr": "ही आकृती चौकोन आहे का?",
+   "speech": [
+    0.02,
+    2.04
+   ],
+   "words": [
+    0.02,
+    0.32,
+    1.04,
+    1.6,
+    1.84
+   ],
+   "runs": [
+    [
+     0.02,
+     2.04
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 106,
+   "key": "s37Pentagon",
+   "use": "lesson",
+   "file": "37_A_polygon_with_five_sides_is_called_a_pentagon",
+   "en": "A polygon with five sides is called a pentagon.",
+   "mr": "5 बाजू असलेल्या बहुभुजाकृतीला पंचकोन म्हणतात.",
+   "speech": [
+    0.03,
+    3.6
+   ],
+   "words": [
+    0.03,
+    0.36,
+    0.68,
+    1.28,
+    2.64,
+    3.22
+   ],
+   "runs": [
+    [
+     0.03,
+     2.47
+    ],
+    [
+     2.64,
+     3.6
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 107,
+   "key": "s38Hexagon",
+   "use": "lesson",
+   "file": "38_A_polygon_with_six_sides_is_called_a_hexagon",
+   "en": "A polygon with six sides is called a hexagon.",
+   "mr": "6 बाजू असलेल्या बहुभुजाकृतीला षट्कोन म्हणतात.",
+   "speech": [
+    0.02,
+    3.59
+   ],
+   "words": [
+    0.02,
+    0.4,
+    0.76,
+    1.36,
+    2.64,
+    3.2
+   ],
+   "runs": [
+    [
+     0.02,
+     3.59
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 108,
+   "key": "s39Heptagon",
+   "use": "lesson",
+   "file": "39_A_polygon_with_seven_sides_is_called_a_heptagon",
+   "en": "A polygon with seven sides is called a heptagon.",
+   "mr": "7 बाजू असलेल्या बहुभुजाकृतीला सप्तकोन म्हणतात.",
+   "speech": [
+    0.01,
+    3.68
+   ],
+   "words": [
+    0.01,
+    0.4,
+    0.76,
+    1.36,
+    2.64,
+    3.28
+   ],
+   "runs": [
+    [
+     0.01,
+     2.81
+    ],
+    [
+     2.93,
+     3.68
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 109,
+   "key": "s40Octagon",
+   "use": "lesson",
+   "file": "40_A_polygon_with_eight_sides_is_called_an_octagon",
+   "en": "A polygon with eight sides is called an octagon.",
+   "mr": "8 बाजू असलेल्या बहुभुजाकृतीला अष्टकोन म्हणतात.",
+   "speech": [
+    0.0,
+    3.57
+   ],
+   "words": [
+    0.0,
+    0.32,
+    0.64,
+    1.2,
+    2.57,
+    3.2
+   ],
+   "runs": [
+    [
+     0.0,
+     2.43
+    ],
+    [
+     2.57,
+     3.57
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 110,
+   "key": "recapRecall",
+   "use": "lesson",
+   "file": "91_Lets_recall_what_we_learnt_today",
+   "en": "Let's recall what we learnt today.",
+   "mr": "चला, आज आपण काय शिकलो ते आठवूया.",
+   "speech": [
+    0.05,
+    2.77
+   ],
+   "words": [
+    0.05,
+    0.71,
+    0.92,
+    1.24,
+    1.52,
+    2.0,
+    2.24
+   ],
+   "runs": [
+    [
+     0.05,
+     0.38
+    ],
+    [
+     0.71,
+     2.77
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 111,
+   "key": "recapNames",
+   "use": "lesson",
+   "file": "92_Polygons_have_different_names_based_on_their_number_of_sides",
+   "en": "Polygons have different names based on their number of sides.",
+   "mr": "बाजूंच्या संख्येनुसार बहुभुजाकृतींची नावे वेगवेगळी असतात.",
+   "speech": [
+    0.02,
+    4.0
+   ],
+   "words": [
+    0.02,
+    0.64,
+    1.6,
+    2.68,
+    3.12,
+    3.68
+   ],
+   "runs": [
+    [
+     0.02,
+     4.0
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 112,
+   "key": "c1WhichPolygons",
+   "use": "lesson",
+   "file": "77_Select_polygons",
+   "en": "Which of these are polygons?",
+   "mr": "यांपैकी कोणत्या बहुभुजाकृती आहेत?",
+   "speech": [
+    0.03,
+    2.56
+   ],
+   "words": [
+    0.03,
+    0.8,
+    1.36,
+    2.24
+   ],
+   "runs": [
+    [
+     0.03,
+     2.56
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 113,
+   "key": "c1Yes",
+   "use": "lesson",
+   "file": "52_Yes_Closed_with_only_straight_sides",
+   "en": "Yes! Closed, with only straight sides.",
+   "mr": "हो! बंद, आणि फक्त सरळ बाजू.",
+   "speech": [
+    0.02,
+    3.16
+   ],
+   "words": [
+    0.02,
+    0.79,
+    1.56,
+    2.16,
+    2.4,
+    2.76
+   ],
+   "runs": [
+    [
+     0.02,
+     0.44
+    ],
+    [
+     0.79,
+     1.34
+    ],
+    [
+     1.56,
+     1.98
+    ],
+    [
+     2.16,
+     3.16
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 114,
+   "key": "c1NotQuite",
+   "use": "lesson",
+   "file": "87_Not_quite_A_polygon_is_closed",
+   "en": "Not quite! A polygon is closed with only straight sides.",
+   "mr": "अगदी बरोबर नाही! बहुभुजाकृती बंद असते आणि तिच्या फक्त सरळ बाजू असतात.",
+   "speech": [
+    0.02,
+    6.5
+   ],
+   "words": [
+    0.02,
+    0.48,
+    1.32,
+    2.19,
+    3.24,
+    3.64,
+    4.32,
+    4.56,
+    5.04,
+    5.52,
+    5.88,
+    6.16
+   ],
+   "runs": [
+    [
+     0.02,
+     0.98
+    ],
+    [
+     1.32,
+     1.76
+    ],
+    [
+     2.19,
+     3.97
+    ],
+    [
+     4.32,
+     5.18
+    ],
+    [
+     5.31,
+     6.5
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 115,
+   "key": "c2Classify",
+   "use": "lesson",
+   "file": "43_Classify_the_figures_as_a_polygon_or_not_a_polygon",
+   "en": "Classify the figures as a polygon or not a polygon.",
+   "mr": "आकृतींचे बहुभुजाकृती आणि बहुभुजाकृती नाही असे वर्गीकरण करा.",
+   "speech": [
+    0.02,
+    5.25
+   ],
+   "words": [
+    0.02,
+    0.88,
+    2.09,
+    2.4,
+    3.36,
+    4.0,
+    4.32,
+    4.96
+   ],
+   "runs": [
+    [
+     0.02,
+     1.95
+    ],
+    [
+     2.09,
+     5.25
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 117,
+   "key": "c2GreatJob",
+   "use": "lesson",
+   "file": "55_Great_job_You_sorted_the_figures_correctly",
+   "en": "Great job! You sorted the figures correctly.",
+   "mr": "छान! तुम्ही आकृतींचे योग्य वर्गीकरण केले.",
+   "speech": [
+    0.03,
+    3.52
+   ],
+   "words": [
+    0.03,
+    0.97,
+    1.28,
+    2.16,
+    2.56,
+    3.2
+   ],
+   "runs": [
+    [
+     0.03,
+     0.52
+    ],
+    [
+     0.97,
+     3.52
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 118,
+   "key": "c2WrongGroup",
+   "use": "lesson",
+   "file": "56_Wrong_group_Check_for_gaps_or_curved_sides",
+   "en": "Wrong group. Check for gaps or curved sides.",
+   "mr": "चुकीचा गट. मोकळी जागा किंवा वक्र बाजू आहेत का ते तपासा.",
+   "speech": [
+    0.05,
+    4.87
+   ],
+   "words": [
+    0.05,
+    0.56,
+    1.39,
+    1.88,
+    2.32,
+    2.64,
+    3.04,
+    3.36,
+    3.76,
+    4.18,
+    4.32
+   ],
+   "runs": [
+    [
+     0.05,
+     0.91
+    ],
+    [
+     1.39,
+     4.02
+    ],
+    [
+     4.18,
+     4.87
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 119,
+   "key": "c2Rule",
+   "use": "lesson",
+   "file": "57_Polygons_are_closed_with_only_straight_sides_Try_again",
+   "en": "Polygons are closed, with only straight sides. Try again.",
+   "mr": "बहुभुजाकृती बंद असतात आणि त्यांच्या फक्त सरळ बाजू असतात. पुन्हा प्रयत्न करा.",
+   "speech": [
+    0.02,
+    5.86
+   ],
+   "words": [
+    0.02,
+    1.12,
+    1.48,
+    2.19,
+    2.4,
+    2.76,
+    3.2,
+    3.52,
+    3.84,
+    4.81,
+    5.12,
+    5.52
+   ],
+   "runs": [
+    [
+     0.02,
+     1.88
+    ],
+    [
+     2.19,
+     2.89
+    ],
+    [
+     3.01,
+     4.19
+    ],
+    [
+     4.81,
+     5.86
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 120,
+   "key": "c3WhichNot",
+   "use": "lesson",
+   "file": "78_Not_a_polygon",
+   "en": "Which figure is NOT a polygon?",
+   "mr": "कोणती आकृती बहुभुजाकृती नाही?",
+   "speech": [
+    0.03,
+    2.43
+   ],
+   "words": [
+    0.03,
+    0.48,
+    1.12,
+    2.04
+   ],
+   "runs": [
+    [
+     0.03,
+     2.43
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 121,
+   "key": "c3Found",
+   "use": "lesson",
+   "file": "58_You_found_it_That_is_not_a_polygon",
+   "en": "You found it! That is not a polygon.",
+   "mr": "तुम्ही शोधले! ती बहुभुजाकृती नाही.",
+   "speech": [
+    0.04,
+    2.94
+   ],
+   "words": [
+    0.04,
+    0.32,
+    1.43,
+    1.68,
+    2.52
+   ],
+   "runs": [
+    [
+     0.04,
+     0.98
+    ],
+    [
+     1.43,
+     2.94
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 122,
+   "key": "c3BreaksRule",
+   "use": "lesson",
+   "file": "59_Which_figure_breaks_the_rule_for_a_polygon",
+   "en": "Which figure breaks the rule for a polygon?",
+   "mr": "कोणती आकृती बहुभुजाकृतीचा नियम मोडते?",
+   "speech": [
+    0.03,
+    3.1
+   ],
+   "words": [
+    0.03,
+    0.48,
+    1.12,
+    2.24,
+    2.56
+   ],
+   "runs": [
+    [
+     0.03,
+     3.1
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 123,
+   "key": "c3Questions",
+   "use": "lesson",
+   "file": "53_Is_it_closed_Does_it_have_only_straight_sides",
+   "en": "Is it closed? Does it have only straight sides?",
+   "mr": "ती बंद आहे का? तिच्या फक्त सरळ बाजू आहेत का?",
+   "speech": [
+    0.09,
+    3.47
+   ],
+   "words": [
+    0.09,
+    0.32,
+    0.64,
+    0.88,
+    1.62,
+    1.84,
+    2.32,
+    2.68,
+    2.96,
+    3.28
+   ],
+   "runs": [
+    [
+     0.09,
+     1.16
+    ],
+    [
+     1.62,
+     3.47
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 124,
+   "key": "c4WhichPentagons",
+   "use": "lesson",
+   "file": "79_Select_pentagons",
+   "en": "Which of these are pentagons?",
+   "mr": "यांपैकी कोणते पंचकोन आहेत?",
+   "speech": [
+    0.03,
+    2.07
+   ],
+   "words": [
+    0.03,
+    0.8,
+    1.28,
+    1.84
+   ],
+   "runs": [
+    [
+     0.03,
+     2.07
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 125,
+   "key": "c4Exactly",
+   "use": "lesson",
+   "file": "60_Exactly_A_pentagon_always_has_five_sides",
+   "en": "Exactly! A pentagon always has five sides.",
+   "mr": "अगदी बरोबर! पंचकोनाला नेहमी 5 बाजू असतात.",
+   "speech": [
+    0.02,
+    3.78
+   ],
+   "words": [
+    0.02,
+    0.48,
+    1.4,
+    2.32,
+    2.85,
+    3.12,
+    3.44
+   ],
+   "runs": [
+    [
+     0.02,
+     0.96
+    ],
+    [
+     1.4,
+     2.73
+    ],
+    [
+     2.85,
+     3.78
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 126,
+   "key": "c4CountEach",
+   "use": "lesson",
+   "file": "61_Count_the_sides_of_each_figure_carefully",
+   "en": "Count the sides of each figure carefully.",
+   "mr": "प्रत्येक आकृतीच्या बाजू नीट मोजा.",
+   "speech": [
+    0.08,
+    2.63
+   ],
+   "words": [
+    0.08,
+    0.64,
+    1.28,
+    1.84,
+    2.2
+   ],
+   "runs": [
+    [
+     0.08,
+     0.25
+    ],
+    [
+     0.37,
+     2.63
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 127,
+   "key": "c4LookFor5",
+   "use": "lesson",
+   "file": "62_Look_for_every_figure_with_exactly_five_sides",
+   "en": "Look for every figure with exactly five sides.",
+   "mr": "बरोबर 5 बाजू असलेली प्रत्येक आकृती शोधा.",
+   "speech": [
+    0.02,
+    3.47
+   ],
+   "words": [
+    0.02,
+    0.75,
+    1.04,
+    1.4,
+    2.0,
+    2.56,
+    3.04
+   ],
+   "runs": [
+    [
+     0.02,
+     0.62
+    ],
+    [
+     0.75,
+     2.19
+    ],
+    [
+     2.34,
+     3.47
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 128,
+   "key": "c5Classify",
+   "use": "lesson",
+   "file": "46_Classify_each_figure_as_a_hexagon_or_a_heptagon",
+   "en": "Classify each figure as a hexagon or a heptagon.",
+   "mr": "प्रत्येक आकृतीचे षट्कोन किंवा सप्तकोन असे वर्गीकरण करा.",
+   "speech": [
+    0.09,
+    4.68
+   ],
+   "words": [
+    0.09,
+    0.64,
+    1.44,
+    2.18,
+    2.48,
+    3.44,
+    3.76,
+    4.4
+   ],
+   "runs": [
+    [
+     0.09,
+     2.01
+    ],
+    [
+     2.18,
+     2.65
+    ],
+    [
+     2.77,
+     3.2
+    ],
+    [
+     3.44,
+     4.68
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 130,
+   "key": "c5WellDone",
+   "use": "lesson",
+   "file": "63_Well_done_Hexagons_have_six_sides_and_heptagons_have_seven_sid",
+   "en": "Well done! Hexagons have six sides and heptagons have seven sides.",
+   "mr": "छान! षट्कोनाला 6 बाजू असतात आणि सप्तकोनाला 7 बाजू.",
+   "speech": [
+    0.02,
+    5.23
+   ],
+   "words": [
+    0.02,
+    1.01,
+    1.84,
+    2.16,
+    2.52,
+    3.2,
+    3.52,
+    4.48,
+    4.8
+   ],
+   "runs": [
+    [
+     0.02,
+     0.55
+    ],
+    [
+     1.01,
+     2.89
+    ],
+    [
+     3.2,
+     5.23
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 131,
+   "key": "c5CountWrong",
+   "use": "lesson",
+   "file": "64_Count_the_sides_of_the_ones_you_placed_wrong",
+   "en": "Count the sides of the ones you placed wrong.",
+   "mr": "तुम्ही चुकीच्या ठिकाणी ठेवलेल्या आकृतींच्या बाजू मोजा.",
+   "speech": [
+    0.08,
+    3.58
+   ],
+   "words": [
+    0.08,
+    0.4,
+    0.88,
+    1.36,
+    1.84,
+    2.8,
+    3.2
+   ],
+   "runs": [
+    [
+     0.08,
+     3.58
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 132,
+   "key": "c5Rule",
+   "use": "lesson",
+   "file": "65_Six_sides_make_a_hexagon_seven_make_a_heptagon",
+   "en": "Six sides make a hexagon, seven make a heptagon.",
+   "mr": "6 बाजूंचा षट्कोन होतो, 7 चा सप्तकोन.",
+   "speech": [
+    0.03,
+    3.7
+   ],
+   "words": [
+    0.03,
+    0.44,
+    1.04,
+    1.52,
+    2.26,
+    2.71,
+    2.96
+   ],
+   "runs": [
+    [
+     0.03,
+     1.82
+    ],
+    [
+     2.26,
+     2.58
+    ],
+    [
+     2.71,
+     3.12
+    ],
+    [
+     3.25,
+     3.7
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 133,
+   "key": "endReady",
+   "use": "lesson",
+   "file": "93_Now_you_know_everything_about_polygons_You_are_ready_to_help_Momo",
+   "en": "Now you know everything about polygons. You are ready to help Momo.",
+   "mr": "आता तुम्हाला बहुभुजाकृतींबद्दल सर्व काही माहीत आहे. तुम्ही मोमोला मदत करायला तयार आहात.",
+   "speech": [
+    0.02,
+    6.02
+   ],
+   "words": [
+    0.02,
+    0.28,
+    0.8,
+    2.24,
+    2.6,
+    2.88,
+    3.2,
+    3.84,
+    4.12,
+    4.6,
+    4.92,
+    5.32,
+    5.64
+   ],
+   "runs": [
+    [
+     0.02,
+     3.41
+    ],
+    [
+     3.84,
+     6.02
+    ]
+   ],
+   "voice": "Sayali - Marathi User Onboarding Agent"
+  },
+  {
+   "n": 32,
+   "key": "gameMeet",
+   "use": "game",
+   "id": "tut-1-meet",
+   "en": "This is Momo. He needs to find his friend.",
+   "mr": "हा मोमो आहे. त्याला त्याच्या मित्राला शोधायचे आहे.",
+   "speech": [
+    0.03,
+    3.07
+   ],
+   "words": [
+    0.03,
+    0.24,
+    0.64,
+    1.25,
+    1.6,
+    1.92,
+    2.4,
+    2.84
+   ],
+   "runs": [
+    [
+     0.03,
+     0.84
+    ],
+    [
+     1.25,
+     3.07
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 33,
+   "key": "gameGoal",
+   "use": "game",
+   "id": "tut-2-goal",
+   "en": "Help Momo cross the Frozen Pass!",
+   "mr": "मोमोला गोठलेली खिंड पार करायला मदत करा!",
+   "speech": [
+    0.02,
+    2.84
+   ],
+   "words": [
+    0.02,
+    0.52,
+    1.04,
+    1.52,
+    1.84,
+    2.24,
+    2.56
+   ],
+   "runs": [
+    [
+     0.02,
+     2.84
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 34,
+   "key": "gameWatchOut",
+   "use": "game",
+   "id": "tut-3-watch",
+   "en": "Watch out!",
+   "mr": "सावध!",
+   "speech": [
+    0.04,
+    0.65
+   ],
+   "words": [
+    0.04
+   ],
+   "runs": [
+    [
+     0.04,
+     0.65
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 35,
+   "key": "gameTapJump",
+   "use": "game",
+   "id": "tut-4-jump",
+   "en": "Tap to jump over obstacles.",
+   "mr": "अडथळ्यांवरून उडी मारण्यासाठी टॅप करा.",
+   "speech": [
+    0.03,
+    2.4
+   ],
+   "words": [
+    0.03,
+    0.88,
+    1.147,
+    1.89,
+    2.16
+   ],
+   "runs": [
+    [
+     0.03,
+     1.77
+    ],
+    [
+     1.89,
+     2.4
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 36,
+   "key": "gamePathBroken",
+   "use": "game",
+   "id": "tut-5-broken",
+   "en": "Oh no! The path is broken.",
+   "mr": "अरे बापरे! रस्ता तुटला आहे.",
+   "speech": [
+    0.04,
+    2.32
+   ],
+   "words": [
+    0.04,
+    0.32,
+    1.23,
+    1.68,
+    2.04
+   ],
+   "runs": [
+    [
+     0.04,
+     0.87
+    ],
+    [
+     1.23,
+     2.32
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 37,
+   "key": "gameUseIcePiece",
+   "use": "game",
+   "id": "tut-6-use",
+   "en": "Use the right ice piece to fix the path.",
+   "mr": "रस्ता दुरुस्त करण्यासाठी बर्फाचा योग्य तुकडा वापरा.",
+   "speech": [
+    0.02,
+    3.35
+   ],
+   "words": [
+    0.02,
+    0.48,
+    0.92,
+    1.68,
+    2.32,
+    2.72,
+    3.04
+   ],
+   "runs": [
+    [
+     0.02,
+     3.35
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 38,
+   "key": "gameUsePiece",
+   "use": "game",
+   "id": "tut-6b-piece",
+   "en": "Use the right piece to fix the path.",
+   "mr": "रस्ता दुरुस्त करण्यासाठी योग्य तुकडा वापरा.",
+   "speech": [
+    0.02,
+    2.72
+   ],
+   "words": [
+    0.02,
+    0.48,
+    0.92,
+    1.68,
+    2.08,
+    2.4
+   ],
+   "runs": [
+    [
+     0.02,
+     2.72
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 39,
+   "key": "gamePerfectFit",
+   "use": "game",
+   "id": "tut-7-fit",
+   "en": "Perfect fit! Keep going!",
+   "mr": "अगदी बरोबर बसला! पुढे चला!",
+   "speech": [
+    0.02,
+    2.24
+   ],
+   "words": [
+    0.02,
+    0.56,
+    1.12,
+    1.78,
+    2.0
+   ],
+   "runs": [
+    [
+     0.02,
+     1.45
+    ],
+    [
+     1.78,
+     2.24
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 40,
+   "key": "signTriangle",
+   "use": "game",
+   "id": "sign-triangle",
+   "en": "Cut the triangle.",
+   "mr": "त्रिकोण कापा.",
+   "speech": [
+    0.1,
+    0.9
+   ],
+   "words": [
+    0.1,
+    0.56
+   ],
+   "runs": [
+    [
+     0.1,
+     0.9
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 41,
+   "key": "signQuadrilateral",
+   "use": "game",
+   "id": "sign-quadrilateral",
+   "en": "Cut the quadrilateral.",
+   "mr": "चौकोन कापा.",
+   "speech": [
+    0.04,
+    0.96
+   ],
+   "words": [
+    0.04,
+    0.56
+   ],
+   "runs": [
+    [
+     0.04,
+     0.96
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 42,
+   "key": "signPentagon",
+   "use": "game",
+   "id": "sign-pentagon",
+   "en": "Cut the pentagon.",
+   "mr": "पंचकोन कापा.",
+   "speech": [
+    0.04,
+    0.99
+   ],
+   "words": [
+    0.04,
+    0.56
+   ],
+   "runs": [
+    [
+     0.04,
+     0.99
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 43,
+   "key": "signHexagon",
+   "use": "game",
+   "id": "sign-hexagon",
+   "en": "Cut the hexagon.",
+   "mr": "षट्कोन कापा.",
+   "speech": [
+    0.04,
+    0.96
+   ],
+   "words": [
+    0.04,
+    0.56
+   ],
+   "runs": [
+    [
+     0.04,
+     0.96
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 44,
+   "key": "signHeptagon",
+   "use": "game",
+   "id": "sign-heptagon",
+   "en": "Cut the heptagon.",
+   "mr": "सप्तकोन कापा.",
+   "speech": [
+    0.02,
+    1.28
+   ],
+   "words": [
+    0.02,
+    0.8
+   ],
+   "runs": [
+    [
+     0.02,
+     1.28
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 45,
+   "key": "signPentagons",
+   "use": "game",
+   "id": "sign-pentagons",
+   "en": "Cut all the pentagons.",
+   "mr": "सर्व पंचकोन कापा.",
+   "speech": [
+    0.02,
+    1.46
+   ],
+   "words": [
+    0.02,
+    0.48,
+    1.04
+   ],
+   "runs": [
+    [
+     0.02,
+     1.46
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  },
+  {
+   "n": 46,
+   "key": "signHexagons",
+   "use": "game",
+   "id": "sign-hexagons",
+   "en": "Cut all the hexagons.",
+   "mr": "सर्व षट्कोन कापा.",
+   "speech": [
+    0.01,
+    1.36
+   ],
+   "words": [
+    0.01,
+    0.4,
+    1.0
+   ],
+   "runs": [
+    [
+     0.01,
+     1.36
+    ]
+   ],
+   "voice": "Vardaan - Expressive Marathi Care Agent"
+  }
+ ]
+}

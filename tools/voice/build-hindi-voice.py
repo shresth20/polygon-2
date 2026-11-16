@@ -24,6 +24,21 @@ a voice, as a line with no recording is (never in the English voice under Hindi 
 
 Usage (from the project folder, after `npm install`):
     npm run build:hindi-voice
+
+THE SAME FOR MARATHI: --lang mr builds the Marathi voice the same way, from the ElevenLabs
+takes (assets/VO-MR/<n>_<key>.mp3) and docs/voice/mr/cue-map.json
+(tools/voice/measure-marathi-voice.py): assets/audio/lesson/mr/, src/lesson/recordings-mr.js,
+game/assets/audio/vo-lines-mr and CFG.vo.langs.mr. Its cue words are CONCEPTS_MR.
+    npm run build:marathi-voice
+
+AND FOR GUJARATI: --lang gu, from the ElevenLabs takes (assets/VO-GU/<n>_<key>.mp3) and
+docs/voice/gu/cue-map.json (tools/voice/measure-gujarati-voice.py): assets/audio/lesson/gu/,
+src/lesson/recordings-gu.js, game/assets/audio/vo-lines-gu and CFG.vo.langs.gu. Its cue words
+are CONCEPTS_GU.
+    npm run build:gujarati-voice
+
+Each .ogg it writes gets its .mp3 twin beside it, made from that .ogg (24 kHz mono: 48 kbps
+for a lesson line, 64 kbps for the game's take), the file Apple's WebKit is given.
 """
 import array
 import hashlib
@@ -37,7 +52,8 @@ import wave
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
-LANG = 'hi'
+LANG = sys.argv[sys.argv.index('--lang') + 1] if '--lang' in sys.argv else 'hi'
+NAME = {'hi': 'Hindi', 'mr': 'Marathi', 'gu': 'Gujarati'}[LANG]
 MAP = os.path.join(ROOT, 'docs', 'voice', LANG, 'cue-map.json')
 _BUNDLED = os.path.join(ROOT, 'node_modules', 'ffmpeg-static', 'ffmpeg')
 FFMPEG = os.environ.get('FFMPEG') or (_BUNDLED if os.path.exists(_BUNDLED) else 'ffmpeg')
@@ -88,6 +104,73 @@ CONCEPTS = [
     (('meet',), ('मिल',)),
     (('figure', 'figures', 'shape', 'shapes'), ('आकृति',)),
 ]
+# The same in Marathi (--lang mr): the Marathi word that says what the English cue word says.
+CONCEPTS_MR = [
+    (('open',), ('खुल',)),
+    (('closed', 'close'), ('बंद',)),
+    # "straight line segments" is one word, रेषाखंडांनी (s18Definition)
+    (('straight',), ('सरळ', 'रेषाखंड')),
+    (('curved', 'curves', 'curve'), ('वक्र', 'वळ')),
+    (('boundary', 'boundaries'), ('सीम',)),
+    (('gap', 'gaps'), ('मोकळी',)),
+    (('polygon', 'polygons'), ('बहुभुजाकृ',)),
+    (('side', 'sides'), ('बाजू',)),
+    (('vertex', 'vertices'), ('शिरोबिंदू',)),
+    (('angle', 'angles'), ('कोन',)),
+    (('point',), ('बिंदू',)),
+    (('segments', 'segment'), ('रेषाखंड',)),
+    (('line', 'lines'), ('रेष',)),
+    (('triangle', 'triangles'), ('त्रिकोण',)),
+    (('quadrilateral', 'quadrilaterals'), ('चौकोन',)),
+    (('pentagon', 'pentagons'), ('पंचकोन',)),
+    (('hexagon', 'hexagons'), ('षट्कोन',)),
+    (('heptagon', 'heptagons'), ('सप्तकोन',)),
+    (('octagon', 'octagons'), ('अष्टकोन',)),
+    (('two',), ('दोन', '2')), (('three',), ('3', 'तीन')), (('four',), ('4', 'चार')),
+    (('five',), ('5', 'पाच')), (('six',), ('6', 'सहा')), (('seven',), ('7', 'सात')), (('eight',), ('8', 'आठ')),
+    (('look',), ('पाह', 'शोध')),           # "Look!" पाहा; "Look for a figure" शोधा
+    (('which',), ('कोणत',)),
+    (('both',), ('दोन्ही',)),
+    (('number',), ('संख्य',)),
+    (('name',), ('नाव',)),
+    (('whoa', 'woah', 'wow'), ('व्वा',)),
+    (('meet',), ('मिळ',)),
+    (('figure', 'figures', 'shape', 'shapes'), ('आकृ',)),
+]
+# The same in Gujarati (--lang gu). Six is only ever shown as 6 (છ alone would also catch છે, "is").
+CONCEPTS_GU = [
+    (('open',), ('ખુલ્લ',)),
+    (('closed', 'close'), ('બંધ',)),
+    # "straight line segments" is one word, રેખાખંડોથી (s18Definition)
+    (('straight',), ('સીધ', 'રેખાખંડ')),
+    (('curved', 'curves', 'curve'), ('વક્ર', 'વળ')),
+    (('boundary', 'boundaries'), ('સીમ',)),
+    (('gap', 'gaps'), ('ખાલી',)),
+    (('polygon', 'polygons'), ('બહુકોણ',)),
+    (('side', 'sides'), ('બાજુ',)),
+    (('vertex', 'vertices'), ('શિરોબિંદુ',)),
+    (('angle', 'angles'), ('ખૂણ',)),
+    (('point',), ('બિંદુ',)),
+    (('segments', 'segment'), ('રેખાખંડ',)),
+    (('line', 'lines'), ('રેખ',)),
+    (('triangle', 'triangles'), ('ત્રિકોણ',)),
+    (('quadrilateral', 'quadrilaterals'), ('ચતુષ્કોણ',)),
+    (('pentagon', 'pentagons'), ('પંચકોણ',)),
+    (('hexagon', 'hexagons'), ('ષટ્કોણ',)),
+    (('heptagon', 'heptagons'), ('સપ્તકોણ',)),
+    (('octagon', 'octagons'), ('અષ્ટકોણ',)),
+    (('two',), ('બે', '2')), (('three',), ('3', 'ત્રણ')), (('four',), ('4', 'ચાર')),
+    (('five',), ('5', 'પાંચ')), (('six',), ('6',)), (('seven',), ('7', 'સાત')), (('eight',), ('8', 'આઠ')),
+    (('look',), ('જુઓ', 'જો', 'શોધ')),     # "Look!" જુઓ; "Let's look" જોઈએ; "Look for a figure" શોધો
+    (('which',), ('કઈ', 'કય')),
+    (('both',), ('બંને',)),
+    (('number',), ('સંખ્ય',)),
+    (('name',), ('નામ',)),
+    (('whoa', 'woah', 'wow'), ('વાહ',)),
+    (('meet',), ('મળ',)),
+    (('figure', 'figures', 'shape', 'shapes'), ('આકૃ',)),
+]
+CONCEPTS = {'mr': CONCEPTS_MR, 'gu': CONCEPTS_GU}.get(LANG, CONCEPTS)
 STEM = {}
 for words, stems in CONCEPTS:
     for w in words:
@@ -95,7 +178,10 @@ for words, stems in CONCEPTS:
 # A line's own: {key: {English word: the stem of the Hindi word it fires on}}. Screen 11's angle
 # draws its arc from "form" to "angle"; Hindi says the angle (कोण) before the verb (बनाती), so the
 # arc starts on the clause that leads to it, "तो वे एक", and is drawn by the time कोण is said.
-CUE_AT = {'s22Angle': {'form': 'तो'}}
+# Marathi does the same (कोनही before तयार करतात): the arc starts on "तेव्हा त्या एक".
+# So does Gujarati (ખૂણો before બનાવે): the arc starts on "ત્યારે તે એક".
+CUE_AT = {'hi': {'s22Angle': {'form': 'तो'}}, 'mr': {'s22Angle': {'form': 'तेव्हा'}},
+          'gu': {'s22Angle': {'form': 'ત્યારે'}}}[LANG]
 
 
 def normalize(text):
@@ -105,7 +191,7 @@ def normalize(text):
 
 
 def bare(token):
-    return re.sub(r'^[^\u0900-\u097F0-9A-Za-z]+|[^\u0900-\u097F0-9A-Za-z]+$', '', token).rstrip('।॥')
+    return re.sub(r'^[^\u0900-\u097F\u0A80-\u0AFF0-9A-Za-z]+|[^\u0900-\u097F\u0A80-\u0AFF0-9A-Za-z]+$', '', token).rstrip('।॥')
 
 
 def sentences(tokens, english):
@@ -219,10 +305,18 @@ def encode(wav, base, ogg_rate='40k'):
          '-fflags', '+bitexact', '-flags:a', '+bitexact', base + '.ogg'])
 
 
+def twin(base, mp3_rate):
+    """The .ogg's .mp3 twin, made from it (24 kHz mono), for Apple's WebKit: plain CBR frames, no
+    Xing or ID3 header, as the other twins are (one starts at 0, as its .ogg does)."""
+    run([FFMPEG, '-y', '-v', 'error', '-i', base + '.ogg', '-ac', '1', '-ar', '24000', '-c:a', 'libmp3lame',
+         '-b:a', mp3_rate, '-write_xing', '0', '-id3v2_version', '0', base + '.mp3'])
+
+
 def source(cue, line):
-    """The line's delivered take: the lossless FLAC, or a WAV newly dropped in beside it."""
+    """The line's delivered take: the lossless FLAC, or a WAV newly dropped in beside it, or
+    (Marathi, Gujarati) the ElevenLabs take, <n>_<key>.mp3."""
     base = os.path.join(ROOT, cue['source'], '%d' % line['n'])
-    for ext in ('.flac', '.wav'):
+    for ext in ('.flac', '.wav', '_%s.mp3' % line['key']):
         if os.path.exists(base + ext):
             return base + ext
     return base + '.flac'
@@ -241,30 +335,32 @@ def lesson(cue, lines):
             write_wav(wav, clip)
             rel = 'assets/audio/lesson/%s/%s' % (LANG, line['file'])
             encode(wav, os.path.join(ROOT, rel))
+            twin(os.path.join(ROOT, rel), '48k')
             starts = [round(max(0.0, t - lo), 3) for t in line['words']]
-            ht = line['hi'].split(' ')
+            ht = line[LANG].split(' ')
             et = [t for t in line['en'].split() if normalize(t)]
-            pick = line.get('cues') or cues(line['en'], line['hi'], line['key'])
+            pick = line.get('cues') or cues(line['en'], line[LANG], line['key'])
             if len(pick) != len(et):
                 raise SystemExit('line %d: %d cues for %d English words' % (line['n'], len(pick), len(et)))
             rows.append({
                 'text': line['en'],
-                'shown': line['hi'],
+                'shown': line[LANG],
                 'src': rel + '.ogg',
                 'duration': round(len(clip) / RATE, 3),
                 'spoken': [{'word': w, 'start': t} for w, t in zip(ht, starts)],
                 'words': [{'word': w, 'start': starts[j]} for w, j in zip(et, pick)],
-                'source': 'Hindi take: %s (%s), %.2f-%.2f s' % (os.path.relpath(source(cue, line), ROOT), line['key'], max(0, lo), hi)
+                'source': '%s take: %s (%s), %.2f-%.2f s' % (NAME, os.path.relpath(source(cue, line), ROOT), line['key'], max(0, lo), hi)
             })
             print('lesson %3d %-24s %.2fs  %s' % (line['n'], line['key'], len(clip) / RATE,
                   ' '.join('%s=%s' % (w, ht[j]) for w, j in zip(et, pick) if normalize(w).split()[0] in STEM)))
-    head = ('/* Generated by tools/voice/build-hindi-voice.py from the delivered Hindi takes\n'
-            '   (assets/audio/source/hi/, docs/voice/hi/cue-map.json). Loaded by src/i18n/i18n.js for ?lan=hi\n'
+    head = ('/* Generated by tools/voice/build-hindi-voice.py%s from the delivered %s takes\n'
+            '   (%s/, docs/voice/%s/cue-map.json). Loaded by src/i18n/i18n.js for ?lan=%s\n'
             '   on a page that asks for its voice (index.html). A row is found by its English `text`, as the\n'
-            '   English catalogue\'s (src/lesson/recordings.js) are; `shown` is the Hindi on screen, `spoken`\n'
+            '   English catalogue\'s (src/lesson/recordings.js) are; `shown` is the %s on screen, `spoken`\n'
             '   when each of its words starts, and `words` each English word with the moment its cue fires in\n'
-            '   this take (seconds from the start of the file, not in order: Hindi puts its words in its own\n'
-            '   order). See PolygonRecordedVoice in src/lesson/recorded-player.js. */\n')
+            '   this take (seconds from the start of the file, not in order: %s puts its words in its own\n'
+            '   order). See PolygonRecordedVoice in src/lesson/recorded-player.js. */\n') % (
+        '' if LANG == 'hi' else ' --lang ' + LANG, NAME, cue['source'], LANG, LANG, NAME, NAME)
     out = os.path.join(ROOT, 'src', 'lesson', 'recordings-%s.js' % LANG)
     with open(out, 'w', encoding='utf-8') as f:
         f.write(head + '(window.POLYGON_VOICES = window.POLYGON_VOICES || {}).%s = ' % LANG
@@ -287,12 +383,13 @@ def game(cue, lines):
         at = len(joined) / RATE
         joined.extend(clip)
         words = [round(max(0.0, t - lo), 2) for t in line['words']]
-        windows[line['id']] = (round(at, 2), round(len(clip) / RATE, 2), words, line['hi'], line['en'])
+        windows[line['id']] = (round(at, 2), round(len(clip) / RATE, 2), words, line[LANG], line['en'])
     base = GAME_TAKE + '-' + LANG
     with tempfile.TemporaryDirectory() as tmp:
         wav = os.path.join(tmp, 'take.wav')
         write_wav(wav, joined)
         encode(wav, base, ogg_rate='48k')
+    twin(base, '64k')
     total = len(joined) / RATE
 
     def fmt(key, w):
@@ -300,7 +397,7 @@ def game(cue, lines):
         pad = ' ' * max(1, 20 - len(key) - 4)
         return "          '%s':%s[%.2f, %.2f, [%s]],   // \"%s\" (%s)" % (key, pad, lo, length, ', '.join('%.2f' % t for t in words), hi, en)
     block = '\n'.join(fmt(l['id'], windows[l['id']]) for l in lines)
-    rels = ['assets/audio/vo-lines-%s.ogg' % LANG]
+    rels = ['assets/audio/vo-lines-%s.ogg' % LANG, 'assets/audio/vo-lines-%s.mp3' % LANG]
     hashes = {rel: hashlib.md5(open(os.path.join(ROOT, 'game', rel), 'rb').read()).hexdigest()[:8] for rel in rels}
     for js in ('game/js/engine.js', 'game/js/game.bundle.js', 'game/js/asset-versions.js'):
         path = os.path.join(ROOT, js)
@@ -341,11 +438,11 @@ def main():
                          ', '.join('%d.flac' % l['n'] for l in missing if l['use'] == 'game'))
     game(cue, game_lines)
     for l in missing:
-        print('not built, no file: %d.flac (or .wav) (%s) "%s"' % (l['n'], l['key'], l['hi']))
+        print('not built, no file: %s (%s) "%s"' % (os.path.relpath(source(cue, l), ROOT), l['key'], l[LANG]))
 
 
 if __name__ == '__main__':
-    if not os.path.isdir(os.path.join(ROOT, 'assets', 'audio', 'source')):
+    if not os.path.isdir(os.path.join(ROOT, json.load(open(MAP, encoding='utf-8'))['source'])):
         raise SystemExit('The delivered recordings are not in the working tree. Restore them first:\n'
                          '    git checkout ee1ca5c -- assets/audio/source')
     main()

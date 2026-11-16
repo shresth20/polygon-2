@@ -164,7 +164,9 @@ https://tarun-figmaboy-838.github.io/polygon-2/?lan=hi
 Everything the learner reads is in that language: Swiftee's lines in the lesson, the buttons, labels and name pills, the feedback, the recap, her lines over the game, the game's tutorial, its plank and its controls, the page title and the screen-reader messages. The key words are coloured as in English, orange for open, gap and curved and purple for the rest. The words come from [src/i18n/locales.json](src/i18n/locales.json), one block per language. [docs/i18n/translations-review.html](docs/i18n/translations-review.html) shows them side by side.
 
 - **In Hindi the voice is Hindi.** Swiftee's lesson lines, the recap, her lines over the game and her last line, and the game's tutorial and plank are all said in the Hindi recordings, and each word appears as it is said. Every cue the voice drives fires on the Hindi word that says it: the Open and Closed buttons on खुली and बंद, the boundaries pulsing on सीधी and वक्र, the pentagon's sides, vertex and angle drawn on भुजाएँ, शीर्ष and कोण, the recap's counts on the number. See [The Hindi voice](#the-hindi-voice).
-- **The other languages speak with the English recording.** There are no recordings in Marathi, Telugu, Gujarati or Odia and no synthetic voice, so Swiftee and the game voice speak English while the words appear in the chosen language, in step with the voice. Every cue the voice drives works as in English.
+- **In Marathi the voice is Marathi.** Every line said in Hindi is said in Marathi too, by voices made with ElevenLabs: Swiftee is Sayali (warm, clear, welcoming), Frozen Rush's game voice is Vardaan (bright, upbeat), at a steady pace for learners of 11 to 13. Each word appears as it is said, and every cue fires on the Marathi word that says it: खुली and बंद, सरळ and वक्र, बाजू, शिरोबिंदू and कोनही, the recap's counts on the number. See [The Marathi voice](#the-marathi-voice).
+- **In Gujarati the voice is Gujarati.** The same lines again, by ElevenLabs voices made for Gujarati: Swiftee, who says the lesson and its narration, is Hetalben (a young female voice: bright, warm, approachable) and Frozen Rush's game voice is Bhavesh Bhai (an expressive voice made for cartoon characters), at the same steady pace. Each word appears as it is said, and every cue fires on the Gujarati word that says it: ખુલ્લી and બંધ, સીધી and વક્ર, બાજુઓ, શિરોબિંદુ and ખૂણો, the recap's counts on the number. See [The Gujarati voice](#the-gujarati-voice).
+- **The other languages speak with the English recording.** There are no recordings in Telugu or Odia and no synthetic voice, so Swiftee and the game voice speak English while the words appear in the chosen language, in step with the voice. Every cue the voice drives works as in English.
 - **Each language has its own font.** Nunito, Baloo 2 and Fredoka have no Indian scripts, so the matching Baloo is used under the same names: Baloo 2 for Hindi and Marathi, Baloo Tammudu 2 for Telugu, Baloo Bhai 2 for Gujarati and Baloo Bhaina 2 for Odia (`assets/fonts/`, about 100 kB). Only the chosen language's file is fetched, and English loads nothing new.
 - **The code keeps its English.** Every line is still written, compared, timed and looked up in English. Only what is shown is put into the language, by `src/i18n/i18n.js`, which finds each line in the JSON by its English. A line missing from the JSON is shown in English.
 - **To change a translation,** edit its line in `locales.json`. Key words are wrapped in `<strong>…</strong>`, and `{placeholders}` are filled in by the game. Then run `npm run test:i18n`, which checks the file and every screen, and `npm run build:i18n-review` to refresh the review page.
@@ -209,6 +211,32 @@ With `?lan=hi` every line is said in Hindi. The Hindi voice-over was delivered a
 - **A line with no Hindi take** is shown in Hindi at a reading pace, without a voice, never in the English voice under Hindi words. Every line has one now: the last to come, `127.flac` ("ठीक 5 भुजाओं वाली हर आकृति ढूँढें।", a hint on the pentagon quiz), was delivered after the rest.
 - The drafted story and its Help Momo scene (`?story=1`) stay English, voice and words.
 
+### The Marathi voice
+
+With `?lan=mr` every line is said in Marathi: the same 98 lines as in Hindi (83 of Swiftee's, 15 of the game's), generated with ElevenLabs (model `eleven_v4`, speed 0.95) from the Marathi in `src/i18n/locales.json`, numerals said as Marathi words. Swiftee is **Sayali** ("Marathi User Onboarding Agent", a young female voice: warm, clear, welcoming) and Frozen Rush's game voice is **Vardaan** ("Expressive Marathi Care Agent", a young male voice: bright, upbeat), both from the ElevenLabs Voice Library. The takes are kept as ElevenLabs delivered them in `assets/VO-MR/` (`<n>_<key>.mp3`, numbered as the Hindi script; [script.csv](assets/VO-MR/script.csv) says which is which line, its voice, characters and credits). They are not deployed (`.vercelignore`): the game plays what the build cuts from them. The 82 texts nobody hears (labels, screen-reader messages) have no take, as in every language.
+
+| To change | Do |
+|---|---|
+| A Marathi take (a line's words changed, or a new one) | with the project owner's go-ahead to spend ElevenLabs credits: `ELEVENLABS_API_KEY=... python3 tools/voice/generate-marathi-voice.py --only <n> --force`, then `python3 tools/voice/measure-marathi-voice.py --only <n>` and `npm run build:marathi-voice` |
+| Which Marathi word an English cue fires on | `CONCEPTS_MR` (by word) or `CUE_AT` in `tools/voice/build-hindi-voice.py`, or a line's `cues` in the cue map; then `npm run build:marathi-voice` |
+
+- **The takes.** `tools/voice/generate-marathi-voice.py` asks ElevenLabs for each line with its timestamps, and keeps in `docs/voice/mr/takes.json` the voice, model and settings, the text sent, the credits charged, and where each word starts and ends in the take, as ElevenLabs aligned it. It calls a paid API: run it only with the go-ahead (CLAUDE.md).
+- **The map.** `tools/voice/measure-marathi-voice.py` fits those word starts to the waveform as the Hindi tool fits Whisper's (the first word where the voice starts, a pause between words) and writes `docs/voice/mr/cue-map.json`, in the Hindi map's form. With `--model <faster-whisper folder>` it also transcribes each take blind, and the map carries the check (`heard`, `match`) that the take says its whole line.
+- **The build.** `npm run build:marathi-voice` is the Hindi build with `--lang mr`: `assets/audio/lesson/mr/` (each line under its English take's name, an `.ogg` and its `.mp3` twin), `src/lesson/recordings-mr.js`, and Frozen Rush's Marathi take `game/assets/audio/vo-lines-mr` with its windows in `CFG.vo.langs.mr` (`game/js/engine.js`). Then `npm run build:game-bundle` brings the game's bundle and asset versions in step.
+- **At run time** it is the Hindi voice's path: `mr` is in `VOICED` (`src/i18n/i18n.js`), so the page loads `recordings-mr.js` with its words, and the game plays its own take with them.
+
+### The Gujarati voice
+
+With `?lan=gu` every line is said in Gujarati: the same 98 lines (83 of Swiftee's, 15 of the game's), made as the Marathi ones are, with ElevenLabs (model `eleven_v4`, speed 0.95, a clear and steady pace for learners in grades 6 and 7) from the Gujarati in `src/i18n/locales.json`, numerals said as Gujarati words (5 is પાંચ, 7થી is સાતથી). Swiftee, who carries the lesson and its narration, is **Hetalben** ("Young Gujarati Customer Care", a young female voice: bright, warm, approachable) and Frozen Rush's game voice is **Bhavesh Bhai** ("Expressive Gujarati Friend", made for cartoon and animation characters), both from the ElevenLabs Voice Library. The takes are kept as ElevenLabs delivered them in `assets/VO-GU/` (`<n>_<key>.mp3`, numbered as the Hindi script; [script.csv](assets/VO-GU/script.csv) says which is which line, its voice, characters and credits) and are not deployed (`.vercelignore`). Generated on 2026-11-16: 620 words, 3,242 characters, 1,571 credits, 5 min 11 s of speech.
+
+| To change | Do |
+|---|---|
+| A Gujarati take (a line's words changed, or a new one) | with the project owner's go-ahead to spend ElevenLabs credits: `ELEVENLABS_API_KEY=... python3 tools/voice/generate-gujarati-voice.py --only <n> --force`, then `python3 tools/voice/measure-gujarati-voice.py --only <n>` and `npm run build:gujarati-voice` |
+| Which Gujarati word an English cue fires on | `CONCEPTS_GU` (by word) or `CUE_AT` in `tools/voice/build-hindi-voice.py`, or a line's `cues` in the cue map; then `npm run build:gujarati-voice` |
+
+- **The takes, the map, the build** are the Marathi voice's, in Gujarati: `tools/voice/generate-gujarati-voice.py` (ElevenLabs, with timestamps; `docs/voice/gu/takes.json`), `tools/voice/measure-gujarati-voice.py` (`docs/voice/gu/cue-map.json`; its `check` is a blind Whisper transcription of each take), and `npm run build:gujarati-voice` (`assets/audio/lesson/gu/`, `src/lesson/recordings-gu.js`, `game/assets/audio/vo-lines-gu` with `CFG.vo.langs.gu`), then `npm run build:game-bundle`.
+- **At run time** `gu` is in `VOICED` (`src/i18n/i18n.js`), so the page loads `recordings-gu.js` with its words, and the game plays its own take with them.
+
 ## Testing
 
 ```bash
@@ -223,7 +251,9 @@ npm run test:runner                    # just the hand-off: ?game=1, the Help Mo
 npm run test:i18n                      # the languages (?lan=): the JSON, every line in five languages, every screen in Hindi,
                                        # the game's tutorial and plank in Hindi, ?lan=xx left in English (~10 min)
 npm run test:hindi-voice               # the Hindi voice with real audio: every screen in its Hindi take, its words keeping to it,
-                                       # the recap, the opening, the end and the return; Marathi and English keep the English (~8 min)
+                                       # the recap, the opening, the end and the return; Telugu and English keep the English (~8 min)
+npm run test:marathi-voice             # the same for the Marathi voice (?lan=mr), the ElevenLabs takes (~8 min)
+npm run test:gujarati-voice            # the same for the Gujarati voice (?lan=gu), the ElevenLabs takes (~8 min)
 npm run test:bridge                    # Help Momo and the lesson's ending: order, locking, voice, Next, the game starting by itself (~5 min)
 npm run test:swiftee                   # Swiftee loading: sheet table, cold / slow / warm loads, state races (~2 min)
 npm run test:recap                     # the recap: states in order, voice, word cues, layout, phones, Next into the quizzes (~5 min)

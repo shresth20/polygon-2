@@ -1,0 +1,99 @@
+file,key,english,marathi,voice,characters,credits
+32_gameMeet.mp3,gameMeet,This is Momo. He needs to find his friend.,हा मोमो आहे. त्याला त्याच्या मित्राला शोधायचे आहे.,Vardaan,50,24
+33_gameGoal.mp3,gameGoal,Help Momo cross the Frozen Pass!,मोमोला गोठलेली खिंड पार करायला मदत करा!,Vardaan,39,19
+34_gameWatchOut.mp3,gameWatchOut,Watch out!,सावध!,Vardaan,5,2
+35_gameTapJump.mp3,gameTapJump,Tap to jump over obstacles.,अडथळ्यांवरून उडी मारण्यासाठी टॅप करा.,Vardaan,37,18
+36_gamePathBroken.mp3,gamePathBroken,Oh no! The path is broken.,अरे बापरे! रस्ता तुटला आहे.,Vardaan,27,13
+37_gameUseIcePiece.mp3,gameUseIcePiece,Use the right ice piece to fix the path.,रस्ता दुरुस्त करण्यासाठी बर्फाचा योग्य तुकडा वापरा.,Vardaan,51,25
+38_gameUsePiece.mp3,gameUsePiece,Use the right piece to fix the path.,रस्ता दुरुस्त करण्यासाठी योग्य तुकडा वापरा.,Vardaan,43,21
+39_gamePerfectFit.mp3,gamePerfectFit,Perfect fit! Keep going!,अगदी बरोबर बसला! पुढे चला!,Vardaan,26,13
+40_signTriangle.mp3,signTriangle,Cut the triangle.,त्रिकोण कापा.,Vardaan,13,6
+41_signQuadrilateral.mp3,signQuadrilateral,Cut the quadrilateral.,चौकोन कापा.,Vardaan,11,5
+42_signPentagon.mp3,signPentagon,Cut the pentagon.,पंचकोन कापा.,Vardaan,12,6
+43_signHexagon.mp3,signHexagon,Cut the hexagon.,षट्कोन कापा.,Vardaan,12,6
+44_signHeptagon.mp3,signHeptagon,Cut the heptagon.,सप्तकोन कापा.,Vardaan,13,6
+45_signPentagons.mp3,signPentagons,Cut all the pentagons.,सर्व पंचकोन कापा.,Vardaan,17,8
+46_signHexagons.mp3,signHexagons,Cut all the hexagons.,सर्व षट्कोन कापा.,Vardaan,17,8
+47_swifteeNeedsHelp.mp3,swifteeNeedsHelp,Momo needs your help.,मोमोला तुमच्या मदतीची गरज आहे.,Sayali,30,15
+48_swifteeLearnFirst.mp3,swifteeLearnFirst,"But to help Momo, you need to learn about polygons.",पण मोमोला मदत करण्यासाठी तुम्हाला बहुभुजाकृतींबद्दल शिकावे लागेल.,Sayali,65,32
+49_swifteeLetsHelp.mp3,swifteeLetsHelp,Now let's help Momo.,"चला, आता मोमोला मदत करूया.",Sayali,26,13
+50_s01Point.mp3,s01Point,Look! A point.,पाहा! एक बिंदू.,Sayali,15,7
+51_s02DrewShape.mp3,s02DrewShape,Woah! It drew a shape.,व्वा! त्याने एक आकृती काढली.,Sayali,28,14
+52_s03LookClosely.mp3,s03LookClosely,Let's look at this shape closely.,"चला, ही आकृती नीट पाहूया.",Sayali,25,12
+53_s04NoGaps.mp3,s04NoGaps,There are no gaps in its boundary.,हिच्या सीमेत कुठेही मोकळी जागा नाही.,Sayali,36,17
+54_s05OpenOrClosed.mp3,s05OpenOrClosed,Is it open or closed?,ही खुली आहे की बंद?,Sayali,19,9
+55_s06ThisShapeOpenOrClosed.mp3,s06ThisShapeOpenOrClosed,Is this shape open or closed?,ही आकृती खुली आहे की बंद?,Sayali,25,12
+56_s07WhatAboutThis.mp3,s07WhatAboutThis,What about this one?,हिचे काय?,Sayali,9,4
+57_s08AndThis.mp3,s08AndThis,And this?,आणि ही?,Sayali,7,3
+58_s09HowAboutThis.mp3,s09HowAboutThis,How about this one?,ही कशी आहे?,Sayali,11,5
+59_ocFbClosed.mp3,ocFbClosed,No gaps in its boundary. This shape is closed.,हिच्या सीमेत मोकळी जागा नाही. ही आकृती बंद आहे.,Sayali,47,23
+60_ocFbOpen.mp3,ocFbOpen,There is a gap in its boundary. It is open.,हिच्या सीमेत मोकळी जागा आहे. ही खुली आहे.,Sayali,41,20
+61_ocYesClosed.mp3,ocYesClosed,Yes! It is closed.,हो! ही बंद आहे.,Sayali,15,7
+62_ocYesOpen.mp3,ocYesOpen,Yes! It is open.,हो! ही खुली आहे.,Sayali,16,8
+63_s10TwoOpen.mp3,s10TwoOpen,These two shapes are open...,या दोन आकृती खुल्या आहेत...,Sayali,27,13
+64_s11TwoClosed.mp3,s11TwoClosed,...and these two shapes are closed.,...आणि या दोन आकृती बंद आहेत.,Sayali,29,14
+65_s12BoundariesDifferent.mp3,s12BoundariesDifferent,Look! The boundaries of the shapes are different too.,पाहा! आकृतींच्या सीमाही वेगवेगळ्या आहेत.,Sayali,40,19
+66_s13StraightAndCurved.mp3,s13StraightAndCurved,Some are straight and some are curved.,काही सरळ आहेत आणि काही वक्र.,Sayali,28,14
+67_s14WhichStraightCurved.mp3,s14WhichStraightCurved,Which boundaries are straight and which are curved?,कोणत्या सीमा सरळ आहेत आणि कोणत्या वक्र?,Sayali,39,19
+68_s14AskAgain.mp3,s14AskAgain,Is the boundary straight or curved?,ही सीमा सरळ आहे की वक्र?,Sayali,24,12
+69_s14NotCurved.mp3,s14NotCurved,Look! This boundary isn't curved. It is made of straight lines.,पाहा! ही सीमा वक्र नाही. ती सरळ रेषांनी बनलेली आहे.,Sayali,51,25
+70_s14IsCurved.mp3,s14IsCurved,Look closely. This boundary bends smoothly. It is curved.,नीट पाहा. ही सीमा हळूवारपणे वळते. ती वक्र आहे.,Sayali,46,22
+71_s15GotIt.mp3,s15GotIt,"You got it! These boundaries are straight, while these are curved.","अगदी बरोबर! या सीमा सरळ आहेत, तर या वक्र आहेत.",Sayali,46,22
+72_s16TapClosedStraight.mp3,s16TapClosedStraight,Tap the closed figure made with straight lines.,सरळ रेषांनी बनलेल्या बंद आकृतीवर टॅप करा.,Sayali,41,20
+73_s16Yes.mp3,s16Yes,Yes! It is closed and made of straight lines.,हो! ती बंद आहे आणि सरळ रेषांनी बनलेली आहे.,Sayali,42,20
+74_s16NotQuite.mp3,s16NotQuite,Not quite. Look for a figure with no gaps and no curves.,अगदी बरोबर नाही. मोकळी जागा आणि वक्रता नसलेली आकृती शोधा.,Sayali,57,28
+75_s17CallPolygon.mp3,s17CallPolygon,We call this a polygon.,याला आपण बहुभुजाकृती म्हणतो.,Sayali,28,14
+76_s18Definition.mp3,s18Definition,A closed figure made of only straight line segments is called a polygon.,फक्त रेषाखंडांनी बनलेल्या बंद आकृतीला बहुभुजाकृती म्हणतात.,Sayali,58,28
+77_s19WhichPolygons.mp3,s19WhichPolygons,Which of these figures are polygons?,यांपैकी कोणत्या आकृती बहुभुजाकृती आहेत?,Sayali,39,19
+78_s19GreatJob.mp3,s19GreatJob,Great job! You identified all the polygons.,छान! तुम्ही सर्व बहुभुजाकृती ओळखल्या.,Sayali,37,18
+79_polygonRule.mp3,polygonRule,"A polygon is closed, with only straight sides.",बहुभुजाकृती बंद असते आणि तिच्या सर्व बाजू सरळ असतात.,Sayali,52,25
+80_fbTheseAreTheOnes.mp3,fbTheseAreTheOnes,That is right! These are the ones.,बरोबर! ह्याच त्या आहेत.,Sayali,23,11
+81_fbNotQuiteTryAgain.mp3,fbNotQuiteTryAgain,Not quite. Try again.,अगदी बरोबर नाही. पुन्हा प्रयत्न करा.,Sayali,36,17
+83_s20Sides.mp3,s20Sides,These line segments are the sides of the polygon.,हे रेषाखंड बहुभुजाकृतीच्या बाजू आहेत.,Sayali,37,18
+84_s21Vertex.mp3,s21Vertex,The point where two sides meet is called a vertex.,"ज्या बिंदूत दोन बाजू मिळतात, त्याला शिरोबिंदू म्हणतात.",Sayali,54,26
+85_s22Angle.mp3,s22Angle,"When two sides meet, they also form an angle.","जेव्हा दोन बाजू मिळतात, तेव्हा त्या एक कोनही तयार करतात.",Sayali,56,27
+86_s23LabelParts.mp3,s23LabelParts,Label the parts of the polygon.,बहुभुजाकृतीच्या भागांना नावे द्या.,Sayali,34,16
+87_s23Perfect.mp3,s23Perfect,"Perfect! Side, vertex and angle — all labelled.","उत्तम! बाजू, शिरोबिंदू आणि कोन — सर्वांना नावे दिली.",Sayali,52,25
+88_s24CountSides.mp3,s24CountSides,Let's count the sides of the polygon.,"चला, बहुभुजाकृतीच्या बाजू मोजूया.",Sayali,33,16
+89_countCarefully.mp3,countCarefully,Count each side carefully and try again.,प्रत्येक बाजू नीट मोजा आणि पुन्हा प्रयत्न करा.,Sayali,46,22
+90_s25Correct5.mp3,s25Correct5,Correct! This polygon has 5 sides.,बरोबर! या बहुभुजाकृतीला 5 बाजू आहेत.,Sayali,38,18
+91_s26ChangeLooks.mp3,s26ChangeLooks,Now let's change how it looks.,आता याचे रूप बदलूया.,Sayali,20,10
+92_s27DragVertex.mp3,s27DragVertex,"Drag any vertex. Stretch it, squash it, or resize it.","कोणताही शिरोबिंदू ओढा. ती ताणा, दाबा किंवा तिचा आकार बदला.",Sayali,58,28
+94_s28Whoa.mp3,s28Whoa,Whoa! It looks quite different now.,व्वा! आता ती खूपच वेगळी दिसते.,Sayali,30,15
+95_s29Appearance.mp3,s29Appearance,Its appearance has completely changed.,तिचे रूप पूर्णपणे बदलले आहे.,Sayali,28,14
+96_s30NotEverything.mp3,s30NotEverything,But not everything has changed.,पण सर्व काही बदललेले नाही.,Sayali,26,13
+97_s31CountAgain.mp3,s31CountAgain,Let's count the sides again.,"चला, बाजू पुन्हा मोजूया.",Sayali,24,12
+98_s32Still5.mp3,s32Still5,Both polygons still have 5 sides.,दोन्ही बहुभुजाकृतींना अजूनही 5 बाजू आहेत.,Sayali,43,21
+99_s33NameBySides.mp3,s33NameBySides,So the number of sides gives us a good way to name polygons.,म्हणून बाजूंच्या संख्येवरून बहुभुजाकृतींना नावे देणे सोपे जाते.,Sayali,63,31
+100_s34Triangle.mp3,s34Triangle,A polygon with 3 sides is called a triangle.,3 बाजू असलेल्या बहुभुजाकृतीला त्रिकोण म्हणतात.,Sayali,48,23
+101_s35Quadrilateral.mp3,s35Quadrilateral,A polygon with 4 sides is called a quadrilateral.,4 बाजू असलेल्या बहुभुजाकृतीला चौकोन म्हणतात.,Sayali,46,22
+102_s36SelectQuadrilaterals.mp3,s36SelectQuadrilaterals,Select all the quadrilaterals.,सर्व चौकोन निवडा.,Sayali,17,8
+103_s36ThatsRight.mp3,s36ThatsRight,That’s right! Quadrilaterals are polygons with 4 sides.,बरोबर! चौकोन म्हणजे 4 बाजू असलेल्या बहुभुजाकृती.,Sayali,50,24
+104_s36Rule.mp3,s36Rule,Quadrilaterals are polygons with 4 sides.,चौकोन म्हणजे 4 बाजू असलेल्या बहुभुजाकृती.,Sayali,43,21
+105_s36IsThisQuad.mp3,s36IsThisQuad,Is this shape a quadrilateral?,ही आकृती चौकोन आहे का?,Sayali,22,11
+106_s37Pentagon.mp3,s37Pentagon,A polygon with 5 sides is called a pentagon.,5 बाजू असलेल्या बहुभुजाकृतीला पंचकोन म्हणतात.,Sayali,47,23
+107_s38Hexagon.mp3,s38Hexagon,A polygon with 6 sides is called a hexagon.,6 बाजू असलेल्या बहुभुजाकृतीला षट्कोन म्हणतात.,Sayali,47,23
+108_s39Heptagon.mp3,s39Heptagon,A polygon with 7 sides is called a heptagon.,7 बाजू असलेल्या बहुभुजाकृतीला सप्तकोन म्हणतात.,Sayali,48,23
+109_s40Octagon.mp3,s40Octagon,A polygon with 8 sides is called an octagon.,8 बाजू असलेल्या बहुभुजाकृतीला अष्टकोन म्हणतात.,Sayali,47,23
+110_recapRecall.mp3,recapRecall,Let's recall what we learnt today.,"चला, आज आपण काय शिकलो ते आठवूया.",Sayali,32,16
+111_recapNames.mp3,recapNames,Polygons have different names based on their number of sides.,बाजूंच्या संख्येनुसार बहुभुजाकृतींची नावे वेगवेगळी असतात.,Sayali,57,28
+112_c1WhichPolygons.mp3,c1WhichPolygons,Which of these are polygons?,यांपैकी कोणत्या बहुभुजाकृती आहेत?,Sayali,33,16
+113_c1Yes.mp3,c1Yes,"Yes! Closed, with only straight sides.","हो! बंद, आणि फक्त सरळ बाजू.",Sayali,27,13
+114_c1NotQuite.mp3,c1NotQuite,Not quite! A polygon is closed with only straight sides.,अगदी बरोबर नाही! बहुभुजाकृती बंद असते आणि तिच्या फक्त सरळ बाजू असतात.,Sayali,69,33
+115_c2Classify.mp3,c2Classify,Classify the figures as a polygon or not a polygon.,आकृतींचे बहुभुजाकृती आणि बहुभुजाकृती नाही असे वर्गीकरण करा.,Sayali,59,29
+117_c2GreatJob.mp3,c2GreatJob,Great job! You sorted the figures correctly.,छान! तुम्ही आकृतींचे योग्य वर्गीकरण केले.,Sayali,41,20
+118_c2WrongGroup.mp3,c2WrongGroup,Wrong group. Check for gaps or curved sides.,चुकीचा गट. मोकळी जागा किंवा वक्र बाजू आहेत का ते तपासा.,Sayali,55,27
+119_c2Rule.mp3,c2Rule,"Polygons are closed, with only straight sides. Try again.",बहुभुजाकृती बंद असतात आणि त्यांच्या फक्त सरळ बाजू असतात. पुन्हा प्रयत्न करा.,Sayali,76,37
+120_c3WhichNot.mp3,c3WhichNot,Which figure is NOT a polygon?,कोणती आकृती बहुभुजाकृती नाही?,Sayali,29,14
+121_c3Found.mp3,c3Found,You found it! That is not a polygon.,तुम्ही शोधले! ती बहुभुजाकृती नाही.,Sayali,34,16
+122_c3BreaksRule.mp3,c3BreaksRule,Which figure breaks the rule for a polygon?,कोणती आकृती बहुभुजाकृतीचा नियम मोडते?,Sayali,37,18
+123_c3Questions.mp3,c3Questions,Is it closed? Does it have only straight sides?,ती बंद आहे का? तिच्या फक्त सरळ बाजू आहेत का?,Sayali,44,21
+124_c4WhichPentagons.mp3,c4WhichPentagons,Which of these are pentagons?,यांपैकी कोणते पंचकोन आहेत?,Sayali,26,13
+125_c4Exactly.mp3,c4Exactly,Exactly! A pentagon always has 5 sides.,अगदी बरोबर! पंचकोनाला नेहमी 5 बाजू असतात.,Sayali,43,21
+126_c4CountEach.mp3,c4CountEach,Count the sides of each figure carefully.,प्रत्येक आकृतीच्या बाजू नीट मोजा.,Sayali,33,16
+127_c4LookFor5.mp3,c4LookFor5,Look for every figure with exactly 5 sides.,बरोबर 5 बाजू असलेली प्रत्येक आकृती शोधा.,Sayali,42,20
+128_c5Classify.mp3,c5Classify,Classify each figure as a hexagon or a heptagon.,प्रत्येक आकृतीचे षट्कोन किंवा सप्तकोन असे वर्गीकरण करा.,Sayali,55,27
+130_c5WellDone.mp3,c5WellDone,Well done! Hexagons have 6 sides and heptagons have 7 sides.,छान! षट्कोनाला 6 बाजू असतात आणि सप्तकोनाला 7 बाजू.,Sayali,54,26
+131_c5CountWrong.mp3,c5CountWrong,Count the sides of the ones you placed wrong.,तुम्ही चुकीच्या ठिकाणी ठेवलेल्या आकृतींच्या बाजू मोजा.,Sayali,54,26
+132_c5Rule.mp3,c5Rule,"6 sides make a hexagon, 7 make a heptagon.","6 बाजूंचा षट्कोन होतो, 7 चा सप्तकोन.",Sayali,40,19
+133_endReady.mp3,endReady,Now you know everything about polygons. You are ready to help Momo.,आता तुम्हाला बहुभुजाकृतींबद्दल सर्व काही माहीत आहे. तुम्ही मोमोला मदत करायला तयार आहात.,Sayali,87,42
